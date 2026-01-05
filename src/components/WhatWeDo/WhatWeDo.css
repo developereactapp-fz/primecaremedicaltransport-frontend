@@ -88,7 +88,7 @@
 /* ICON */
 /* ===================== */
 
-.service-icon {
+.servicee-icon {
   font-size: 52px;
   color: #10b981;
   margin-bottom: 26px;
@@ -129,7 +129,7 @@
   transform: translateY(-12px);
 }
 
-.whatwedo-item:hover .service-icon {
+.whatwedo-item:hover .servicee-icon {
   color: #2563eb;
   transform: scale(1.1);
 }
@@ -184,7 +184,7 @@
   }
 
   /* ICON */
-  .service-icon {
+  .servicee-icon {
     font-size: 40px;
     margin-bottom: 18px;
   }

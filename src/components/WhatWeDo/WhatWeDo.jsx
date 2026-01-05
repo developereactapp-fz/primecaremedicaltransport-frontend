@@ -44,7 +44,7 @@ export default function WhatWeDo() {
               inView ? "animate-up-ontime" : ""
             }`}
           >
-            <i className="fa-solid fa-car-side service-icon"></i>
+            <i className="fa-solid fa-car-side servicee-icon"></i>
             <h3>On-Time</h3>
             <p>
               On-Time, Professional Transport for Medical Appointments,
@@ -58,7 +58,7 @@ export default function WhatWeDo() {
               inView ? "animate-up-Reliable" : ""
             }`}
           >
-            <i className="fa-solid fa-tag service-icon"></i>
+            <i className="fa-solid fa-tag servicee-icon"></i>
             <h3>Reliable</h3>
             <p>
               Reliable Non-Emergency Medical Transportation, Putting
@@ -72,7 +72,7 @@ export default function WhatWeDo() {
               inView ? "animate-up-Serving" : ""
             }`}
           >
-            <i className="fa-solid fa-screwdriver-wrench service-icon"></i>
+            <i className="fa-solid fa-screwdriver-wrench servicee-icon"></i>
             <h3>Serving</h3>
             <p>
               Serving Western Washington with Compassionate and Accessible
