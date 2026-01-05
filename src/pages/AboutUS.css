@@ -1,0 +1,48 @@
+/* ===============================
+   HERO (same pattern as other pages)
+================================ */
+
+.page-hero {
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  /* position: relative; */
+}
+
+.page-hero-overlay {
+  background: rgba(0, 0, 0, 0.651);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.page-hero-overlay h1 {
+  font-size: 46px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: #10b981;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ===============================
+   ABOUT CONTENT
+================================ */

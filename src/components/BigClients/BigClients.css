@@ -1,0 +1,184 @@
+.bigclients {
+  padding: 110px 0;
+  background: #ffffff;
+  font-family: "Jost", "Plus Jakarta Sans", sans-serif;
+}
+
+/* HEADER */
+.bigclients-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 70px;
+}
+
+.bigclients-header h2 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.bigclients-header p {
+  font-size: 15px;
+  color: #475569;
+  margin-top: 14px;
+  line-height: 1.7;
+}
+
+/* ===================== */
+/* CLIENT LOGOS */
+/* ===================== */
+
+.client-logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 26px;
+  margin-bottom: 80px;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.logos-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 2s ease;
+}
+
+.logo-card {
+  background: #f8fafc;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1.5s ease, box-shadow 0.3s ease;
+}
+
+.logo-card img {
+  max-width: 120px;
+  max-height: 42px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.85;
+}
+
+.logo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.logo-card:hover img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/* ===================== */
+/* STATS */
+/* ===================== */
+
+.bigclients-stats {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.stats-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1.5s ease;
+}
+
+.stat-item h3 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.stat-item p {
+  font-size: 14px;
+  color: #475569;
+  margin-top: 6px;
+}
+
+/* ===================== */
+/* TABLET */
+/* ===================== */
+
+@media (max-width: 1024px) {
+  .client-logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bigclients-stats {
+    gap: 50px;
+  }
+}
+
+/* ===================== */
+/* MOBILE */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .bigclients {
+    padding: 80px 0;
+  }
+
+  .bigclients-header h2 {
+    font-size: 30px;
+  }
+
+  .client-logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .logo-card img {
+    max-width: 90px;
+  }
+
+  .bigclients-stats {
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .stat-item h3 {
+    font-size: 30px;
+  }
+}
+
+/* ===================== */
+/* MOBILE – STATS LAYOUT */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .bigclients-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  /* First two items stay in row 1 */
+  .bigclients-stats .stat-item:nth-child(1),
+  .bigclients-stats .stat-item:nth-child(2) {
+    grid-column: span 1;
+  }
+
+  /* Third item centered in row 2 */
+  .bigclients-stats .stat-item:nth-child(3) {
+    grid-column: 1 / -1;
+    max-width: 220px;
+  }
+
+  .stat-item h3 {
+    font-size: 30px;
+  }
+
+  .stat-item p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,203 @@
+/* ===============================
+   SECTION BASE
+================================ */
+
+.about-intro {
+  position: relative;
+  padding: 120px 0;
+  background: url("../../assets/work-bg-img.jpg") left/cover no-repeat;
+  overflow: hidden;
+  font-family: "Jost", "Plus Jakarta Sans", sans-serif;
+}
+/* 
+.about-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.94);
+  z-index: 0;
+} */
+
+.about-wrapper {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* ===============================
+   LEFT SLIDER
+================================ */
+
+.about-slider {
+  position: relative;
+  width: 100%;
+  height: 460px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.about-slider img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.about-slider img.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* QUOTE BOX */
+.quote-box {
+    position: fixed;
+    bottom: 60px;
+    left: -50px;
+  background: #10b981;
+  color: #ffffff;
+  padding: 30px 29px;
+  max-width: 260px;
+  border-radius: 0px 48px 48px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ===============================
+   RIGHT CONTENT
+================================ */
+
+.about-tag {
+  color: #10b981;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.about-right h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 14px 0 18px;
+  color: #0f172a;
+}
+
+.about-right p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 14px;
+}
+
+/* UL GRID */
+.about-ul-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin: 28px 0;
+}
+
+.about-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+.about-ul li svg {
+  color: #10b981;
+  font-size: 18px;
+}
+
+/* BUTTON */
+.about-btn {
+  display: inline-block;
+  background: #10b981;
+  color: #ffffff;
+  padding: 14px 36px;
+  border-radius: 0px 24px 24px 24px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.4);
+}
+
+/* ===============================
+   SCROLL ANIMATION
+================================ */
+
+.about-left,
+.about-right {
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+
+.about-left {
+  transform: translateX(-70px);
+}
+
+.about-right {
+  transform: translateX(70px);
+}
+
+.show-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.show-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1024px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-slider {
+    height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-intro {
+    padding: 80px 0;
+  }
+
+  .about-right h2 {
+    font-size: 28px;
+  }
+
+  .about-ul-grid {
+    /* grid-template-columns: 2fr; */
+    gap: 18px;
+  }
+
+  .quote-box {
+    font-size: 13px;
+    padding: 16px;
+  }
+}

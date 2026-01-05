@@ -1,0 +1,71 @@
+.topbar {
+  background: linear-gradient(135deg, #2563eb, #14b8a6);
+  color: white;
+  font-size: 13px;
+}
+
+.topbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  flex-wrap: nowrap; /* 🔑 prevents column collapse */
+}
+
+/* LEFT INFO (DESKTOP) */
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  white-space: nowrap;
+}
+
+/* LINKS */
+.topbar a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  transition: opacity 0.2s ease;
+}
+
+.topbar a:hover {
+  opacity: 0.85;
+}
+
+/* SOCIAL ICONS */
+.topbar-social {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* CTA (MOBILE ONLY) */
+.topbar-cta {
+  background: white;
+  color: #2563eb;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* VISIBILITY */
+.desktop-only {
+  display: none;
+}
+
+.mobile-only {
+  display: flex;
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+  .desktop-only {
+    display: flex;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+}

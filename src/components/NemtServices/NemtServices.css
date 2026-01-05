@@ -1,0 +1,197 @@
+/* ===================== */
+/* BASE */
+/* ===================== */
+
+.nemt-section {
+  padding: 110px 0;
+  background: #ffffff;
+  font-family: "Jost", "Plus Jakarta Sans", sans-serif;
+  overflow: hidden;
+}
+
+.nemt-wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 70px;
+}
+
+/* ===================== */
+/* INITIAL STATE */
+/* ===================== */
+
+.nemt-left,
+.nemt-right {
+  opacity: 0;
+}
+
+/* ===================== */
+/* LEFT */
+/* ===================== */
+
+.nemt-left h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 22px;
+}
+
+.nemt-left p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 16px;
+}
+
+/* ===================== */
+/* BUTTONS */
+/* ===================== */
+
+.nemt-buttons {
+  display: flex;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.btn-red,
+.btn-dark {
+  padding: 16px 44px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0 30px 30px 30px;
+  box-shadow: 1px 1px 30px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-red {
+  background: #10b981;
+}
+
+.btn-dark {
+  background: #0b1f3a;
+  border-radius: 30px 0 30px 30px;
+}
+
+.btn-red:hover,
+.btn-dark:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #2563eb, #14b8a6);
+}
+
+/* ===================== */
+/* RIGHT */
+/* ===================== */
+
+.nemt-right h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 22px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 🔥 KEEP TWO UL ALWAYS */
+  gap: 26px;
+}
+
+.services-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-grid li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 15px;
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+.services-grid svg {
+  font-size: 22px;
+  color: #14b8a6;
+}
+
+/* ===================== */
+/* SCROLL ANIMATION */
+/* ===================== */
+
+.nemt-left-animate {
+  animation: slideLeft 2s ease forwards;
+}
+
+.nemt-right-animate {
+  animation: slideRight 2s ease forwards;
+}
+
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-120px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(120px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ===================== */
+/* TABLET */
+/* ===================== */
+
+@media (max-width: 1024px) {
+  .nemt-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===================== */
+/* MOBILE – TWO UL FIX */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .nemt-section {
+    padding: 70px 0;
+  }
+
+  .nemt-left h2 {
+    font-size: 24px;
+  }
+
+  .nemt-left p {
+    font-size: 14px;
+  }
+
+  .nemt-right h3 {
+    font-size: 24px;
+  }
+
+  /* KEEP TWO UL */
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .services-grid li {
+    font-size: 13px;
+    gap: 10px;
+  }
+
+  .services-grid svg {
+    font-size: 16px;
+  }
+
+  .nemt-buttons {
+    flex-direction: column;
+  }
+
+  .btn-red,
+  .btn-dark {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+  }
+}

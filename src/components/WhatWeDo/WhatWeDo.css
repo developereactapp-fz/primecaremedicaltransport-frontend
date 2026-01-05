@@ -1,0 +1,209 @@
+.whatwedo {
+  padding: 110px 0;
+  background: #ffffff;
+  font-family: "Jost", "Plus Jakarta Sans", sans-serif;
+}
+
+/* ===================== */
+/* INITIAL HIDDEN STATE */
+/* ===================== */
+
+.whatwedo-item {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+/* ===================== */
+/* HEADER */
+/* ===================== */
+
+.whatwedo-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 70px;
+}
+
+.whatwedo-header h2 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #0f172a;
+  position: relative;
+}
+
+.whatwedo-header h2::after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  background: #2563eb;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+.whatwedo-header p {
+  margin-top: 18px;
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.7;
+}
+
+/* ===================== */
+/* GRID */
+/* ===================== */
+
+.whatwedo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* ===================== */
+/* STAGGERED ANIMATIONS */
+/* ===================== */
+
+.animate-up-ontime {
+  animation: slideUp 1s ease forwards;
+}
+
+.animate-up-Reliable {
+  animation: slideUp 1.8s ease forwards;
+}
+
+.animate-up-Serving {
+  animation: slideUp 2.6s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===================== */
+/* ICON */
+/* ===================== */
+
+.service-icon {
+  font-size: 52px;
+  color: #10b981;
+  margin-bottom: 26px;
+  transition: transform 0.35s ease, color 0.35s ease;
+}
+
+/* ===================== */
+/* TEXT */
+/* ===================== */
+
+.whatwedo-item h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+.whatwedo-item p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.7;
+}
+
+/* ===================== */
+/* CARD EFFECT */
+/* ===================== */
+
+.whatwedo-item {
+  text-align: center;
+  padding: 30px 22px;
+  border-radius: 22px;
+  transition: all 0.35s ease;
+}
+
+.whatwedo-item:hover {
+  background: #ffffff;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.1);
+  transform: translateY(-12px);
+}
+
+.whatwedo-item:hover .service-icon {
+  color: #2563eb;
+  transform: scale(1.1);
+}
+
+/* ===================== */
+/* TABLET */
+/* ===================== */
+
+@media (max-width: 1024px) {
+  .whatwedo-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* ===================== */
+/* MOBILE – PERFECT VIEW */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+  .whatwedo {
+    padding: 80px 0;
+  }
+
+  /* HEADER */
+  .whatwedo-header {
+    margin-bottom: 50px;
+    padding: 0 16px;
+  }
+
+  .whatwedo-header h2 {
+    font-size: 30px;
+  }
+
+  .whatwedo-header p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* GRID */
+  .whatwedo-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  /* CARD */
+  .whatwedo-item {
+    padding: 26px 20px;
+    border-radius: 20px;
+  }
+
+  /* ICON */
+  .service-icon {
+    font-size: 40px;
+    margin-bottom: 18px;
+  }
+
+  /* TITLE */
+  .whatwedo-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  /* TEXT */
+  .whatwedo-item p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* HOVER SAFETY (MOBILE) */
+  .whatwedo-item:hover {
+    transform: none;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  }
+}

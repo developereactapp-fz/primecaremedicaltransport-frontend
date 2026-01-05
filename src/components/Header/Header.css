@@ -1,0 +1,283 @@
+/* ===================== */
+/* HEADER BASE */
+/* ===================== */
+
+.header {
+  background: transparent;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header.scrolled {
+  position: fixed;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 114px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+/* LOGO IMAGE */
+.logo img {
+  height: 100px;          /* primary control */
+  width: auto;
+  max-width: 200px;     /* prevents stretching */
+  object-fit: contain;
+  display: block;
+   background: rgba(255,255,255,0.6);
+  padding: 4px 6px;
+  border-radius: 6px;
+  
+  /* VISUAL BOOST */
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.15));
+}
+.logo a:hover img {
+  opacity: 0.9;
+}
+/* ===================== */
+/* DESKTOP NAV */
+/* ===================== */
+
+.nav {
+  display: flex;
+  gap: 36px;
+}
+
+.nav a {
+  position: relative;
+  font-weight: 500;
+  padding: 6px 0;
+  color: #0f172a;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+/* DESKTOP UNDERLINE */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #2563eb, #14b8a6);
+  border-radius: 10px;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+/* DESKTOP HOVER */
+.nav a:hover {
+  transform: translateY(-3px) scale(1.08);
+  color: #2563eb;
+}
+
+.nav a:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* DESKTOP ACTIVE */
+.nav a.active {
+  transform: translateY(-3px) scale(1.08);
+  color: #2563eb;
+}
+
+.nav a.active::after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* ===================== */
+/* CTA BUTTON (DESKTOP) */
+/* ===================== */
+
+.header-cta {
+  background: linear-gradient(135deg, #2563eb, #14b8a6);
+  color: #ffffff;
+  border: none;
+  padding: 10px 22px;
+  gap: 6px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.header-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+}
+
+/* ===================== */
+/* VISIBILITY HELPERS */
+/* ===================== */
+
+.desktop-only {
+  display: none;
+}
+
+.mobile-only {
+  display: flex;
+  
+}
+
+@media (min-width: 769px) {
+  .desktop-only {
+    display: flex;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+}
+
+/* ===================== */
+/* FULLSCREEN MOBILE MENU */
+/* ===================== */
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #2563eb, #14b8a6);
+  z-index: 2000;
+  transform: translateX(100%);
+  transition: transform 0.9s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+/* MOBILE MENU HEADER */
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.close-icon {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* ===================== */
+/* MOBILE MENU LINKS */
+/* ===================== */
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 40px 35px;
+}
+
+.mobile-menu-links a {
+  position: relative;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  padding-bottom: 6px;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+/* ✅ MOBILE UNDERLINE — SAME AS DESKTOP */
+.mobile-menu-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #14b8a6, #2563eb);
+  border-radius: 10px;
+  opacity: 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+/* MOBILE HOVER */
+.mobile-menu-links a:hover {
+  transform: translateX(8px) scale(1.05);
+  color: #e0f2fe;
+}
+
+.mobile-menu-links a:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* MOBILE ACTIVE (SAME AS HOVER) */
+.mobile-menu-links a.active {
+  transform: translateX(8px) scale(1.05);
+  color: #0a0a0a;
+  font-weight: 700;
+}
+
+.mobile-menu-links a.active::after {
+  width: 100%;
+  opacity: 1;
+}
+/* Tablet */
+@media (max-width: 1024px) {
+  .logo img {
+    height: 44px;
+    max-width: 180px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .logo img {
+    height: 110px;
+    max-width: 160px;
+  }
+}
+/* ===================== */
+/* DESKTOP ONLY STICKY */
+/* ===================== */
+@media (min-width: 769px) {
+  .header.scrolled {
+    position: fixed;
+    top: 0;
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    animation: slideDown 0.35s ease;
+  }
+}
+
+/* ===================== */
+/* MOBILE – NO STICKY */
+/* ===================== */
+@media (max-width: 768px) {
+  .header {
+    position: absolute !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+}
+
+/* OPTIONAL ANIMATION */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

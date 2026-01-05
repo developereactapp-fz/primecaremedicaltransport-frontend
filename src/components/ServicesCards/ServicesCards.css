@@ -1,0 +1,127 @@
+.services-cards {
+  padding: 110px 0;
+  background: #ffffff;
+  font-family: "Jost", "Plus Jakarta Sans", sans-serif;
+}
+
+/* HEADER */
+.services-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.services-header span {
+  color: #10b981;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.services-header h2 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+/* GRID */
+.services-grids {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+.services-grids.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 3s ease;
+}
+
+/* CARD */
+.service-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 36px 32px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.12);
+}
+
+/* ICON */
+.service-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 0px 24px 24px 24px;
+  background: rgba(20, 184, 166, 0.12);
+  color: #14b8a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* TEXT */
+.service-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 18px;
+}
+
+.service-card a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #14b8a6;
+  text-decoration: none;
+}
+
+.service-card a:hover {
+  text-decoration: underline;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .services-grids {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .services-cards {
+    padding: 80px 0;
+  }
+
+  .services-header h2 {
+    font-size: 30px;
+  }
+
+  .services-grids {
+    grid-template-columns: 2fr 2fr;
+    gap: 26px;
+  }
+
+  .service-card {
+    padding: 30px 24px;
+  }
+
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
+}
