@@ -66,6 +66,6 @@
   }
 
   .mobile-only {
-    display: none;
+    display: flex;
   }
 }
