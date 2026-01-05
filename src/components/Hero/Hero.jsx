@@ -70,7 +70,7 @@ A step closer to recovery, a step back to home
   className="help-btn"
   onClick={() => navigate("/about-us")}
 >
-Book YOur Appointment</button>
+Book Your Appointment</button>
 
 
           {/* <span className="hero-index">01.</span> */}
