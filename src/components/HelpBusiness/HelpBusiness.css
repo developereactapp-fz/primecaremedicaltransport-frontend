@@ -240,17 +240,17 @@
   /* MOBILE TRIANGLE POSITIONS */
   .top-left {
     top: 20px;
-    left: -80px;
+    left: -33px;
   }
 
   .middle-right {
     top: 50%;
-    right: -90px;
+    right: -33px;
   }
 
   .bottom-left {
     bottom: 20px;
-    left: -60px;
+    left: -33px;
   }
 
   /* CONTENT FONT SCALE */

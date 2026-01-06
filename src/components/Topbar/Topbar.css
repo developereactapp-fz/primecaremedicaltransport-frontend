@@ -1,18 +1,29 @@
+/* ===================== */
+/* BASE */
+/* ===================== */
+
 .topbar {
   background: linear-gradient(135deg, #2563eb, #14b8a6);
-  color: white;
+  font-family: "Jost", "Plus Jakarta Sans", sans-serif;
+  color: #ffffff;
   font-size: 13px;
 }
+
+/* ===================== */
+/* LAYOUT */
+/* ===================== */
 
 .topbar-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 44px;
-  flex-wrap: nowrap; /* 🔑 prevents column collapse */
 }
 
+/* ===================== */
 /* LEFT INFO (DESKTOP) */
+/* ===================== */
+
 .topbar-left {
   display: flex;
   align-items: center;
@@ -20,37 +31,66 @@
   white-space: nowrap;
 }
 
-/* LINKS */
-.topbar a {
+.topbar-left span,
+.topbar-left a {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: white;
-  transition: opacity 0.2s ease;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.topbar a:hover {
-  opacity: 0.85;
-}
-
+/* ===================== */
 /* SOCIAL ICONS */
+/* ===================== */
+
 .topbar-social {
   display: flex;
   align-items: center;
   gap: 14px;
 }
 
-/* CTA (MOBILE ONLY) */
+.topbar-social a {
+  color: #ffffff;
+  font-size: 14px;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.topbar-social a:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* ===================== */
+/* CTA BUTTON (MOBILE) */
+/* ===================== */
+
 .topbar-cta {
-  background: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
   color: #2563eb;
-  border: none;
   padding: 6px 14px;
   border-radius: 4px;
   font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.topbar-cta svg {
+  font-size: 12px;
+}
+
+.topbar-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* ===================== */
 /* VISIBILITY */
+/* ===================== */
+
 .desktop-only {
   display: none;
 }
@@ -59,13 +99,16 @@
   display: flex;
 }
 
+/* ===================== */
 /* DESKTOP */
+/* ===================== */
+
 @media (min-width: 769px) {
   .desktop-only {
     display: flex;
   }
 
   .mobile-only {
-    display: flex;
+    display: none;
   }
 }

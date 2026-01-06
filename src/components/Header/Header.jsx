@@ -51,6 +51,8 @@ export default function Header() {
           Call +91 9344228012
         </button>
 
+
+
         {/* MOBILE MENU ICON */}
         <div className="menu-icon mobile-only" onClick={() => setOpen(true)}>
           <FaBars />
