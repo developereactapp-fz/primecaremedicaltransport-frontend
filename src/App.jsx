@@ -24,8 +24,8 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/fleet" element={<Fleet />} />
           <Route path="/services" element={<Services />} />
-          {/* <Route path="/service-areas" element={<ServiceAreas />} /> */}
-          {/* <Route path="/reservation" element={<Reservation />} /> */}
+          {/* <Route path="/service-areas" element={<ServiceAreas />} /> 
+          <Route path="/reservation" element={<Reservation />} />  */}
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <BookRideCTA/>

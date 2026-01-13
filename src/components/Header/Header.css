@@ -58,7 +58,8 @@
   position: relative;
   font-weight: 500;
   padding: 6px 0;
-  color: #0f172a;
+  /* color: #0f172a; */
+  color: #7b808c;
   transition: transform 0.25s ease, color 0.25s ease;
 }
 
