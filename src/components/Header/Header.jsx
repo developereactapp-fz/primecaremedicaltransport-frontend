@@ -36,8 +36,8 @@ export default function Header() {
           <NavLink to="/about-us">About Us</NavLink>
           <NavLink to="/fleet">Our Fleet</NavLink>
           <NavLink to="/services">Services</NavLink>
-          {/* <NavLink to="/service-areas">Service Areas</NavLink>
-          <NavLink to="/reservation">Reservation</NavLink> */}
+          <NavLink to="/service-areas">Service Areas</NavLink>
+          <NavLink to="/reservation">Reservation</NavLink>
           <NavLink to="/contact-us">Contact Us</NavLink>
         </nav>
 
@@ -69,8 +69,8 @@ export default function Header() {
           <NavLink to="/about-us" onClick={() => setOpen(false)}>About Us</NavLink>
           <NavLink to="/fleet" onClick={() => setOpen(false)}>Our Fleet</NavLink>
           <NavLink to="/services" onClick={() => setOpen(false)}>Services</NavLink>
-          {/* <NavLink to="/service-areas" onClick={() => setOpen(false)}>Service Areas</NavLink>
-          <NavLink to="/reservation" onClick={() => setOpen(false)}>Reservation</NavLink> */}
+          <NavLink to="/service-areas" onClick={() => setOpen(false)}>Service Areas</NavLink>
+          <NavLink to="/reservation" onClick={() => setOpen(false)}>Reservation</NavLink>
           <NavLink to="/contact-us" onClick={() => setOpen(false)}>Contact Us</NavLink>
         </div>
       </div>
