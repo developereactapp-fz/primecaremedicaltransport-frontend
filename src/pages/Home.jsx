@@ -12,17 +12,17 @@ export default function Home() {
     <>
       {/* ================= SEO ================= */}
       <Seo
-        title="Non-Emergency Medical Transportation Services | Elegant Care Transportation"
-        description="Elegant Care Transportation provides safe, reliable non-emergency medical transportation including wheelchair transport, hospital visits, dialysis, and assisted mobility services."
-        url="https://elegantcaretransportation.com/"
+        title="Non-Emergency Medical Transportation Services | PrimeCare Medical Transportation"
+        description="PrimeCare Medical Transportation provides safe, reliable non-emergency medical transportation including wheelchair transport, hospital visits, dialysis, and assisted mobility services."
+        url="https://https://primecaremedicaltransport.com//"
         image="/home-preview.jpg"
         schema={{
           "@context": "https://schema.org",
           "@type": "MedicalBusiness",
-          "name": "Elegant Care Transportation",
+          "name": "Prime Care Medical Transportation",
           "description":
             "Non-emergency medical transportation services offering safe, reliable and compassionate care.",
-          "url": "https://elegantcaretransportation.com/",
+          "url": "https://https://primecaremedicaltransport.com//",
           "telephone": "+1-XXX-XXX-XXXX",
           "areaServed": {
             "@type": "Place",

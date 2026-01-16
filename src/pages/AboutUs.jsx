@@ -43,7 +43,7 @@ export default function AboutUs() {
           "url": "https://primecaremedicaltransport.com/about-us",
           "mainEntity": {
             "@type": "MedicalBusiness",
-            "name": "PrimeCare Medical Transport",
+            "name": "Prime Care Medical Transport",
             "description":
               "Non-emergency medical transportation provider offering wheelchair transport, hospital visits, and assisted mobility services.",
             "areaServed": {
