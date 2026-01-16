@@ -57,8 +57,8 @@ export default function AboutProcess() {
           <span className="process-tag">How It Works</span>
 
           <h2>
-            Professional Psychology <br />
-            Therapy You Can Choose
+            How can CareHealth <br />
+             help your journey?
           </h2>
 
           <div className="process-steps">

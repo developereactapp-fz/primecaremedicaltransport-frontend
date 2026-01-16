@@ -62,7 +62,7 @@
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 70px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 /* LEFT */
@@ -78,43 +78,57 @@
 }
 
 /* BUTTONS – SAME AS HOME */
-.btn-primary {
-  background: #dc2626;
-  color: #ffffff;
-  padding: 14px 28px;
-  border-radius: 6px;
-  font-weight: 700;
+/* ===================== */
+/* BUTTONS */
+/* ===================== */
+
+.service-buttons {
+  display: flex;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.btn-red,
+.btn-dark {
+  padding: 16px 44px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0 30px 30px 30px;
+  box-shadow: 1px 1px 30px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
-  background: #b91c1c;
-  transform: translateY(-3px);
+.btn-red {
+  background: #10b981;
 }
 
-.btn-secondary {
-  background: #0f172a;
-  color: #ffffff;
-  padding: 14px 28px;
-  border-radius: 6px;
-  font-weight: 700;
-  transition: all 0.3s ease;
+.btn-dark {
+  background: #0b1f3a;
+  border-radius: 30px 0 30px 30px;
 }
 
-.btn-secondary:hover {
-  background: #020617;
-  transform: translateY(-3px);
+.btn-red:hover,
+.btn-dark:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #2563eb, #14b8a6);
 }
 
 /* RIGHT */
+.service-right {
+    margin-top: 2%;
+}
+
 .service-right h3 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 22px;
-  font-weight: 800;
-  color: #2563eb;
-  margin-bottom: 26px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 42px;
+    font-weight: 800;
+    font-family: "jost";
+    color: #0b1f3a;
+    margin-bottom: 26px;
 }
 
 .service-lists {
@@ -124,12 +138,13 @@
 }
 
 .service-lists li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 14px;
-  margin-bottom: 12px;
-  color: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-family: "jost";
+    margin-bottom: 15px;
+    color: #0f172a;
 }
 
 /* ICON STYLE – SAME AS HOME */

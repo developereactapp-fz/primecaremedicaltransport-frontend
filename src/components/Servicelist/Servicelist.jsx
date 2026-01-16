@@ -50,19 +50,24 @@ export default function ServiceArea() {
             <img src={serviceImg} alt="Service Area" />
 
             <div className="service-buttons">
-              <a href="/contact-us" className="btn-primary">
+              <a href="/contact-us" className="btn-red">
                 Book a Ride
               </a>
-              <a href="tel:+12064566665" className="btn-secondary">
+              <a href="tel:+12064566665" className="btn-dark">
                 (206) 456-6665
               </a>
             </div>
+           
           </div>
 
           {/* RIGHT */}
           <div className="service-right">
+                      <div className="service-icon">
+
+             <FaMapMarkerAlt />
+</div>
             <h3>
-              <FaMapMarkerAlt />  <span className="highlight">Our Service</span> Area List
+               <span className="highlight">Our Service</span> Area List
             </h3>
 
             <div className="service-lists">
