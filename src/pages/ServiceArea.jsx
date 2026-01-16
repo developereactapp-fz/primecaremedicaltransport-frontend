@@ -51,7 +51,7 @@ export default function ServiceArea() {
       {/* ================= HERO ================= */}
       <section
         ref={sectionRef}
-        className={`page-hero ${inView ? "fade-up" : ""}`}
+        className={`page-hero ${inView ? "fade-in" : ""}`}
         style={{ backgroundImage: `url(${heroImg})` }}
       >
         <div className="page-hero-overlay">

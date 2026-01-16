@@ -24,7 +24,7 @@ export default function OurFleet() {
           observer.disconnect();
         }
       },
-      { threshold: 0.25 }
+      { threshold: 0.0 }
     );
 
     if (sectionRef.current) observer.observe(sectionRef.current);
