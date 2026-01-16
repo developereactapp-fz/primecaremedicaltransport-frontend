@@ -17,8 +17,11 @@ function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
+                      <ScrollToTop/>
         <Topbar />
         <Header />
+
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
@@ -30,7 +33,6 @@ function App() {
         </Routes>
         <BookRideCTA/>
         <Footer/>
-        <ScrollToTop/>
       </BrowserRouter>
     </HelmetProvider>
   );
