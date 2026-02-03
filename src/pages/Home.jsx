@@ -6,6 +6,7 @@ import BigClients from "../components/BigClients/BigClients";
 import OurFleet from "../components/OurFleet/OurFleet";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import NemtServices from "../components/NemtServices/NemtServices";
+import Faq from "../components/Faq/Faq";
 
 export default function Home() {
   return (
@@ -46,6 +47,8 @@ export default function Home() {
       <OurFleet />
       <WhyChooseUs />
       <NemtServices />
+      <Faq />
+
     </>
   );
 }
