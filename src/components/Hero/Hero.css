@@ -4,7 +4,7 @@
 
 .hero-dezvu {
   position: relative;
- padding-top: 180px; /* HEADER HEIGHT SPACE */
+ padding-top: 220px; /* HEADER HEIGHT SPACE */
   padding-bottom: 110px;
   overflow: hidden;
   background-image: url("../../assets/banner-bg-img.png");

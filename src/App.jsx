@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Topbar from "./components/Topbar/Topbar";
+import MovingBanner from "./components/MovingBanner/MovingBanner";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
@@ -19,6 +20,7 @@ function App() {
       <BrowserRouter>
                       <ScrollToTop/>
         <Topbar />
+         <MovingBanner />
         <Header />
 
 
