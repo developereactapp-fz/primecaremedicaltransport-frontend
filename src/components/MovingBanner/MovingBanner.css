@@ -58,15 +58,15 @@
 
 .banner-content {
   grid-column: span 10;
-      padding-left: 190px;
+      padding-left: 250px;
 
 }
 
 .banner-content p {
 color: #eaebed;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
-    text-align: center;
+    text-align: right;
     margin: 0;
 }
 

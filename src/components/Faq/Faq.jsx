@@ -1,43 +1,69 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./Faq.css";
 
 const faqData = [
   {
     question: "Where Should I Book A Ride To Right Now?",
     answer:
-      "You can book a ride directly through our website, by phone, or by contacting our support team. We offer flexible scheduling for all non-emergency medical transportation needs."
+      "You can book a ride directly through our website, by phone, or by contacting our support team."
   },
   {
     question: "What Key Themes Do I Explore In The One?",
     answer:
-      "Our services focus on safety, comfort, reliability, and compassionate care for seniors, patients, and individuals with mobility challenges."
+      "We focus on safety, comfort, reliability, and compassionate non-emergency medical transportation."
   },
   {
     question: "Would You Take The Test?",
     answer:
-      "Our trained drivers and coordinators follow strict protocols to ensure each ride meets medical transportation standards."
+      "Our drivers and coordinators follow strict protocols to ensure reliable and secure service."
   },
   {
     question: "How Do I Address Gender In The Book?",
     answer:
-      "We provide respectful, inclusive service to all individuals, regardless of background or personal needs."
+      "We provide inclusive, respectful services for every individual."
   },
   {
     question: "Where Should I Book A Ride To Right Now?",
     answer:
-      "Booking is available online 24/7 or via phone during business hours for your convenience."
+      "You can schedule online 24/7 or call us directly for assistance."
   }
 ];
 
 export default function Faq() {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [visible, setVisible] = useState(false);
+  const sectionRef = useRef(null);
 
+  /* =====================
+     AUTO CLOSE LOGIC
+  ===================== */
   const toggleFaq = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
+  /* =====================
+     SCROLL REVEAL
+  ===================== */
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.25 }
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="faq-section">
+    <section
+      ref={sectionRef}
+      className={`faq-section ${visible ? "faq-show" : ""}`}
+    >
       <div className="container">
 
         {/* HEADER */}
@@ -49,7 +75,7 @@ export default function Faq() {
           </h2>
         </div>
 
-        {/* GRID */}
+        {/* FAQ GRID */}
         <div className="faq-grid">
           {faqData.map((item, index) => (
             <div

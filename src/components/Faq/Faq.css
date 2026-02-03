@@ -1,11 +1,23 @@
+
 /* ===================== */
 /* BASE */
 /* ===================== */
 
 .faq-section {
   padding: 110px 0;
-  background: #ffffff; /* same as your site bg */
+  background: #ffffff;
   font-family: "Jost", "Plus Jakarta Sans", sans-serif;
+
+  /* scroll animation start */
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+/* SCROLL REVEAL */
+.faq-show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1.2s ease;
 }
 
 /* ===================== */
@@ -19,11 +31,11 @@
 }
 
 .faq-tag {
-  display: inline-block;
   font-size: 12px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: #2563eb;
+  display: inline-block;
   margin-bottom: 12px;
 }
 
@@ -36,7 +48,7 @@
 
 .faq-header h2 span {
   text-decoration: underline;
-  text-decoration-color: #f97316;
+  text-decoration-color:#14b8a6;
   text-decoration-thickness: 3px;
 }
 
@@ -51,7 +63,7 @@
 }
 
 /* ===================== */
-/* ITEM */
+/* FAQ ITEM */
 /* ===================== */
 
 .faq-item {
@@ -59,22 +71,19 @@
   border-radius: 999px;
   padding: 18px 24px;
   cursor: pointer;
-  transition: all 0.35s ease;
   background: #ffffff;
+  transition: all 0.35s ease;
 }
 
 .faq-item.active {
   border-radius: 26px;
 }
 
-/* ===================== */
 /* QUESTION */
-/* ===================== */
-
 .faq-question {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .faq-question h4 {
@@ -83,23 +92,18 @@
   color: #0f172a;
 }
 
-/* ICON */
 .faq-icon {
   font-size: 22px;
   font-weight: 500;
-  color: #0f172a;
   transition: transform 0.3s ease;
 }
 
-/* ===================== */
 /* ANSWER */
-/* ===================== */
-
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.3s ease;
   opacity: 0;
+  transition: all 0.4s ease;
 }
 
 .faq-item.active .faq-answer {
@@ -112,16 +116,6 @@
   font-size: 14px;
   color: #475569;
   line-height: 1.6;
-}
-
-/* ===================== */
-/* TABLET */
-/* ===================== */
-
-@media (max-width: 1024px) {
-  .faq-header h2 {
-    font-size: 34px;
-  }
 }
 
 /* ===================== */
@@ -145,3 +139,4 @@
     border-radius: 22px;
   }
 }
+ 
