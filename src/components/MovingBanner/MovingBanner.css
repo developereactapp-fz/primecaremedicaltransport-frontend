@@ -26,13 +26,13 @@
 /* ========================= */
 
 .banner-car-wrap {
-  grid-column: span 4;
+  grid-column: span 2;
   display: flex;
   justify-content: flex-end;
 }
 
 .banner-car {
-  width: 95px;
+  width: 175px;
   transform: translateX(140%);
   opacity: 0;
 }
@@ -57,14 +57,17 @@
 /* ========================= */
 
 .banner-content {
-  grid-column: span 8;
+  grid-column: span 10;
+      padding-left: 190px;
+
 }
 
 .banner-content p {
-  font-size: 14px;
-  color: #0f172a;
-  line-height: 1.5;
-  margin: 0;
+color: #eaebed;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
 }
 
 /* ========================= */
@@ -73,11 +76,11 @@
 
 @media (max-width: 1024px) {
   .banner-car {
-    width: 80px;
+    width: 100px;
   }
 
   .banner-content p {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
@@ -105,11 +108,13 @@
   }
 
   .banner-car {
-    width: 60px;
+    width: 110px;
   }
 
   .banner-content p {
     font-size: 12px;
     margin-top: 6px;
+        display:none;
+
   }
 }
