@@ -6,8 +6,8 @@
   padding: 55px 0 110px 0;
   background: #ffffff;
   font-family: "Jost", "Plus Jakarta Sans", sans-serif;
-  opacity: 0;
-  transform: translateY(80px);
+  opacity: 1;
+  /* transform: translateY(80px); */
 }
 
 .faq-show {

@@ -82,11 +82,11 @@ export default function Faq() {
   };
 
   return (
-    <section
-      ref={sectionRef}
-      className={`faq-section ${visible ? "faq-show" : ""}`}
+    <section  className="faq-section">
+      
+      <div ref={sectionRef}
+      className={`container ${visible ? "faq-show" : ""}`}
     >
-      <div className="container">
 
         {/* HEADER */}
         <div className="faq-header">
