@@ -2,7 +2,7 @@ import "./Header.css";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes, FaPhoneAlt } from "react-icons/fa";
-import Logo from "../../assets/primecareLogo.png";
+import Logo from "../../assets/mainlogo.png";
 
 export default function Header() {
   const [open, setOpen] = useState(false);

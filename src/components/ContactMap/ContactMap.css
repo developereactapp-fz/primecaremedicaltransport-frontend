@@ -1,0 +1,38 @@
+/* Wrapper */
+.map-section {
+  width: 100%;
+  height: 420px;
+  margin-top: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Iframe */
+.map-section iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .map-section {
+    height: 360px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .map-section {
+    height: 300px;
+    border-radius: 8px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .map-section {
+    height: 260px;
+  }
+}

@@ -5,7 +5,7 @@
 .header {
   background: transparent;
   position: absolute;
-  top: 130px;
+  top: 128px;
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -18,10 +18,10 @@
 }
 
 .header-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 114px;
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
 }
 
 .logo {
@@ -30,12 +30,12 @@
 }
 /* LOGO IMAGE */
 .logo img {
-  height: 100px;          /* primary control */
+  height: 160px;          /* primary control */
   width: auto;
   max-width: 200px;     /* prevents stretching */
   object-fit: contain;
   display: block;
-   background: rgba(255,255,255,0.6);
+   /* background: rgba(255,255,255,0.6); */
   padding: 4px 6px;
   border-radius: 6px;
   

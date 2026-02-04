@@ -18,6 +18,7 @@
   align-items: center;
   justify-content: space-between;
   height: 44px;
+  font-size: 14px;
 }
 
 /* ===================== */
@@ -52,7 +53,7 @@
 
 .topbar-social a {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 

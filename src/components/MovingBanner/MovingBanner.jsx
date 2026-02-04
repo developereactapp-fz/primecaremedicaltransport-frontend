@@ -1,37 +1,41 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import "./MovingBanner.css";
 import carImg from "../../assets/Van_Left_Side3_sm.avif";
 
 export default function MovingBanner() {
+  const location = useLocation();
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    setAnimate(true);
-  }, []);
+    // reset animation
+    setAnimate(false);
+
+    // trigger animation again
+    const timer = setTimeout(() => {
+      setAnimate(true);
+    }, 50);
+
+    return () => clearTimeout(timer);
+  }, [location.pathname]); // 🔑 runs on every route change
 
   return (
-    <section className="moving-banner">
-      <div className="container moving-banner-grid">
-
-        {/* LEFT – CAR (4 GRID) */}
-        <div className="banner-car-wrap">
-          <img
-            src={carImg}
-            alt="PrimeCare Medical Transport Vehicle"
-            className={`banner-car ${animate ? "car-animate" : ""}`}
-          />
+    <div className="moving-banner">
+      <div className="container banner-grid">
+        {/* CAR */}
+        <div className={`car-wrapper ${animate ? "car-move" : ""}`}>
+          <img src={carImg} alt="PrimeCare Medical Transport Vehicle" />
         </div>
 
-        {/* RIGHT – CONTENT (8 GRID) */}
-        <div className="banner-content">
+        {/* TEXT */}
+        <div className="banner-text">
           <p>
-            <strong>#1 Private Pay Patient and Senior Transportation Service Provider</strong>{" "}
-            for Assisted Ambulatory, Wheelchair and Stretcher Transports for Patients,
-            Elderly & Disabled. <strong>Non-Emergency</strong>
+            #1 Private Pay Patient and Senior Transportation Service Provider for
+            Assisted Ambulatory, Wheelchair and Stretcher Transports for
+            Patients, Elderly & Disabled. <strong>Non-Emergency</strong>
           </p>
         </div>
-
       </div>
-    </section>
+    </div>
   );
 }

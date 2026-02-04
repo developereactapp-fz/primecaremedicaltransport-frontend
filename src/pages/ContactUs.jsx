@@ -6,6 +6,7 @@ import heroImg from "../assets/ContactUS.jpg";
 
 import ContactHeader from "../components/ContactHeader/ContactHeader";
 import ContactAppointment from "../components/ContactAppointment/ContactAppointment";
+import ContactMap from "../components/ContactMap/ContactMap";
 
 export default function ContactUs() {
   const sectionRef = useRef(null);
@@ -73,6 +74,7 @@ export default function ContactUs() {
       {/* ================= CONTENT ================= */}
       <ContactHeader />
       <ContactAppointment />
+       <ContactMap />
     </>
   );
 }

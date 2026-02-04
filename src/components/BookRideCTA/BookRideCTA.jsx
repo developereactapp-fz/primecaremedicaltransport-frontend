@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import "./BookRideCTA.css";
 import { FaCheckCircle, FaStar } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import Logo from "../../assets/mainlogo.png";
 
 export default function BookRideCTA() {
   const sectionRef = useRef(null);
@@ -30,8 +32,15 @@ export default function BookRideCTA() {
       {/* TOP RATING BAR */}
       <div className="rating-bar">
         <div className="rating-left">
-          <div className="dummy-logo">LOGO</div>
-
+          {/* LOGO */}
+        <div className="logo">
+          <NavLink aria-label="Prime Care Home">
+            <img
+              src={Logo}
+              alt="Prime Care Medical Transportation"
+            />
+          </NavLink>
+        </div>
           <span className="rating-text">
             Based On <strong>4,50+ Reviews</strong>
           </span>

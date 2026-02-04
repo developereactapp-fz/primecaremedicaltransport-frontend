@@ -20,10 +20,16 @@ export default function Topbar() {
         {/* DESKTOP: ADDRESS INFO */}
         <div className="topbar-left desktop-only">
           <span>
-            <FaMapMarkerAlt /> Baton Rouge, LA
-          </span>
-          <a href="mailto:support@primecare.com">
-            <FaEnvelope /> support@primecare.com
+ <FaMapMarkerAlt />
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=5535+Charlotte+Ave+SE,+Auburn,+WA+98092"
+              target="_blank"
+              rel="noreferrer"
+            >
+              5535 Charlotte Ave Se Auburn, WA 98092
+            </a>          </span>
+          <a href="mailto:primecare.tranportations@gmail.com">
+            <FaEnvelope /> primecare.tranportations@gmail.com
           </a>
           <span>
             <FaClock /> Open 24 Hours

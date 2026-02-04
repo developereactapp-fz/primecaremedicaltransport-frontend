@@ -14,13 +14,16 @@ export default function Home() {
       {/* ================= SEO ================= */}
       <Seo
         title="Non-Emergency Medical Transportation Services | PrimeCare Medical Transportation"
-        description="PrimeCare Medical Transportation provides safe, reliable non-emergency medical transportation including wheelchair transport, hospital visits, dialysis, and assisted mobility services."
+        Meta Description="Safe and reliable non-emergency medical transportation in Washington State. Wheelchair and ambulatory transport with professional, trained drivers."
+        Keywords="NEMT Washington, wheelchair transportation, medical transportation Auburn WA, non-emergency transport, dialysis transportation, hospital"
         url="https://https://primecaremedicaltransport.com//"
         image="/home-preview.jpg"
         schema={{
           "@context": "https://schema.org",
           "@type": "MedicalBusiness",
           "name": "Prime Care Medical Transportation",
+          "Meta Description":
+            "Safe and reliable non emergency medical transportation in Washington State. Wheelchair and ambulatory transport with professional, trained drivers.",
           "description":
             "Non-emergency medical transportation services offering safe, reliable and compassionate care.",
           "url": "https://https://primecaremedicaltransport.com//",

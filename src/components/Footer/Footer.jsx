@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 
-import Logo from "../../assets/primecareLogo.png";
+import Logo from "../../assets/mainlogo.png";
 
 export default function Footer() {
   const footerRef = useRef(null);
@@ -49,11 +49,11 @@ export default function Footer() {
             <img src={Logo} alt="CareHealth Medical Transport" />
           </NavLink>
 
-          <p>
+          {/* <p>
             CareHealth Medical Transportation provides safe, reliable, and
             compassionate non-emergency medical transport services for seniors,
             patients, and individuals with special mobility needs.
-          </p>
+          </p> */}
 
            {/* SOCIAL ICONS (external links must be valid URLs) */}
           <div className="social-icons">
@@ -84,25 +84,25 @@ export default function Footer() {
           <p>
             <FaMapMarkerAlt />
             <a
-              href="https://maps.google.com"
+              href="https://www.google.com/maps/search/?api=1&query=5535+Charlotte+Ave+SE,+Auburn,+WA+98092"
               target="_blank"
               rel="noreferrer"
             >
-              Baton Rouge, LA, United States
+              5535 Charlotte Ave Se Auburn, WA 98092
             </a>
           </p>
 
           <p>
             <FaEnvelope />
-            <a href="mailto:support@primecare.com">
-              support@primecare.com
+            <a href="mailto:primecare.tranportations@gmail.com">
+              primecare.tranportations@gmail.com
             </a>
           </p>
 
           <p>
             <FaPhoneAlt />
-            <a href="tel:+919344228012">
-              +91 93442 28012
+            <a href="tel:2064566665">
+              (206) 456-6665
             </a>
           </p>
         </div>

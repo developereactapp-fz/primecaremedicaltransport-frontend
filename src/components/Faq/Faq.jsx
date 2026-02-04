@@ -2,44 +2,59 @@ import { useState, useEffect, useRef } from "react";
 import "./Faq.css";
 
 const faqData = [
-  {
-    question: "Where Should I Book A Ride To Right Now?",
+   {
+    question: "What services do you provide?",
     answer:
-      "You can book a ride directly through our website, by phone, or by contacting our support team."
+      "We offer wheelchair transportation, ambulatory transportation, hospital discharge rides, dialysis trips, therapy appointments, and long‑distance NEMT services."
   },
-  {
-    question: "What Key Themes Do I Explore In The One?",
+
+ {
+    question: "Do you accept last‑minute bookings?",
     answer:
-      "We focus on safety, comfort, reliability, and compassionate non-emergency medical transportation."
+      "Yes, based on availability. We recommend scheduling in advance to guarantee your preferred time."
   },
-  {
-    question: "Would You Take The Test?",
+
+ {
+    question: "Are your vehicles wheelchair accessible?",
     answer:
-      "Our drivers and coordinators follow strict protocols to ensure reliable and secure service."
+      "Yes. Our vehicles are equipped with ADA‑compliant wheelchair lifts and securement systems."
   },
-  {
-    question: "How Do I Address Gender In The Book?",
+
+ {
+    question: "Are your drivers trained?",
     answer:
-      "We provide inclusive, respectful services for every individual."
+      "All drivers undergo background checks, safety training, CPR/First Aid certification, and NEMT‑specific training."
   },
-  {
-    question: "Where Should I Book A Ride To Right Now?",
+
+ {
+    question: "Do you provide round‑trip transportation",
     answer:
-      "You can schedule online 24/7 or call us directly for assistance."
-  }
+      "Yes. We can wait during your appointment or return at a scheduled time."
+  },
+
+ {
+    question: "What areas do you serve?",
+    answer:
+      "We serve King, Pierce, Thurston, Snohomish, and surrounding Washington counties."
+  },
+
+ {
+    question: "How do I pay?",
+    answer:
+      "We accept cash, card, or invoicing depending on the service type."
+  },
+
+ {
+    question: "What is your cancellation policy?",
+    answer:
+      "Cancellations must be made at least 24 hours in advance to avoid fees."
+  },
 ];
 
 export default function Faq() {
   const [activeIndex, setActiveIndex] = useState(null);
   const [visible, setVisible] = useState(false);
   const sectionRef = useRef(null);
-
-  /* =====================
-     AUTO CLOSE LOGIC
-  ===================== */
-  const toggleFaq = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
 
   /* =====================
      SCROLL REVEAL
@@ -58,6 +73,13 @@ export default function Faq() {
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
+
+  /* =====================
+     SINGLE ACTIVE ITEM
+  ===================== */
+  const handleToggle = (index) => {
+    setActiveIndex((prev) => (prev === index ? null : index));
+  };
 
   return (
     <section
@@ -80,16 +102,24 @@ export default function Faq() {
           {faqData.map((item, index) => (
             <div
               key={index}
-              className={`faq-item ${activeIndex === index ? "active" : ""}`}
-              onClick={() => toggleFaq(index)}
+              className={`faq-item ${
+                activeIndex === index ? "active" : ""
+              }`}
             >
-              <div className="faq-question">
+              {/* CLICK AREA */}
+              <button
+                type="button"
+                className="faq-question"
+                onClick={() => handleToggle(index)}
+                aria-expanded={activeIndex === index}
+              >
                 <h4>{item.question}</h4>
                 <span className="faq-icon">
                   {activeIndex === index ? "−" : "+"}
                 </span>
-              </div>
+              </button>
 
+              {/* ANSWER */}
               <div className="faq-answer">
                 <p>{item.answer}</p>
               </div>

@@ -31,8 +31,7 @@ export default function WhatWeDo() {
         <div className="whatwedo-header">
           <h2>What We Do</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Prime Care Medical Transportation LLC is dedicated to providing safe, reliable, and compassionate non‑emergency medical transportation that empowers individuals with mobility challenges to access essential healthcare with dignity, comfort, and respect. Our mission is to serve our community with professionalism, integrity, and unwavering commitment to care.  
           </p>
         </div>
 
@@ -45,10 +44,9 @@ export default function WhatWeDo() {
             }`}
           >
             <i className="fa-solid fa-car-side wedo-service-icon"></i>
-            <h3>On-Time</h3>
+            <h3>Warm & Caring</h3>
             <p>
-              On-Time, Professional Transport for Medical Appointments,
-              Therapy, and Assisted Living Needs.
+              Compassion in Every Mile. Caring Transportation You Can Trust. Where Comfort Meets Care
             </p>
           </div>
 
@@ -59,10 +57,9 @@ export default function WhatWeDo() {
             }`}
           >
             <i className="fa-solid fa-tag wedo-service-icon"></i>
-            <h3>Reliable</h3>
+            <h3>Professional & Reliable</h3>
             <p>
-              Reliable Non-Emergency Medical Transportation, Putting
-              Your Comfort and Safety First.
+              Reliable Medical Transportation Every Time. Your Trusted Partner in NEMT. Safe, Professional, On Time.
             </p>
           </div>
 
@@ -73,10 +70,9 @@ export default function WhatWeDo() {
             }`}
           >
             <i className="fa-solid fa-screwdriver-wrench wedo-service-icon"></i>
-            <h3>Serving</h3>
+            <h3>Modern & Clean</h3>
             <p>
-              Serving Western Washington with Compassionate and Accessible
-              Transportation Solutions.
+              Moving Care Forward. Accessible Transportation, Redefined. Your Journey, Our Priority.
             </p>
           </div>
         </div>
