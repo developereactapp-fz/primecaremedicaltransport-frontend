@@ -3,13 +3,13 @@
 /* ===================== */
 
 .faq-section {
-  padding: 110px 0;
+  padding: 0px 0 110px 0;
   background: #ffffff;
   font-family: "Jost", "Plus Jakarta Sans", sans-serif;
   opacity: 1;
 }
 
-.container{
+.conta{
   transform: translateY(80px);
 
 }

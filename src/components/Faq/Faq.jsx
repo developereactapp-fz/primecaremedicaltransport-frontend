@@ -85,7 +85,7 @@ export default function Faq() {
     <section  className="faq-section">
       
       <div ref={sectionRef}
-      className={`container ${visible ? "faq-show" : ""}`}
+      className={`conta, container ${visible ? "faq-show" : ""}`}
     >
 
         {/* HEADER */}
