@@ -1,0 +1,174 @@
+/* ===============================
+   BASE
+================================ */
+.anytrip-section {
+  background: #a9d5f3;
+  padding: 90px 0;
+  overflow: hidden;
+}
+
+.anytrip-section * {
+  box-sizing: border-box;
+}
+
+/* ===============================
+   TITLE
+================================ */
+.anytrip-title {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* ===============================
+   EQUIPMENT IMAGE
+================================ */
+.anytrip-equipment {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: scale(0.96);
+}
+
+.anytrip-equipment img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===============================
+   GRID
+================================ */
+.anytrip-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+/* LEFT */
+.anytrip-left {
+  grid-column: span 6;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(-60px);
+}
+
+.diamond-box {
+  width: 220px;
+  height: 220px;
+  background: #2f2f2f;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diamond-box img {
+  transform: rotate(-45deg);
+  max-width: 120px;
+}
+
+/* RIGHT */
+.anytrip-right {
+  grid-column: span 6;
+  opacity: 0;
+  transform: translateX(60px);
+}
+
+.anytrip-right h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.anytrip-right p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  color: #1f2937;
+}
+
+/* ===============================
+   REVEAL ANIMATIONS
+================================ */
+.reveal-up {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1.6s ease;
+}
+
+.reveal-scale {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 1.8s ease;
+}
+
+.reveal-left {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1.8s ease;
+}
+
+.reveal-right {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1.8s ease;
+}
+
+/* ===============================
+   TABLET
+================================ */
+@media (max-width: 1024px) {
+  .anytrip-title {
+    font-size: 42px;
+  }
+
+  .anytrip-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .anytrip-left,
+  .anytrip-right {
+    grid-column: 1 / -1;
+    transform: translateY(40px);
+  }
+
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 768px) {
+  .anytrip-section {
+    padding: 60px 0;
+  }
+
+  .anytrip-title {
+    font-size: 32px;
+  }
+
+  .diamond-box {
+    width: 170px;
+    height: 170px;
+  }
+
+  .anytrip-right h3 {
+    font-size: 18px;
+  }
+
+  .anytrip-right p {
+    font-size: 14px;
+  }
+}

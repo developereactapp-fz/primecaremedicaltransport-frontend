@@ -13,11 +13,16 @@ import ContactUs from "./pages/ContactUs";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import BookRideCTA from "./components/BookRideCTA/BookRideCTA";
+import { Toaster } from "react-hot-toast";
+
 
 function App() {
   return (
     <HelmetProvider>
+
       <BrowserRouter>
+      <Toaster position="top-center" />
+
                       <ScrollToTop/>
         <Topbar />
          <MovingBanner />

@@ -3,6 +3,7 @@ import Hero from "../components/Hero/Hero";
 import WhatWeDo from "../components/WhatWeDo/WhatWeDo";
 import HelpBusiness from "../components/HelpBusiness/HelpBusiness";
 import BigClients from "../components/BigClients/BigClients";
+import AnyTripSection from "../components/AnyTripSection/AnyTripSection";
 import OurFleet from "../components/OurFleet/OurFleet";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import NemtServices from "../components/NemtServices/NemtServices";
@@ -47,6 +48,7 @@ export default function Home() {
       <WhatWeDo />
       <HelpBusiness />
       <BigClients />
+      <AnyTripSection />
       <OurFleet />
       <WhyChooseUs />
       <NemtServices />
