@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./MovingBanner.css";
-import carImg from "../../assets/Van_Left_Side3_sm.avif";
+import carImg from "../../assets/Car_motionn.png";
 
 export default function MovingBanner() {
   const location = useLocation();
