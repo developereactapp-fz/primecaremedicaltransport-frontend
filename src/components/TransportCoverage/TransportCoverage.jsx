@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./TransportCoverage.css";
-import centerLogo from "../../assets/af61f4_6ee08ffd332944549669c3c2cb064e54~mv2.avif";
+import centerLogo from "../../assets/logocircle.avif";
 
 export default function TransportCoverage() {
   const sectionRef = useRef(null);

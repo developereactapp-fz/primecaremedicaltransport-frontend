@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Seo from "../seo/Seo";
 import "./AboutUS.css";
 
+import AboutStory from "../components/AboutStory/AboutStory";
 import AboutIntro from "../components/About/AboutIntro";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import BigClients from "../components/BigClients/BigClients";
@@ -72,6 +73,7 @@ export default function AboutUs() {
       </section>
 
       {/* ================= PAGE CONTENT ================= */}
+      <AboutStory />
       <AboutIntro />
       <WhyChooseUs />
       <BigClients />
