@@ -1,0 +1,134 @@
+.coverage-section {
+  padding: 55px 0 110px 0;
+  background: linear-gradient(00deg, #06162b, #14b8a6);
+  font-family: "Jost", "Plus Jakarta Sans", sans-serif;
+  opacity: 1;
+  transform: translateY(80px);
+}
+
+.coverage-show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1.8s ease;
+}
+
+.coverage-intro {
+  max-width: 760px;
+  margin: 0 auto 70px;
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* GRID */
+.coverage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* COLUMN */
+.coverage-column h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.coverage-column .count {
+  font-weight: 800;
+  margin-left: 6px;
+}
+
+.coverage-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coverage-column li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.6;
+
+  opacity: 1;
+  transform: translateY(12px);
+}
+
+/* BULLET */
+.coverage-column li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* ANIMATION */
+.bullet-show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease;
+}
+
+/* CENTER LOGO */
+.coverage-center {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 6px solid #14b8a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.logo-circle img {
+  max-width: 150px;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .coverage-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .coverage-center {
+    order: -1;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .coverage-section {
+    padding: 80px 0;
+  }
+
+  .coverage-intro {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .logo-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .logo-circle img {
+    max-width: 120px;
+  }
+
+  .coverage-column h3 {
+    text-align: center;
+  }
+}

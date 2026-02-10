@@ -27,7 +27,7 @@ export default function AnyTripSection() {
       <div className="container anytrip-grid">
 
         {/* LEFT – PAYMENT DIAMOND */}
-        <div className={`anytrip-left ${visible ? "reveal-left" : ""}`}>
+        <div className={`anytrips-left ${visible ? "reveal-left" : ""}`}>
           <div className="payment-diamond">
             <div className="payment-inner">
               <span className="payment-top-text">we accept</span>

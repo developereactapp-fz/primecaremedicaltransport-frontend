@@ -4,6 +4,7 @@ import WhatWeDo from "../components/WhatWeDo/WhatWeDo";
 import HelpBusiness from "../components/HelpBusiness/HelpBusiness";
 import BigClients from "../components/BigClients/BigClients";
 import AnyTripSection from "../components/AnyTripSection/AnyTripSection";
+import TransportCoverage from "../components/TransportCoverage/TransportCoverage"
 import OurFleet from "../components/OurFleet/OurFleet";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import NemtServices from "../components/NemtServices/NemtServices";
@@ -49,6 +50,7 @@ export default function Home() {
       <HelpBusiness />
       <BigClients />
       <AnyTripSection />
+      <TransportCoverage />
       <OurFleet />
       <WhyChooseUs />
       <NemtServices />
