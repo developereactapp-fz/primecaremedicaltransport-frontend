@@ -62,8 +62,7 @@ export default function ContactAppointment() {
 
     try {
       const res = await fetch(
-        // "http://localhost:5000/api/contact", 
-        "${process.env.REACT_APP_API_URL}/api/contact", 
+        `${process.env.REACT_APP_API_URL}/api/contact`, 
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
