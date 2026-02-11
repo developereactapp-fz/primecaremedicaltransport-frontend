@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 
 export default function ContactInfo() {
-   const sectionRef = useRef(null);
+  const sectionRef = useRef(null);
   const [inView, setInView] = useState(false);
 
   useEffect(() => {
@@ -34,56 +34,65 @@ export default function ContactInfo() {
 
         {/* HEADER */}
         <div className="contact-info-header">
-              <span className="contact-tag">Book With Us Now</span>
+          <span className="contact-tag">Book With Us Now</span>
           <h2>Get an Appointment</h2>
-
-        <p>Safe, reliable and compassionate non-emergency medical transportation
-    tailored for your comfort.
-        </p>
+          <p>
+            Safe, reliable and compassionate non-emergency medical transportation
+            tailored for your comfort.
+          </p>
         </div>
 
         {/* CARD GRID */}
         <div className="contact-info-grid">
-          <div
-            className={`contact-card ${
+
+          {/* LOCATION CARD */}
+          <a
+              href="https://www.google.com/maps/search/?api=1&query=5535+Charlotte+Ave+SE,+Auburn,+WA+98092"
+              target="_blank"
+              rel="noreferrer"
+            className={`contact-card blue ${
               inView ? "animate-up-ontime" : ""
-            }`}>
-            <span className="icon blue">
+            }`}
+          >
+            <span className="icon">
               <FaMapMarkerAlt />
             </span>
             <h4>Location</h4>
             <p>
-              HQ. 121 King Street, Melbourne<br />
-              Victoria 3000 Australia.
+              5535 Charlotte Ave Se Auburn, WA 98092
             </p>
-          </div>
+          </a>
 
-          <div
-            className={`contact-card ${
+          {/* PHONE CARD */}
+          <a
+            href="tel:(206) 456-6665"
+            className={`contact-card green ${
               inView ? "animate-up-Reliable" : ""
-            }`}>
-            <span className="icon green">
+            }`}
+          >
+            <span className="icon">
               <FaPhoneAlt />
             </span>
             <h4>Phone</h4>
             <p>
-              +1 - 123 - 456 - 7890<br />
-              +1 - 123 - 456 - 7890
+              Call (206) 456-6665
             </p>
-          </div>
+          </a>
 
-<div
-            className={`contact-card ${
+          {/* EMAIL CARD */}
+          <a href="mailto:primecare.tranportations@gmail.com"  
+              className={`contact-card orange ${
               inView ? "animate-up-Serving" : ""
-            }`}>            <span className="icon orange">
+            }`}
+          >
+            <span className="icon">
               <FaEnvelope />
             </span>
             <h4>Email</h4>
             <p>
-              info@creativehub.com<br />
-              support@creativehub.com
+             Primecare.tranportations@gmail.com
             </p>
-          </div>
+          </a>
 
         </div>
       </div>

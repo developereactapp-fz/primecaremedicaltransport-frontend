@@ -48,9 +48,12 @@ export default function Hero() {
 
             <div className="hero-float-card animate-up">
               <p>
-                Safety, <br />
+                {/* Safety, <br />
                 <span>Professionalism,</span> <br />
-                Quality.
+                Quality. */}
+                Admits, <br />
+                <span>Discharges,</span> <br />
+                Routine.
               </p>
             </div>
           </div>

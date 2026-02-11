@@ -1,20 +1,20 @@
 /* ===== SECTION ===== */
 .form-section {
-  padding: 80px 24px;
+  padding: 0px;
 }
 
 /* ===== GRID ===== */
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 0px;
 }
 
 /* ===== LEFT ===== */
 .form-left {
-  background: #0c6c6d;
-  padding: 48px;
-  border-radius: 8px;
+  background: #14b8a6;
+  padding: 100px 120px;
+  border-radius: 0px;
   color: #fff;
 }
 
@@ -109,7 +109,12 @@
 .field textarea:not(:placeholder-shown) + label {
   top: -6px;
   font-size: 12px;
-  color: #0c6c6d;
+  color: #14b8a6;
+}
+
+/* Contact-form-header */
+.contact-form-header{
+  padding-bottom: 30px;
 }
 
 /* UNDERLINE */
@@ -119,7 +124,7 @@
   bottom: 0;
   height: 2px;
   width: 100%;
-  background: #0c6c6d;
+  background: #14b8a6;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }

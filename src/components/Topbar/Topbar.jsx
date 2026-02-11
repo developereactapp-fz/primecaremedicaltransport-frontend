@@ -20,16 +20,17 @@ export default function Topbar() {
         {/* DESKTOP: ADDRESS INFO */}
         <div className="topbar-left desktop-only">
           <span>
- <FaMapMarkerAlt />
+           <FaMapMarkerAlt />
             <a
               href="https://www.google.com/maps/search/?api=1&query=5535+Charlotte+Ave+SE,+Auburn,+WA+98092"
               target="_blank"
               rel="noreferrer"
             >
               5535 Charlotte Ave Se Auburn, WA 98092
-            </a>          </span>
+            </a>          
+          </span>
           <a href="mailto:primecare.tranportations@gmail.com">
-            <FaEnvelope /> primecare.tranportations@gmail.com
+            <FaEnvelope /> Primecare.tranportations@gmail.com
           </a>
           <span>
             <FaClock /> Open 24 Hours
@@ -118,12 +119,12 @@ export default function Topbar() {
 
         {/* MOBILE: CTA BUTTON */}
         <a
-          href="tel:+919344228012"
+          href="tel:(206) 456-6665"
           className="topbar-cta mobile-only"
           aria-label="Call PrimeCare Medical Transport"
         >
           <FaPhoneAlt />
-          Call +91 93442 28012
+          Call (206) 456-6665
         </a>
 
       </div>

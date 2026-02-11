@@ -73,8 +73,9 @@ export default function AboutUs() {
       </section>
 
       {/* ================= PAGE CONTENT ================= */}
-      <AboutStory />
       <AboutIntro />
+            <AboutStory />
+
       <WhyChooseUs />
       <BigClients />
     </>

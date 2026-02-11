@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import "./ContactAppointment.css";
-import contactImg from "../../assets/AboutUS.webp";
+// import contactImg from "../../assets/AboutUS.webp";
+import ContactMap from "../ContactMap/ContactMap";
 
 export default function ContactAppointment() {
   const sectionRef = useRef(null);
@@ -95,7 +96,7 @@ export default function ContactAppointment() {
       <section className="form-section" ref={sectionRef}>
         <div className={`form-grid ${visible ? "show" : ""}`}>
           <div className="form-left">
-            <h2 className="animate">Contact Us</h2>
+            <h2 className="animate contact-form-header">Contact Us</h2>
 
             {/* ✅ SINGLE FORM ONLY */}
             <form className="form-body" onSubmit={handleSubmit} noValidate>
@@ -154,10 +155,11 @@ export default function ContactAppointment() {
             </form>
           </div>
 
-          <div
+          {/* <div
             className="form-right animate"
-            style={{ backgroundImage: `url(${contactImg})` }}
-          />
+            // style={{ backgroundImage: `url(${contactImg})` }}
+          /> */}
+          <ContactMap/>
         </div>
       </section>
     </>

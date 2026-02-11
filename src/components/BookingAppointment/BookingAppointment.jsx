@@ -2,12 +2,39 @@ import { useEffect, useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { FaCalendarAlt, FaChevronDown } from "react-icons/fa";
 import "./BookingAppointment.css";
-import contactImg from "../../assets/AboutUS.webp";
+import contactImg from "../../assets/ContactUS.jpg";
+import aboutImg from "../../assets/AboutUS.webp";
+import about2Img from "../../assets/about.jpg";
 
 export default function BookingAppointment() {
   const sectionRef = useRef(null);
-  const dateInputRef = useRef(null); // ✅ NEW
+  const dateInputRef = useRef(null);
   const [visible, setVisible] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [aboutImg, about2Img, contactImg];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.25 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) =>
+        prev === slides.length - 1 ? 0 : prev + 1
+      );
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
   const [toast, setToast] = useState({ show: false, type: "", message: "" });
 
@@ -24,21 +51,6 @@ export default function BookingAppointment() {
 
   const [submitted, setSubmitted] = useState(false);
   const [errors, setErrors] = useState({});
-
-  /* SCROLL ANIMATION */
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.25 }
-    );
-
-    if (sectionRef.current) observer.observe(sectionRef.current);
-  }, []);
 
   const showToast = (type, message) => {
     setToast({ show: true, type, message });
@@ -105,14 +117,29 @@ export default function BookingAppointment() {
 
   return (
     <>
-      {/* TOAST */}
       <div className={`toast ${toast.type} ${toast.show ? "show" : ""}`}>
         {toast.message}
       </div>
 
       <section className="form-section" ref={sectionRef}>
+
+        {/* MOBILE BACKGROUND SLIDER */}
+        <div className="mobile-slider">
+          {slides.map((img, index) => (
+            <div
+              key={index}
+              className={`mobile-slide ${
+                index === currentSlide ? "active" : ""
+              }`}
+              style={{ backgroundImage: `url(${img})` }}
+            />
+          ))}
+          <div className="mobile-overlay"></div>
+        </div>
+
         <div className={`form-grid ${visible ? "show" : ""}`}>
 
+          {/* LEFT FORM */}
           <div className="form-left">
             <h2 className="animate">Book a Ride</h2>
 
@@ -145,38 +172,26 @@ export default function BookingAppointment() {
               </div>
 
               <div className="two-col">
-                {/* ✅ DATE PICKER – FIXED */}
-                <div
-                  className={`field date-field animate ${
-                    formData.pickupDateTime ? "has-value" : ""
-                  }`}
-                >
+                <div className={`field date-field animate ${formData.pickupDateTime ? "has-value" : ""}`}>
                   <input
-                    ref={dateInputRef}               // ✅ REF
+                    ref={dateInputRef}
                     type="datetime-local"
                     name="pickupDateTime"
                     value={formData.pickupDateTime}
                     onChange={handleChange}
                   />
                   <label>Pickup Date & Time</label>
-
-                  {/* ✅ ICON OPENS DATE PICKER */}
                   <FaCalendarAlt
                     className="date-icon"
                     onClick={() => dateInputRef.current?.focus()}
                   />
-
                   <span className="underline" />
                   {submitted && errors.pickupDateTime && (
                     <small>{errors.pickupDateTime}</small>
                   )}
                 </div>
 
-                <div
-                  className={`field select-field animate ${
-                    formData.serviceType ? "has-value" : ""
-                  }`}
-                >
+                <div className={`field select-field animate ${formData.serviceType ? "has-value" : ""}`}>
                   <select
                     name="serviceType"
                     value={formData.serviceType}
@@ -244,13 +259,21 @@ export default function BookingAppointment() {
               {submitted && errors.captcha && <small>{errors.captcha}</small>}
 
               <button type="submit">Submit Booking</button>
+
             </form>
           </div>
 
-          <div
-            className="form-right animate"
-            style={{ backgroundImage: `url(${contactImg})` }}
-          />
+          {/* RIGHT DESKTOP SLIDER */}
+          <div className="form-right animate">
+            {slides.map((img, index) => (
+              <div
+                key={index}
+                className={`slide ${index === currentSlide ? "active" : ""}`}
+                style={{ backgroundImage: `url(${img})` }}
+              />
+            ))}
+          </div>
+
         </div>
       </section>
     </>

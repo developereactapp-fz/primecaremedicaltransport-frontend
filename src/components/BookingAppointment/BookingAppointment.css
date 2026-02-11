@@ -1,16 +1,18 @@
-/* ===== SECTION ===== */
 .form-section {
   padding: 80px 24px;
+  position: relative;
 }
 
-/* ===== GRID ===== */
+/* GRID */
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  position: relative;
+  z-index: 2;
 }
 
-/* ===== LEFT FORM ===== */
+/* LEFT */
 .form-left {
   background: #0c6c6d;
   padding: 48px;
@@ -18,59 +20,25 @@
   color: #fff;
 }
 
-/* ===== FORM BODY ===== */
 .form-body {
   display: flex;
   flex-direction: column;
-  gap: 22px; /* 🔑 MAIN FIX FOR MERGING */
+  gap: 22px;
 }
 
-/* ===== GRID ROW ===== */
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-/* ===== FIELD ===== */
 .field {
   position: relative;
   background: #fff;
   border-radius: 6px;
-  padding-top: 6px; /* space for floating label */
+  padding-top: 6px;
 }
 
-/* ===== FLOATING TOAST ===== */
-.toast {
-  position: fixed;
-  top: -80px;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 300px;
-  padding: 14px 18px;
-  border-radius: 6px;
-  font-weight: 600;
-  text-align: center;
-  z-index: 9999;
-  transition: top 0.4s ease;
-}
-
-.toast.show {
-  top: 20px;
-}
-
-.toast.success {
-  background: #2ecc71;
-  color: #fff;
-}
-
-.toast.error {
-  background: #e74c3c;
-  color: #fff;
-}
-
-
-/* INPUTS */
 .field input,
 .field select,
 .field textarea {
@@ -83,13 +51,11 @@
   background: transparent;
 }
 
-/* TEXTAREA */
 .field textarea {
   height: 110px;
   resize: none;
 }
 
-/* LABEL */
 .field label {
   position: absolute;
   left: 14px;
@@ -100,11 +66,9 @@
   font-size: 14px;
   color: #777;
   transition: 0.3s ease;
-  pointer-events: none; /* ✅ THIS FIXES DATE PICKER */
+  pointer-events: none;
 }
 
-
-/* FLOAT */
 .field input:focus + label,
 .field input:not(:placeholder-shown) + label,
 .field textarea:focus + label,
@@ -116,7 +80,6 @@
   color: #0c6c6d;
 }
 
-/* UNDERLINE */
 .underline {
   position: absolute;
   bottom: 0;
@@ -132,12 +95,6 @@
   transform: scaleX(1);
 }
 
-/* SELECT */
-.select-field select {
-  appearance: none;
-  cursor: pointer;
-}
-
 .select-icon,
 .date-icon {
   position: absolute;
@@ -145,37 +102,6 @@
   top: 50%;
   transform: translateY(-50%);
   color: #777;
-      cursor: pointer;
-
-}
-
-.date-field {
-  position: relative;
-}
-
-.date-field input {
-  cursor: pointer;
-}
-
-/* 🔑 KEY FIX */
-.date-icon {
-  pointer-events: none; /* icon will not block click */
-      cursor: pointer;
-
-}
-
-/* Label must not block input */
-.field label {
-  pointer-events: none;
-}
-
-
-/* ERRORS */
-small {
-  margin-top: 4px;
-  display: block;
-  font-size: 12px;
-  color: #ffdddd;
 }
 
 /* BUTTON */
@@ -188,48 +114,75 @@ button {
   cursor: pointer;
 }
 
-/* ===== IMAGE ===== */
+/* DESKTOP SLIDER */
 .form-right {
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  overflow: hidden;
   border-radius: 8px;
   min-height: 420px;
 }
 
-/* ===== SCROLL ANIMATION (BOTTOM → TOP ONLY) ===== */
-.animate {
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
   opacity: 0;
-  transform: translateY(40px); /* 🔑 DOWN → UP */
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: scale(1.08);
+  transition: opacity 1s ease, transform 6s ease;
 }
 
-.form-grid.show .animate {
+.slide.active {
   opacity: 1;
-  transform: translateY(0);
+  transform: scale(1);
 }
 
-/* DELAYS */
-.animate[data-delay="100"] { transition-delay: 0.1s; }
-.animate[data-delay="200"] { transition-delay: 0.2s; }
-.animate[data-delay="300"] { transition-delay: 0.3s; }
-.animate[data-delay="400"] { transition-delay: 0.4s; }
-.animate[data-delay="500"] { transition-delay: 0.5s; }
-.animate[data-delay="600"] { transition-delay: 0.6s; }
-.animate[data-delay="700"] { transition-delay: 0.7s; }
-.animate[data-delay="800"] { transition-delay: 0.8s; }
-.animate[data-delay="900"] { transition-delay: 0.9s; }
+/* MOBILE BACKGROUND */
+.mobile-slider {
+  display: none;
+}
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+
   .form-grid {
     grid-template-columns: 1fr;
   }
 
-  .two-col {
-    grid-template-columns: 1fr;
+  .form-right {
+    display: none;
+  }
+
+  .mobile-slider {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .mobile-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: scale(1.08);
+    transition: opacity 1s ease, transform 6s ease;
+  }
+
+  .mobile-slide.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .mobile-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
   }
 
   .form-left {
+    position: relative;
+    z-index: 2;
     padding: 32px;
   }
 }

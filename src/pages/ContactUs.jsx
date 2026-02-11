@@ -4,9 +4,9 @@ import Seo from "../seo/Seo";
 import "./AboutUS.css";
 import heroImg from "../assets/ContactUS.jpg";
 
-import ContactHeader from "../components/ContactHeader/ContactHeader";
 import ContactAppointment from "../components/ContactAppointment/ContactAppointment";
-import ContactMap from "../components/ContactMap/ContactMap";
+// import ContactMap from "../components/ContactMap/ContactMap";
+import BookingHeader from "../components/BookingHeader/BookingHeader";
 
 export default function ContactUs() {
   const sectionRef = useRef(null);
@@ -72,9 +72,9 @@ export default function ContactUs() {
       </section>
 
       {/* ================= CONTENT ================= */}
-      <ContactHeader />
+      <BookingHeader />
       <ContactAppointment />
-       <ContactMap />
+       {/* <ContactMap /> */}
     </>
   );
 }

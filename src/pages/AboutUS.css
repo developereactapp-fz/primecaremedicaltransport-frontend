@@ -3,7 +3,7 @@
 ================================ */
 
 .page-hero {
-  height: 360px;
+  height: 560px;
   background-size: cover;
   background-position: center;
   /* position: relative; */
@@ -23,7 +23,7 @@
 .page-hero-overlay h1 {
   font-size: 46px;
   font-weight: 800;
-  margin-bottom: 8px;
+  margin-top: 115px;
 }
 
 /* Breadcrumb */

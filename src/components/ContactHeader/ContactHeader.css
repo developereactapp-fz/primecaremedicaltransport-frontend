@@ -19,7 +19,7 @@
   text-transform: uppercase;
   opacity: 0.95;
   margin-bottom: 10px;
-} 
+}
 
 .contact-info-header h2 {
   font-size: 36px;
@@ -41,22 +41,38 @@
   gap: 40px;
 }
 
+/* ===================== */
 /* CARD */
+/* ===================== */
+
 .contact-card {
+  display: block;
+  text-decoration: none;
   background: #ffffff;
   border-radius: 16px;
   padding: 44px 30px;
   text-align: center;
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
 }
 
+/* Color Variables */
+.contact-card.blue { --card-color: #38bdf8; }
+.contact-card.green { --card-color: #10b981; }
+.contact-card.orange { --card-color: #fb923c; }
+
+/* Hover Effect */
 .contact-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 28px 60px rgba(15, 23, 42, 0.15);
+  background: var(--card-color);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 28px 60px var(--card-color);
 }
 
+/* ===================== */
 /* ICON */
+/* ===================== */
+
 .icon {
   width: 70px;
   height: 70px;
@@ -66,36 +82,54 @@
   justify-content: center;
   font-size: 28px;
   margin-bottom: 18px;
-  border: 2px dashed;
+  transition: all 0.4s ease;
 }
 
-.icon.blue {
-  color: #38bdf8;
-  border-color: #38bdf8;
+/* Default icon = card color */
+.contact-card.blue .icon {
+  background: #38bdf8;
+  color: #ffffff;
 }
 
-.icon.green {
-  color: #10b981;
-  border-color: #10b981;
+.contact-card.green .icon {
+  background: #10b981;
+  color: #ffffff;
 }
 
-.icon.orange {
-  color: #fb923c;
-  border-color: #fb923c;
+.contact-card.orange .icon {
+  background: #fb923c;
+  color: #ffffff;
 }
 
+/* Hover icon inversion */
+.contact-card:hover .icon {
+  background: #ffffff;
+  color: var(--card-color);
+}
+
+/* ===================== */
 /* TEXT */
+/* ===================== */
+
 .contact-card h4 {
   font-size: 16px;
   font-weight: 700;
   color: #0f172a;
   margin-bottom: 6px;
+  transition: 0.4s;
 }
 
 .contact-card p {
   font-size: 14px;
   color: #64748b;
   line-height: 1.6;
+  transition: 0.4s;
+}
+
+/* Text turns white on hover */
+.contact-card:hover h4,
+.contact-card:hover p {
+  color: #ffffff;
 }
 
 /* ===================== */
@@ -125,14 +159,16 @@
   }
 }
 
-/* TABLET */
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
 @media (max-width: 1024px) {
   .contact-info-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
   .contact-info {
     padding: 60px 0 40px;
@@ -149,5 +185,9 @@
 
   .contact-card {
     padding: 36px 22px;
+  }
+
+  .contact-card:hover {
+    transform: translateY(-6px) scale(1.03);
   }
 }
