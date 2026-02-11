@@ -141,7 +141,7 @@ export default function BookingAppointment() {
 
           {/* LEFT FORM */}
           <div className="form-left">
-            <h2 className="animate">Book a Ride</h2>
+            <h2 className="animate booking-form-header">Book a Ride</h2>
 
             <form className="form-body" onSubmit={handleSubmit} noValidate>
 

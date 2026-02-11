@@ -80,6 +80,11 @@
   color: #0c6c6d;
 }
 
+/* Booking-form-header */
+.booking-form-header{
+  padding-bottom: 30px;
+}
+
 .underline {
   position: absolute;
   bottom: 0;
