@@ -108,6 +108,8 @@ display: flex;
   background: linear-gradient(135deg, #2563eb, #14b8a6);
   color: #ffffff;
   border: none;
+      font-size: 14px;
+
   padding: 10px 22px;
   gap: 6px;
   border-radius: 6px;
