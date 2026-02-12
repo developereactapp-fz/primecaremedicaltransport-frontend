@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import { FaCalendarAlt, FaChevronDown } from "react-icons/fa";
+import { FaCalendarAlt } from "react-icons/fa";
 import "./BookingAppointment.css";
 import contactImg from "../../assets/ContactUS.jpg";
 import aboutImg from "../../assets/AboutUS.webp";
@@ -87,13 +87,13 @@ export default function BookingAppointment() {
 
     try {
       const res = await fetch(
-        // "http://localhost:5000/api/booking", 
-        `${process.env.REACT_APP_API_URL}/api/booking`, 
+        `${process.env.REACT_APP_API_URL}/api/booking`,
         {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await res.json();
 
@@ -125,21 +125,6 @@ export default function BookingAppointment() {
       </div>
 
       <section className="form-section" ref={sectionRef}>
-
-        {/* MOBILE BACKGROUND SLIDER */}
-        <div className="mobile-slider">
-          {slides.map((img, index) => (
-            <div
-              key={index}
-              className={`mobile-slide ${
-                index === currentSlide ? "active" : ""
-              }`}
-              style={{ backgroundImage: `url(${img})` }}
-            />
-          ))}
-          <div className="mobile-overlay"></div>
-        </div>
-
         <div className={`form-grid ${visible ? "show" : ""}`}>
 
           {/* LEFT FORM */}
@@ -175,24 +160,41 @@ export default function BookingAppointment() {
               </div>
 
               <div className="two-col">
-                <div className={`field date-field animate ${formData.pickupDateTime ? "has-value" : ""}`}>
-                  <input
-                    ref={dateInputRef}
-                    type="datetime-local"
-                    name="pickupDateTime"
-                    value={formData.pickupDateTime}
-                    onChange={handleChange}
-                  />
-                  <label>Pickup Date & Time</label>
-                  <FaCalendarAlt
-                    className="date-icon"
-                    onClick={() => dateInputRef.current?.focus()}
-                  />
-                  <span className="underline" />
-                  {submitted && errors.pickupDateTime && (
-                    <small>{errors.pickupDateTime}</small>
-                  )}
-                </div>
+
+                {/* UPDATED DATE FIELD */}
+              <div
+  className={`field date-field animate ${
+    formData.pickupDateTime ? "has-value" : ""
+  }`}
+>
+  <input
+    ref={dateInputRef}
+    type="datetime-local"
+    name="pickupDateTime"
+    value={formData.pickupDateTime}
+    onChange={handleChange}
+    onClick={() =>
+      dateInputRef.current?.showPicker?.() ||
+      dateInputRef.current?.focus()
+    }
+  />
+  <label>Pickup Date & Time</label>
+
+  <FaCalendarAlt
+    className="date-icon"
+    onClick={(e) => {
+      e.stopPropagation();
+      dateInputRef.current?.showPicker?.() ||
+        dateInputRef.current?.focus();
+    }}
+  />
+
+  <span className="underline" />
+  {submitted && errors.pickupDateTime && (
+    <small>{errors.pickupDateTime}</small>
+  )}
+</div>
+
 
                 <div className={`field select-field animate ${formData.serviceType ? "has-value" : ""}`}>
                   <select
@@ -206,14 +208,14 @@ export default function BookingAppointment() {
                     <option value="Wheelchair">Wheelchair</option>
                   </select>
                   <label>Service Type</label>
-                  <FaChevronDown className="select-icon" />
+                  {/* <FaChevronDown className="select-icon" /> */}
+
                   <span className="underline" />
-                  {submitted && errors.serviceType && (
-                    <small>{errors.serviceType}</small>
-                  )}
                 </div>
+
               </div>
 
+              {/* Other fields unchanged */}
               <div className="field animate">
                 <input
                   name="pickupLocation"
@@ -223,9 +225,6 @@ export default function BookingAppointment() {
                 />
                 <label>Pickup Location</label>
                 <span className="underline" />
-                {submitted && errors.pickupLocation && (
-                  <small>{errors.pickupLocation}</small>
-                )}
               </div>
 
               <div className="field animate">
@@ -237,9 +236,6 @@ export default function BookingAppointment() {
                 />
                 <label>Drop-off Location</label>
                 <span className="underline" />
-                {submitted && errors.dropLocation && (
-                  <small>{errors.dropLocation}</small>
-                )}
               </div>
 
               <div className="field animate">
@@ -259,10 +255,8 @@ export default function BookingAppointment() {
                   setFormData({ ...formData, captchaToken: token })
                 }
               />
-              {submitted && errors.captcha && <small>{errors.captcha}</small>}
 
               <button type="submit">Submit Booking</button>
-
             </form>
           </div>
 
