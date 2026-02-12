@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import { FaCalendarAlt, FaChevronDown } from "react-icons/fa";
+// import { FaCalendarAlt, FaChevronDown } from "react-icons/fa";
 import "./BookingAppointment.css";
 import contactImg from "../../assets/ContactUS.jpg";
 import aboutImg from "../../assets/AboutUS.webp";
@@ -175,7 +175,10 @@ export default function BookingAppointment() {
               </div>
 
               <div className="two-col">
-                <div className={`field date-field animate ${formData.pickupDateTime ? "has-value" : ""}`}>
+                <div 
+                className={`field date-field animate ${
+                  formData.pickupDateTime ? "has-value" : ""
+                  }`}>
                   <input
                     ref={dateInputRef}
                     type="datetime-local"
@@ -184,29 +187,30 @@ export default function BookingAppointment() {
                     onChange={handleChange}
                   />
                   <label>Pickup Date & Time</label>
-                  <FaCalendarAlt
+                  {/* <FaCalendarAlt
                     className="date-icon"
                     onClick={() => dateInputRef.current?.focus()}
-                  />
+                  /> */}
                   <span className="underline" />
                   {submitted && errors.pickupDateTime && (
                     <small>{errors.pickupDateTime}</small>
                   )}
                 </div>
 
-                <div className={`field select-field animate ${formData.serviceType ? "has-value" : ""}`}>
+                <div className={`field select-field animate ${
+                  formData.serviceType ? "has-value" : ""}`}>
                   <select
                     name="serviceType"
                     value={formData.serviceType}
                     onChange={handleChange}
                   >
-                    <option value=""></option>
+                    <option value="Select Service"></option>
                     <option value="NEMT">NEMT</option>
                     <option value="Ambulatory">Ambulatory</option>
                     <option value="Wheelchair">Wheelchair</option>
                   </select>
                   <label>Service Type</label>
-                  <FaChevronDown className="select-icon" />
+                  {/* <FaChevronDown className="select-icon" /> */}
                   <span className="underline" />
                   {submitted && errors.serviceType && (
                     <small>{errors.serviceType}</small>
