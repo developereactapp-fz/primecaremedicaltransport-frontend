@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import { FaCalendarAlt, FaChevronDown } from "react-icons/fa";
+import { FaCalendarAlt } from "react-icons/fa";
 import "./BookingAppointment.css";
 import contactImg from "../../assets/ContactUS.jpg";
 import aboutImg from "../../assets/AboutUS.webp";
