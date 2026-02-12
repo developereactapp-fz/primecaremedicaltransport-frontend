@@ -100,55 +100,14 @@
   transform: scaleX(1);
 }
 
-.select-icon {
-  /* position: absolute;
-  right: 14px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #777; */
-}
-
-/* ============================= */
-/* REMOVE DEFAULT DATE ICON */
-/* ============================= */
-
-.date-field input::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  display: none;
-}
-
-/* Firefox */
-.date-field input::-moz-calendar-picker-indicator {
-  display: none;
-}
-
-/* Make whole field clickable */
-.date-field input {
-  cursor: pointer;
-}
-
-/* ============================= */
-/* IMPROVE CUSTOM ICON LOOK */
-/* ============================= */
-
+.select-icon,
 .date-icon {
   position: absolute;
   right: 14px;
   top: 50%;
   transform: translateY(-50%);
-  color: #0c6c6d;
-  font-size: 18px;
-  pointer-events: auto;
-  cursor: pointer;
-  transition: 0.3s ease;
+  color: #777;
 }
-
-/* Hover effect */
-.date-field:hover .date-icon {
-  color: #084f50;
-  transform: translateY(-50%) scale(1.1);
-}
-
 
 /* BUTTON */
 button {
