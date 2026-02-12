@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-// import { FaCalendarAlt, FaChevronDown } from "react-icons/fa";
+import { FaCalendarAlt, FaChevronDown } from "react-icons/fa";
 import "./BookingAppointment.css";
 import contactImg from "../../assets/ContactUS.jpg";
 import aboutImg from "../../assets/AboutUS.webp";
@@ -175,10 +175,7 @@ export default function BookingAppointment() {
               </div>
 
               <div className="two-col">
-                <div 
-                className={`field date-field animate ${
-                  formData.pickupDateTime ? "has-value" : ""
-                  }`}>
+                {/* <div className={`field date-field animate ${formData.pickupDateTime ? "has-value" : ""}`}>
                   <input
                     ref={dateInputRef}
                     type="datetime-local"
@@ -187,24 +184,51 @@ export default function BookingAppointment() {
                     onChange={handleChange}
                   />
                   <label>Pickup Date & Time</label>
-                  {/* <FaCalendarAlt
+                  <FaCalendarAlt
                     className="date-icon"
                     onClick={() => dateInputRef.current?.focus()}
-                  /> */}
+                  />
                   <span className="underline" />
                   {submitted && errors.pickupDateTime && (
                     <small>{errors.pickupDateTime}</small>
                   )}
-                </div>
+                </div> */}
+<div
+  className={`field date-field animate ${
+    formData.pickupDateTime ? "has-value" : ""
+  }`}
+  onClick={() => dateInputRef.current?.showPicker?.() || dateInputRef.current?.focus()}
+>
+  <input
+    ref={dateInputRef}
+    type="datetime-local"
+    name="pickupDateTime"
+    value={formData.pickupDateTime}
+    onChange={handleChange}
+  />
+  <label>Pickup Date & Time</label>
 
-                <div className={`field select-field animate ${
-                  formData.serviceType ? "has-value" : ""}`}>
+  <FaCalendarAlt
+    className="date-icon"
+    onClick={(e) => {
+      e.stopPropagation();
+      dateInputRef.current?.showPicker?.() || dateInputRef.current?.focus();
+    }}
+  />
+
+  <span className="underline" />
+  {submitted && errors.pickupDateTime && (
+    <small>{errors.pickupDateTime}</small>
+  )}
+</div>
+
+                <div className={`field select-field animate ${formData.serviceType ? "has-value" : ""}`}>
                   <select
                     name="serviceType"
                     value={formData.serviceType}
                     onChange={handleChange}
                   >
-                    <option value="Select Service"></option>
+                    <option value=""></option>
                     <option value="NEMT">NEMT</option>
                     <option value="Ambulatory">Ambulatory</option>
                     <option value="Wheelchair">Wheelchair</option>
