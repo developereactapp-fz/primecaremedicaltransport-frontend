@@ -46,7 +46,7 @@ export default function WhatWeDo() {
             <i className="fa-solid fa-car-side wedo-service-icon"></i>
             <h3>Warm & Caring</h3>
             <p>
-              Compassion in Every Mile. Caring Transportation You Can Trust. Where Comfort Meets Care
+              Compassion in Every Mile.<br></br> Caring Transportation You Can Trust.<br></br> Where Comfort Meets Care
             </p>
           </div>
 
@@ -59,7 +59,7 @@ export default function WhatWeDo() {
             <i className="fa-solid fa-tag wedo-service-icon"></i>
             <h3>Professional & Reliable</h3>
             <p>
-              Reliable Medical Transportation Every Time. Your Trusted Partner in NEMT. Safe, Professional, On Time.
+              Reliable Medical Transportation Every Time.<br></br> Your Trusted Partner in NEMT. <br></br>Safe, Professional, On Time.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ export default function WhatWeDo() {
             <i className="fa-solid fa-screwdriver-wrench wedo-service-icon"></i>
             <h3>Modern & Clean</h3>
             <p>
-              Moving Care Forward. Accessible Transportation, Redefined. Your Journey, Our Priority.
+              Moving Care Forward.<br></br> Accessible Transportation, Redefined.<br></br> Your Journey, Our Priority.
             </p>
           </div>
         </div>
