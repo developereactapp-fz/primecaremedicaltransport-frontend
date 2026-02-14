@@ -69,7 +69,7 @@ export default function ContactAppointment() {
         body: JSON.stringify(formData),
       });
 
-      const data = await res.json();
+      const data = await res.json(); 
 
       if (data.success) {
         showToast("success", "Message sent successfully");

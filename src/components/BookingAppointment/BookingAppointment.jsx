@@ -86,8 +86,7 @@ export default function BookingAppointment() {
     if (Object.keys(v).length > 0) return;
 
     try {
-      const res = await fetch(
-        `${process.env.REACT_APP_API_URL}/api/booking`,
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/api/booking`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
