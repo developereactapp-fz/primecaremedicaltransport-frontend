@@ -9,7 +9,7 @@
   background-position: center;
   display: flex;
   align-items: center;
-  padding: 250px 0 160px;
+  padding: 200px 0 100px;
   overflow: hidden;
 }
 
@@ -291,6 +291,9 @@
   }
 .heros {
     padding: 0px 0px;
+}
+.heros-container {
+    padding: 20px 0px 0px;
 
 }
   .heros-left h1 {
