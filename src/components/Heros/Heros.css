@@ -287,13 +287,13 @@
 @media (max-width: 768px) {
 
   .heros-left {
-    padding: 0px 40px 0px;
+    padding: 20px 40px 0px;
   }
 .heros {
     padding: 0px 0px;
 }
 .heros-container {
-    padding: 20px 0px 0px;
+    padding: 0px 0px 0px;
 
 }
   .heros-left h1 {
