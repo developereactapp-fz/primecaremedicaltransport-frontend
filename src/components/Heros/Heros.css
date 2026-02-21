@@ -4,7 +4,7 @@
 
 .heros {
   position: relative;
-  min-height: 90vh;
+  min-height: 80vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -287,13 +287,13 @@
 @media (max-width: 768px) {
 
   .heros-left {
-    padding: 20px 40px 0px;
+    padding: 0px 40px 0px;
   }
 .heros {
     padding: 0px 0px;
 }
 .heros-container {
-    padding: 0px 0px 0px;
+    padding: 0px 0px;
 
 }
   .heros-left h1 {
