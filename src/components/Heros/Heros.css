@@ -285,14 +285,8 @@
 /* ========================= */
 
 @media (max-width: 768px) {
-  .heros {
-    padding: 0px 0px ;
-  }
-.heros-container{
-    padding: 0px 0px ;
 
-}
-    .heros-left {
+  .heros-left {
     padding: 0px 40px 0px;
   }
 

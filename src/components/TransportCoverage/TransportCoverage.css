@@ -1,6 +1,5 @@
 .coverage-section {
   padding: 55px 0 110px 0;
-  background: linear-gradient(00deg, #06162b, #14b8a6);
   font-family: "Jost", "Plus Jakarta Sans", sans-serif;
   opacity: 1;
   transform: translateY(80px);
@@ -17,7 +16,7 @@
   margin: 0 auto 70px;
   text-align: center;
   font-size: 25px;
-  color: #ffffff;
+  color: #06162b;
   line-height: 1.6;
 }
 
@@ -33,7 +32,7 @@
 .coverage-column h3 {
   font-size: 22px;
   font-weight: 700;
-  color: #ffffff;
+  color: #14b8a6;
   margin-bottom: 18px;
 }
 
@@ -51,8 +50,8 @@
 .coverage-column li {
   position: relative;
   padding-left: 18px;
-  font-size: 18px;
-  color: #ffffff;
+  font-size: 20px;
+  color: #06162b;
   line-height: 1.6;
 
   opacity: 1;
