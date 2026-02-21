@@ -5,8 +5,8 @@
 .why-section {
   padding: 100px 0;
   /* background: radial-gradient(circle at top, #06162b, #14b8a6); */
+  background: linear-gradient(00deg, #06162b, #14b8a6);
 
-background: linear-gradient(360deg, #06162b, #14b8a6);
   font-family: "Jost", "Plus Jakarta Sans", sans-serif;
   color: #ffffff;
   overflow: hidden;

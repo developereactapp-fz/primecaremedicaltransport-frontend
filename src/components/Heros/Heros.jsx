@@ -37,11 +37,11 @@ const Heros = () => {
           </p>
 
           <div className="heros-buttons animate fade-up delay-4">
-            <Link to="/contact" className="btn-primarly">
+            <Link to="/contact-us" className="btn-primarly">
               Book Appointment
             </Link>
 
-            <Link to="/about" className="btn-secondarly">
+            <Link to="/about-us" className="btn-secondarly">
               Read More
             </Link>
           </div>
