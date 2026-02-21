@@ -70,9 +70,10 @@ export default function Footer() {
           <ul>
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/about-us">About Us</NavLink></li>
-            <li><NavLink to="/fleet">Our Fleet</NavLink></li>
+            {/* <li><NavLink to="/fleet">Our Fleet</NavLink></li> */}
             <li><NavLink to="/services">Services</NavLink></li>
             <li><NavLink to="/service-areas">Service Areas</NavLink></li>
+            <li><NavLink to="/reservation">Reservation</NavLink></li>
             <li><NavLink to="/contact-us">Contact Us</NavLink></li>
           </ul>
         </div>
@@ -108,12 +109,12 @@ export default function Footer() {
         </div>
 
         {/* NEWSLETTER */}
-        <div className={`footer-col newsletter ${inView ? "footer-animate delay-4" : ""}`}>
+        {/* <div className={`footer-col newsletter ${inView ? "footer-animate delay-4" : ""}`}>
           <h4>Newsletter</h4>
           <p>Stay connected with CareHealth for updates & alerts.</p>
           <input type="email" placeholder="Your Email" />
           <button>Subscribe →</button>
-        </div>
+        </div> */}
 
       </div>
 

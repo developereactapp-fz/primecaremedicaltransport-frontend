@@ -34,7 +34,7 @@ export default function Header() {
         <nav className="nav desktop-only">
           <NavLink to="/" end>Home</NavLink>
           <NavLink to="/about-us">About Us</NavLink>
-          <NavLink to="/fleet">Our Fleet</NavLink>
+          {/* <NavLink to="/fleet">Our Fleet</NavLink> */}
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/service-areas">Service Areas</NavLink>
           <NavLink to="/reservation">Reservation</NavLink>
@@ -60,14 +60,20 @@ export default function Header() {
       {/* MOBILE FULLSCREEN MENU */}
       <div className={`mobile-menu ${open ? "open" : ""}`}>
         <div className="mobile-menu-header">
-          <span>CareHealth</span>
-          <FaTimes className="close-icon" onClick={() => setOpen(false)} />
+        <div className="logo">
+          <NavLink to="/" aria-label="Prime Care Home">
+            <img
+              src={Logo}
+              alt="Prime Care Medical Transportation"
+            />
+          </NavLink>
+        </div>          <FaTimes className="close-icon" onClick={() => setOpen(false)} />
         </div>
 
         <div className="mobile-menu-links">
           <NavLink to="/" end onClick={() => setOpen(false)}>Home</NavLink>
           <NavLink to="/about-us" onClick={() => setOpen(false)}>About Us</NavLink>
-          <NavLink to="/fleet" onClick={() => setOpen(false)}>Our Fleet</NavLink>
+          {/* <NavLink to="/fleet" onClick={() => setOpen(false)}>Our Fleet</NavLink> */}
           <NavLink to="/services" onClick={() => setOpen(false)}>Services</NavLink>
           <NavLink to="/service-areas" onClick={() => setOpen(false)}>Service Areas</NavLink>
           <NavLink to="/reservation" onClick={() => setOpen(false)}>Reservation</NavLink>

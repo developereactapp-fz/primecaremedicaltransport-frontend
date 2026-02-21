@@ -5,7 +5,7 @@
 .header {
   background: transparent;
   position: absolute;
-  top: 128px;
+  top: 175px;
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -58,8 +58,9 @@ display: flex;
   position: relative;
   font-weight: 500;
   padding: 6px 0;
-  /* color: #0f172a; */
-  color: #7b808c;
+    font-size: 18px;
+    /* color: #0f172a; */
+    color: #7b808c;
   transition: transform 0.25s ease, color 0.25s ease;
 }
 
@@ -108,7 +109,7 @@ display: flex;
   background: linear-gradient(135deg, #2563eb, #14b8a6);
   color: #ffffff;
   border: none;
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px 22px;
   gap: 6px;
   border-radius: 6px;
@@ -153,7 +154,7 @@ display: flex;
 .mobile-menu {
   position: fixed;
   inset: 0;
-  background: linear-gradient(135deg, #2563eb, #14b8a6);
+  background: #0f172a;
   z-index: 2000;
   transform: translateX(100%);
   transition: transform 0.9s ease;
@@ -165,6 +166,10 @@ display: flex;
   transform: translateX(0);
 }
 
+.menu-icon{
+  font-size: 25px;
+  color: white;
+}
 /* MOBILE MENU HEADER */
 .mobile-menu-header {
   display: flex;
@@ -188,7 +193,7 @@ display: flex;
   display: flex;
   flex-direction: column;
   gap: 28px;
-  padding: 40px 35px;
+  padding: 0px 35px;
 }
 
 .mobile-menu-links a {
@@ -228,7 +233,7 @@ display: flex;
 /* MOBILE ACTIVE (SAME AS HOVER) */
 .mobile-menu-links a.active {
   transform: translateX(8px) scale(1.05);
-  color: #0a0a0a;
+  color: #14b8a6;
   font-weight: 700;
 }
 
@@ -247,8 +252,8 @@ display: flex;
 /* Mobile */
 @media (max-width: 768px) {
   .logo img {
-    height: 110px;
-    max-width: 160px;
+    height: 140px;
+    max-width: 170px;
   }
 }
 /* ===================== */

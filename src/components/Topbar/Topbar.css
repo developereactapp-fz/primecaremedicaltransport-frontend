@@ -3,7 +3,7 @@
 /* ===================== */
 
 .topbar {
-  background: linear-gradient(135deg, #2563eb, #14b8a6);
+  background: linear-gradient(125deg, #2563eb, #14b8a6);
   font-family: "Jost", "Plus Jakarta Sans", sans-serif;
   color: #ffffff;
   font-size: 13px;
@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: space-between;
   height: 44px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* ===================== */
@@ -53,7 +53,7 @@
 
 .topbar-social a {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 

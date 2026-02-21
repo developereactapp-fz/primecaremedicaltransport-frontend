@@ -24,7 +24,7 @@
 }
 
 .whatwedo-header h2 {
-  font-size: 42px;
+  font-size: 45px;
   font-weight: 800;
   color: #0f172a;
   position: relative;
@@ -42,7 +42,7 @@
 
 .whatwedo-header p {
   margin-top: 18px;
-  font-size: 18px;
+  font-size:20px;
   color: #475569;
   line-height: 1.7;
 }
@@ -89,7 +89,7 @@
 /* ===================== */
 
 .wedo-service-icon {
-  font-size: 52px;
+  font-size: 82px;
   color: #10b981;
   margin-bottom: 26px;
   transition: transform 0.35s ease, color 0.35s ease;
@@ -100,14 +100,14 @@
 /* ===================== */
 
 .whatwedo-item h3 {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 700;
   color: #0f172a;
   margin-bottom: 14px;
 }
 
 .whatwedo-item p {
-  font-size: 15px;
+  font-size: 16px;
   color: #475569;
   line-height: 1.7;
 }

@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import Topbar from "./components/Topbar/Topbar";
 import MovingBanner from "./components/MovingBanner/MovingBanner";
+import Topbar from "./components/Topbar/Topbar";
+
 import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
@@ -24,8 +25,9 @@ function App() {
       <Toaster position="top-center" />
 
                       <ScrollToTop/>
+                               <MovingBanner />
+
         <Topbar />
-         <MovingBanner />
         <Header />
 
 

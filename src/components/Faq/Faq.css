@@ -99,7 +99,7 @@
 }
 
 .faq-question h4 {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
   color: #0f172a;
   text-align: left;
@@ -129,7 +129,7 @@
 
 .faq-answer p {
   overflow: hidden;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   line-height: 1.6;
 }

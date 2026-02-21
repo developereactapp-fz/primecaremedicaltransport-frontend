@@ -1,5 +1,5 @@
 import Seo from "../seo/Seo";
-import Hero from "../components/Hero/Hero";
+import Heros from "../components/Heros/Heros";
 import WhatWeDo from "../components/WhatWeDo/WhatWeDo";
 import HelpBusiness from "../components/HelpBusiness/HelpBusiness";
 import BigClients from "../components/BigClients/BigClients";
@@ -45,7 +45,7 @@ export default function Home() {
       />
 
       {/* ================= PAGE CONTENT ================= */}
-      <Hero />
+      <Heros />
       <WhatWeDo />
       <HelpBusiness />
       <BigClients />
