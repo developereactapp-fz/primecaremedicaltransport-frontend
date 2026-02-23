@@ -13,7 +13,7 @@
 
 .contact-tag {
   display: inline-block;
-  font-size: 13px;
+  font-size: 22px;
   font-weight: 600;
   letter-spacing: 1.2px;
   text-transform: uppercase;
@@ -22,14 +22,14 @@
 }
 
 .contact-info-header h2 {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: 800;
   color: #0f172a;
   margin-bottom: 12px;
 }
 
 .contact-info-header p {
-  font-size: 18px;
+  font-size: 30px;
   color: #64748b;
   line-height: 1.7;
 }
@@ -112,7 +112,7 @@
 /* ===================== */
 
 .contact-card h4 {
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 700;
   color: #0f172a;
   margin-bottom: 6px;
@@ -120,7 +120,7 @@
 }
 
 .contact-card p {
-  font-size: 14px;
+  font-size: 22px;
   color: #64748b;
   line-height: 1.6;
   transition: 0.4s;
@@ -175,7 +175,7 @@
   }
 
   .contact-info-header h2 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .contact-info-grid {
@@ -187,7 +187,25 @@
     padding: 36px 22px;
   }
 
+  .contact-card h4 {
+  font-size: 30px;
+}
+
+.contact-info-header h2 {
+  font-size: 35px;
+}
+
+.contact-tag {
+  font-size: 20px;
+}
+
+.contact-card p {
+  font-size: 20px;
+}
   .contact-card:hover {
     transform: translateY(-6px) scale(1.03);
   }
+  .contact-info-header p {
+  font-size: 25px;
+}
 }

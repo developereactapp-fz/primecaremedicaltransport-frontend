@@ -12,7 +12,7 @@
 
 .services-header span {
   color: #10b981;
-  font-size: 14px;
+  font-size: 25px;
   font-weight: 600;
   display: block;
   margin-bottom: 8px;
@@ -55,28 +55,28 @@
 
 /* ICON */
 .service-icon {
-  width: 56px;
-  height: 56px;
+  width: 96px;
+  height: 96px;
   border-radius: 0px 24px 24px 24px;
   background: rgba(20, 184, 166, 0.12);
   color: #14b8a6;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 26px;
+  font-size: 42px;
   margin-bottom: 20px;
 }
 
 /* TEXT */
 .service-card h3 {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 700;
   color: #0f172a;
   margin-bottom: 10px;
 }
 
 .service-card p {
-  font-size: 14px;
+  font-size: 22px;
   line-height: 1.7;
   color: #475569;
   margin-bottom: 18px;
@@ -118,10 +118,18 @@
   .service-card {
     padding: 30px 24px;
   }
+.services-header span {
+  color: #10b981;
+  font-size: 22px;
 
+}
   .service-icon {
-    width: 48px;
-    height: 48px;
-    font-size: 22px;
+    width: 68px;
+    height: 68px;
+    font-size: 30px;
   }
+.service-card h3 {
+  font-size: 25px;
+}
+
 }

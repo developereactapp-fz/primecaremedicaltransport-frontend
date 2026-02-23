@@ -47,14 +47,14 @@
 .process-tag {
   /* color: #f97316; */
 
-color: #10b981;  font-size: 14px;
+color: #10b981;  font-size: 22px;
   font-weight: 600;
   margin-bottom: 10px;
   display: inline-block;
 }
 
 .process-right h2 {
-  font-size: 36px;
+  font-size: 56px;
   font-weight: 800;
   color: #0f172a;
   margin-bottom: 30px;
@@ -115,14 +115,14 @@ color: #10b981;  font-size: 14px;
 
 /* TEXT */
 .process-text h4 {
-  font-size: 17px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 6px;
   color: #0f172a;
 }
 
 .process-text p {
-  font-size: 14px;
+  font-size: 22px;
   color: #475569;
   line-height: 1.6;
 }
@@ -164,12 +164,12 @@ color: #10b981;  font-size: 14px;
   }
 
   .process-right h2 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .icon-circle {
-    width: 46px;
-    height: 46px;
+width: 66px;
+        height: 66px;
   }
 
   .icon-circle img {
@@ -183,5 +183,17 @@ color: #10b981;  font-size: 14px;
   .process-btn {
     width: 100%;
     text-align: center;
+            font-size: 22px;
+
   }
+  .process-text h4 {
+  font-size: 25px;
+}
+
+.process-text p {
+  font-size: 18px;
+}
+.process-right h2 {
+  font-size: 36px;
+}
 }

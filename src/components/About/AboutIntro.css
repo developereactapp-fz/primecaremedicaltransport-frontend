@@ -76,7 +76,7 @@
 .about-tag {
   color: #10b981;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 22px;
   letter-spacing: 1px;
 }
 
@@ -88,7 +88,7 @@
 }
 
 .about-right p {
-  font-size: 15px;
+  font-size: 25px;
   line-height: 1.7;
   color: #475569;
   margin-bottom: 14px;
@@ -111,7 +111,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 500;
   color: #0f172a;
   margin-bottom: 14px;
@@ -125,6 +125,8 @@
 /* BUTTON */
 .about-btn {
   display: inline-block;
+      font-size: 25px;
+
   background: #10b981;
   color: #ffffff;
   padding: 14px 36px;
@@ -188,16 +190,26 @@
   }
 
   .about-right h2 {
-    font-size: 28px;
+    font-size: 30px;
   }
+
+.about-ul li {
+    font-size: 20px;
+}
+
+.about-btn {
+      font-size: 20px;
+}
 
   .about-ul-grid {
     /* grid-template-columns: 2fr; */
     gap: 18px;
   }
-
+.about-right p {
+  font-size: 20px;
+}
   .quote-box {
-    font-size: 13px;
+    font-size: 20px;
     padding: 16px;
             left: 0px;
 
