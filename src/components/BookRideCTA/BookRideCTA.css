@@ -156,16 +156,18 @@
   }
 
   .cta-left h2 {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   .cta-left p {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .cta-btn {
     width: 100%;
     text-align: center;
+            font-size: 20px;
+
   }
 
   .cta-right ul {
@@ -174,10 +176,10 @@
   }
 
   .cta-right li {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .cta-right li svg {
-    font-size: 14px;
+    font-size: 18px;
   }
 }

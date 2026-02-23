@@ -147,7 +147,7 @@
 }
 
 .help-right p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
   color: #475569;
   margin-bottom: 18px;
@@ -226,15 +226,15 @@
   }
 
   .info-card i {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .info-card strong {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .info-card span {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   /* MOBILE TRIANGLE POSITIONS */
@@ -260,17 +260,17 @@
   }
 
   .help-right h2 {
-    font-size: 26px;
+    font-size: 30px;
     line-height: 1.25;
   }
 
   .help-right p {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.6;
   }
 
   .help-btn {
-    font-size: 14px;
+    font-size: 20px;
     padding: 12px 30px;
   }
 

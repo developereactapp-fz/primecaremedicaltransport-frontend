@@ -18,7 +18,7 @@
 }
 
 .bigclients-header p {
-  font-size: 15px;
+  font-size: 20px;
   color: #475569;
   margin-top: 14px;
   line-height: 1.7;
@@ -91,13 +91,13 @@
 }
 
 .stat-item h3 {
-  font-size: 38px;
+  font-size: 42px;
   font-weight: 800;
   color: #0f172a;
 }
 
 .stat-item p {
-  font-size: 14px;
+  font-size: 20px;
   color: #475569;
   margin-top: 6px;
 }
@@ -126,8 +126,12 @@
   }
 
   .bigclients-header h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
+
+.bigclients-header p {
+    font-size: 18px;
+}
 
   .client-logos {
     grid-template-columns: repeat(2, 1fr);
@@ -175,10 +179,10 @@
   }
 
   .stat-item h3 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .stat-item p {
-    font-size: 14px;
+    font-size: 20px;
   }
 }

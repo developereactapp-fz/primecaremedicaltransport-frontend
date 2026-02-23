@@ -107,7 +107,7 @@
 }
 
 .whatwedo-item p {
-  font-size: 16px;
+  font-size: 20px;
   color: #475569;
   line-height: 1.7;
 }
@@ -162,11 +162,11 @@
   }
 
   .whatwedo-header h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .whatwedo-header p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
   }
 
@@ -185,19 +185,19 @@
 
   /* ICON */
   .wedo-service-icon {
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 18px;
   }
 
   /* TITLE */
   .whatwedo-item h3 {
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 10px;
   }
 
   /* TEXT */
   .whatwedo-item p {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.6;
   }
 

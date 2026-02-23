@@ -36,7 +36,7 @@
 }
 
 .nemt-left p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
   color: #475569;
   margin-bottom: 16px;
@@ -158,15 +158,15 @@
   }
 
   .nemt-left h2 {
-    font-size: 24px;
+    font-size: 25px;
   }
 
   .nemt-left p {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .nemt-right h3 {
-    font-size: 24px;
+    font-size: 25px;
   }
 
   /* KEEP TWO UL */
@@ -176,7 +176,7 @@
   }
 
   .services-grid li {
-    font-size: 13px;
+    font-size: 18px;
     gap: 10px;
   }
 

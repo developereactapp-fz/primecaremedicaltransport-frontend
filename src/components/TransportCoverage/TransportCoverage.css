@@ -30,7 +30,7 @@
 
 /* COLUMN */
 .coverage-column h3 {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 700;
   color: #14b8a6;
   margin-bottom: 18px;
@@ -49,6 +49,8 @@
 
 .coverage-column li {
   position: relative;
+      font-weight: 600;
+
   padding-left: 18px;
   font-size: 20px;
   color: #06162b;
@@ -114,7 +116,7 @@
   }
 
   .coverage-intro {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 40px;
   }
 
