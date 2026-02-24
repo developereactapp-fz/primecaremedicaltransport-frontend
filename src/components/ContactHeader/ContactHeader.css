@@ -6,8 +6,9 @@
 
 /* HEADER */
 .contact-info-header {
-margin: 60px 0px;
-    max-width: 600px;
+margin: 60px 120px;
+
+    /* max-width: 600px; */
     text-align: center;
 }
 
@@ -22,14 +23,14 @@ margin: 60px 0px;
 }
 
 .contact-info-header h2 {
-  font-size: 50px;
+  font-size: 42px;
   font-weight: 800;
   color: #0f172a;
   margin-bottom: 12px;
 }
 
 .contact-info-header p {
-  font-size: 30px;
+  font-size: 25px;
   color: #64748b;
   line-height: 1.7;
 }
@@ -178,6 +179,10 @@ margin: 60px 0px;
     font-size: 35px;
   }
 
+  .contact-info-header {
+    font-size: 20px;  
+  }   
+
   .contact-info-grid {
     grid-template-columns: 1fr;
     gap: 28px;
@@ -191,10 +196,6 @@ margin: 60px 0px;
   font-size: 30px;
 }
 
-.contact-info-header h2 {
-  font-size: 35px;
-}
-
 .contact-tag {
   font-size: 20px;
 }
@@ -206,6 +207,6 @@ margin: 60px 0px;
     transform: translateY(-6px) scale(1.03);
   }
   .contact-info-header p {
-  font-size: 25px;
+  font-size: 22px;
 }
 }
