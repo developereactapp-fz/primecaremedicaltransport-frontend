@@ -176,12 +176,16 @@
 
 .service-lists li {
 
-    font-size: 30px;
+    font-size: 35px;
 }
 
   .service-buttons {
     flex-direction: column;
   }
+
+  .service-right h3 {
+    font-size: 40px;
+}
 
   .btn-primary,
   .btn-secondary {

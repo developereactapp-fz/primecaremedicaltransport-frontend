@@ -102,7 +102,7 @@ color: #10b981;  font-size: 22px;
 /* DOTTED LINE */
 .icon-line {
   width: 2px;
-  height: 46px;
+  height: 63px;
   background-image: repeating-linear-gradient(
     to bottom,
     #06162b,
@@ -110,7 +110,7 @@ color: #10b981;  font-size: 22px;
     transparent 4px,
     transparent 8px
   );
-  margin-top: 6px;
+  margin-top: 10px;
 }
 
 /* TEXT */
@@ -125,6 +125,8 @@ color: #10b981;  font-size: 22px;
   font-size: 22px;
   color: #475569;
   line-height: 1.6;
+      padding-bottom: 20px;
+
 }
 
 /* BUTTON */
@@ -179,7 +181,7 @@ width: 66px;
   }
 
   .icon-line {
-    height: 36px;
+    height: 63px;
   }
 
   .process-btn {
@@ -194,6 +196,8 @@ width: 66px;
 
 .process-text p {
   font-size: 18px;
+          padding-bottom: 15px;
+
 }
 .process-right h2 {
   font-size: 36px;
