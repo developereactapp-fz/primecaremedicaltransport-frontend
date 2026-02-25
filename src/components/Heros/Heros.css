@@ -5,7 +5,9 @@
 .heros {
   position: relative;
   min-height: 80vh;
-  background-size: cover;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
@@ -293,6 +295,10 @@
   }
 .heros {
     padding: 0px 0px;
+      background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .heros-container {
     padding: 60px 0px;
