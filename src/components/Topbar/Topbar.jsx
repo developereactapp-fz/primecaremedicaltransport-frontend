@@ -119,12 +119,12 @@ export default function Topbar() {
 
         {/* MOBILE: CTA BUTTON */}
         <a
-          href="tel:(206) 456-6665"
+          href="tel:(425) 306-7882"
           className="topbar-cta mobile-only"
           aria-label="Call PrimeCare Medical Transport"
         >
           <FaPhoneAlt />
-          Call (206) 456-6665
+          Call (425) 306-7882
         </a>
 
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import "./Heros.css";
 import { Link } from "react-router-dom";
 
-import bgImage from "../../assets/banner-bg-image.jpg";
+import bgImage from "../../assets/Main-banner.jpeg";
 import rightImg1 from "../../assets/banner-right-img1.png";
 import rightImg2 from "../../assets/banner-right-img2.png";
 import rightImg3 from "../../assets/banner-right-img3.png";
@@ -28,10 +28,10 @@ const Heros = () => {
             We Ensure Every Client  
             <br />
             {/* Understand & Solve */}
-            Receives timely, Comfortable, and 
+            Receives timely, Comfortable, 
             <br />
             {/* The Problems. */}
-            Professional Service.
+           and Professional Service.
           </h1>
 
           <p className="description animate fade-up delay-3">

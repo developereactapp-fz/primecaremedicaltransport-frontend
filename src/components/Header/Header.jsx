@@ -44,11 +44,11 @@ export default function Header() {
         {/* DESKTOP CTA */}
         <button
           className="header-cta desktop-only"
-          onClick={() => (window.location.href = "tel:(206) 456-6665")}
+          onClick={() => (window.location.href = "tel:(425) 306-7882")}
           aria-label="Call PrimeCare"
         >
           <FaPhoneAlt />  
-          Call (206) 456-6665
+          Call (425) 306-7882
         </button>
 
         {/* MOBILE MENU ICON */}

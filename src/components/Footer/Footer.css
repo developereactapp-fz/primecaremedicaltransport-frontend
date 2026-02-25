@@ -209,6 +209,7 @@ font-size:25px;
   display: flex;
   gap: 32px;
   align-items: center;
+  font-size: 25px;
 }
 
 .footer-bottom-links span {
@@ -218,6 +219,10 @@ font-size:25px;
 
 .footer-bottom-links span:hover {
   opacity: 0.85;
+}
+
+.copyright{
+  font-size: 25px;
 }
 
 /* ===================== */
@@ -265,10 +270,18 @@ font-size:20px;
     border-radius: 30px 30px;
   }
 
+.footer-bottom-links {
+  font-size: 22px;
+}
+
   .social-icons {
   display: flex;
   gap: 14px;
 margin: 0px 0px 0px 0px;
+}
+
+.copyright{
+  font-size: 20px;
 }
 
   .footer-bottom-links {

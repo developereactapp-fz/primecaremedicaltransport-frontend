@@ -97,7 +97,7 @@ export default function Footer() {
           <p>
             <FaEnvelope />
             <a href="mailto:primecare.tranportations@gmail.com">
-              primecare.tranportations@gmail.com
+              Primecare.tranportations@gmail.com
             </a>
           </p>
 
@@ -112,8 +112,11 @@ export default function Footer() {
 
           <p>
             <FaClock />
-             Monday - Sunday : 4:00 AM - 10:00 PM
+            
+          <a href>
+           Monday - Sunday : 4:00 AM - 10:00 PM
 
+            </a>
           </p>
         </div>
 
