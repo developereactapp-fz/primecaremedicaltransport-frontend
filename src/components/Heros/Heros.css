@@ -296,6 +296,7 @@
 .heros {
     padding: 0px 0px;
       background-size: cover;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: top;
 }
