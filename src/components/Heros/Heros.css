@@ -296,9 +296,8 @@
 .heros {
     padding: 0px 0px;
       background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top;
 }
 .heros-container {
     padding: 60px 0px;
