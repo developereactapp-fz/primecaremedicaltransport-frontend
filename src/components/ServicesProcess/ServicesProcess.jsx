@@ -57,7 +57,7 @@ export default function AboutProcess() {
           <span className="process-tag">How It Works</span>
 
           <h2>
-            How can CareHealth <br />
+            How can PrimeCare <br />
              help your journey?
           </h2>
 

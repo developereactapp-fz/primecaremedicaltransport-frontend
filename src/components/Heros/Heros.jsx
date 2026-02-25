@@ -20,20 +20,22 @@ const Heros = () => {
         <div className="heros-left">
           <p className="subtitle animate fade-up delay-1">
             <span className="line"></span>
-            Perfect Solutions for Your Mind
+            Safe Reliable Transportation.
           </p>
 
           <h1 className="animate fade-up delay-2">
-            We Will Help You to
+            {/* We Will Help You to  */}
+            We Ensure Every Client  
             <br />
-            Understand & Solve
+            {/* Understand & Solve */}
+            Receives timely, Comfortable, and 
             <br />
-            The Problems
+            {/* The Problems. */}
+            Professional Service.
           </h1>
 
           <p className="description animate fade-up delay-3">
-            Doidunt eget semper nec ruam sed hendrerit morbi aeu felisiao
-            augue pellentesque veniam morbi acer.
+           Healing continues beyond hospital doors. A step closer to recovery, a step back to home.
           </p>
 
           <div className="heros-buttons animate fade-up delay-4">

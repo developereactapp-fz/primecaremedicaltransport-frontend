@@ -1,9 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./NemtServices.css";
 import {
-  FaHospital,
-  FaUserMd,
-  FaProcedures,
   FaHeartbeat,
   FaXRay,
   FaWheelchair,
@@ -11,6 +8,13 @@ import {
   FaHome,
   FaStethoscope,
   FaClinicMedical,
+  FaWalking,
+  FaHospital,
+  FaProcedures,
+  FaDumbbell,
+  FaUserMd,
+  FaAmbulance,
+  FaHandsHelping,
 } from "react-icons/fa";
 
 export default function NemtServices() {
@@ -42,7 +46,7 @@ export default function NemtServices() {
             <h2>Non-Emergency Medical Transportation (NEMT)</h2>
 
             <p>
-              Elegant Care Transportation provides convenient, affordable, safe,
+              PrimeCareMedicalTransportations provides convenient, affordable, safe,
               comfortable and reliable transportation for individuals with
               special needs.
             </p>
@@ -58,8 +62,8 @@ export default function NemtServices() {
           </div>
 
           <div className="nemt-buttons">
-            <a href="tel:2534999999" className="btn-red">(253) 499-9999</a>
-            <a href="tel:2064566665" className="btn-dark">(206) 456-6665</a>
+            <a href="tel:4253067882" className="btn-red">(425) 306-7882</a>
+            {/* <a href="tel:4253067882" className="btn-dark">(425) 306-7882</a> */}
           </div>
         </div>
 
@@ -69,29 +73,35 @@ export default function NemtServices() {
 
           <div className="services-grid">
             <ul>
+              <li><FaWheelchair /> Wheelchair Transportation</li>
+              <li><FaWalking /> Ambulatory Transportation</li>
+              <li><FaHospital />Hospital Discharge Transportation</li>
+              <li><FaProcedures />Dialysis Appointment Transportation</li>
               <li><FaHospital /> Non-Emergency</li>
               <li><FaHospital /> Hospital Visits</li>
-              <li><FaUserMd /> Doctor’s Appointments</li>
-              <li><FaProcedures /> Hospital Discharge</li>
               <li><FaClinicMedical /> Adult Day Care</li>
               <li><FaClinicMedical /> Acute Care Facilities</li>
               <li><FaXRay /> Radiation Appointments</li>
-              <li><FaHeartbeat /> Dialysis Appointments</li>
-              <li><FaWheelchair /> Physical Therapy</li>
               <li><FaHeartbeat /> Pulmonary & Cardiac</li>
+              <li><FaHome /> Nursing Homes</li>
+              <li><FaCalendarCheck /> Appointments</li>
             </ul>
 
             <ul>
+              
+              <li><FaDumbbell /> Physical Therapy Transportation</li>
+              <li><FaUserMd />Doctor Appointment Transportation</li>
+              <li><FaAmbulance />Long-Distance Medical Transportation</li>
+              <li><FaHandsHelping />Special Needs Transportation</li>
               <li><FaStethoscope /> Rehabilitation</li>
               <li><FaClinicMedical /> Nursing Facilities</li>
               <li><FaHome /> Assisted Living</li>
+              <li><FaHeartbeat /> Chemotherapy</li>
               <li><FaCalendarCheck /> Events</li>
-              <li><FaHome /> Nursing Homes</li>
               <li><FaUserMd /> Dentist Visits</li>
               <li><FaCalendarCheck /> Pharmacy Trips</li>
               <li><FaProcedures /> Outpatient Surgery</li>
-              <li><FaHeartbeat /> Chemotherapy</li>
-              <li><FaCalendarCheck /> Appointments</li>
+
             </ul>
           </div>
         </div>

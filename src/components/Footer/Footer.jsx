@@ -8,6 +8,7 @@ import {
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
+  FaClock,
 } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 
@@ -89,7 +90,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              5535 Charlotte Ave Se Auburn, WA 98092
+              5535 Charlotte Ave Se Auburn, Washington 98092
             </a>
           </p>
 
@@ -102,9 +103,17 @@ export default function Footer() {
 
           <p>
             <FaPhoneAlt />
-            <a href="tel:2064566665">
-              (206) 456-6665
+    
+           <a href="tel:4253067882">
+              (425) 306-7882
             </a>
+
+          </p>
+
+          <p>
+            <FaClock />
+             Monday - Sunday : 4:00 AM - 10:00 PM
+
           </p>
         </div>
 
@@ -130,7 +139,7 @@ export default function Footer() {
         </div>
 
         <div className="copyright">
-          © {new Date().getFullYear()} CareHealth Medical Transport. All Rights Reserved.
+          © {new Date().getFullYear()} PrimeCareMedicalTransportations. All Rights Reserved.
         </div>
 
       </div>

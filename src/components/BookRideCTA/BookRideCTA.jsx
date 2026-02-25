@@ -64,10 +64,9 @@ export default function BookRideCTA() {
           <p>
             Schedule your ride online or call us to reserve your spot today!
           </p>
+          
+         <a href="tel:4253067882" className="cta-btn">(425) 306-7882</a>
 
-          <a href="tel:2064566665" className="cta-btn">
-            (206) 456-6665
-          </a>
         </div>
 
         {/* RIGHT */}

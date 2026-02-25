@@ -76,13 +76,26 @@ export default function AboutIntro() {
           </h2>
 
           <p>
-            PrimeCare Medical Transportation provides safe, respectful, and
-            reliable non-emergency medical transport services.
+            {/* PrimeCare Medical Transportation provides safe, respectful, and
+            reliable non-emergency medical transport services. */}
+            Prime Care Medical Transportation LLC is a community‑focused 
+            NEMT provider dedicated to delivering safe, dependable,
+             and dignified transportation for medical appointments, dialysis, 
+             physical therapy, hospital discharges, and more.
           </p>
 
           <p>
-            Our mission is to deliver comfort, dignity, and punctual care for
-            every patient.
+            {/* Our mission is to deliver comfort, dignity, and punctual care for
+            every patient. */}
+            Our mission is to support individuals who need mobility assistance by 
+            offering professional drivers, well‑maintained vehicles, and exceptional customer care.
+          </p>
+
+          <p>
+            {/* Our mission is to deliver comfort, dignity, and punctual care for
+            every patient. */}
+            We proudly serve seniors, individuals with disabilities, and anyone requiring
+             specialized transportation with comfort and respect.
           </p>
 
           {/* TWO UL BLOCKS */}
@@ -101,7 +114,7 @@ export default function AboutIntro() {
           </div>
 
           <a href="/reservation" className="about-btn">
-            Get Started
+            Book Appointment
           </a>
         </div>
 

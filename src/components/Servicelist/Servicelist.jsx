@@ -50,12 +50,13 @@ export default function ServiceArea() {
             <img src={serviceImg} alt="Service Area" />
 
             <div className="service-buttons">
-              <a href="/contact-us" className="btn-red">
+              <a href="/reservation" className="btn-red">
                 Book a Ride
               </a>
-              <a href="tel:+12064566665" className="btn-dark">
-                (206) 456-6665
+              <a href="tel:4253067882" className="btn-dark">
+                (425) 306-7882
               </a>
+
             </div>
            
           </div>
@@ -73,17 +74,14 @@ export default function ServiceArea() {
             <div className="service-lists">
 
               <ul>
-                <li><FaCheckCircle /> Seattle</li>
-                <li><FaCheckCircle /> Seatac</li>
-                <li><FaCheckCircle /> Snohomish County</li>
-                <li><FaCheckCircle /> Pierce County</li>
                 <li><FaCheckCircle /> King County</li>
-                <li><FaCheckCircle /> Bellevue</li>
-                <li><FaCheckCircle /> Kent</li>
-                <li><FaCheckCircle /> Renton</li>
+                <li><FaCheckCircle /> Pierce County</li>
+                <li><FaCheckCircle /> Thurston County</li>
+                <li><FaCheckCircle /> Snohomish County</li>
+                <li><FaCheckCircle /> Surrounding Washington State regions</li>
               </ul>
 
-              <ul>
+              {/* <ul>
                 <li><FaCheckCircle /> Maple Valley</li>
                 <li><FaCheckCircle /> Covington</li>
                 <li><FaCheckCircle /> Tukwila</li>
@@ -92,7 +90,7 @@ export default function ServiceArea() {
                 <li><FaCheckCircle /> Des Moines</li>
                 <li><FaCheckCircle /> Puyallup</li>
                 <li><FaCheckCircle /> Woodinville</li>
-              </ul>
+              </ul> */}
 
             </div>
           </div>

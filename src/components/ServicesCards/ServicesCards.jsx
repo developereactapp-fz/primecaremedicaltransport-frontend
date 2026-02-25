@@ -2,44 +2,56 @@ import { useEffect, useRef, useState } from "react";
 import "./ServicesCards.css";
 
 import {
-  FaUserFriends,
-  FaHandsHelping,
-  FaBrain,
+  FaWheelchair,
   FaWalking,
-  FaUserShield,
-  FaUsers
+  FaHospital,
+  FaProcedures,
+  FaDumbbell,
+  FaUserMd,
+  FaAmbulance,
+  FaHandsHelping,
 } from "react-icons/fa";
 
 const services = [
   {
-    icon: <FaUserFriends />,
-    title: "Non-Emergency Transport",
-    desc: "Safe and reliable transportation for medical appointments and daily needs."
-  },
-  {
-    icon: <FaHandsHelping />,
-    title: "Wheelchair Assistance",
-    desc: "Professional door-to-door wheelchair and mobility assistance."
-  },
-  {
-    icon: <FaBrain />,
-    title: "Special Needs Care",
-    desc: "Compassionate transport for patients requiring extra attention."
+    icon: <FaWheelchair />,
+    title: "Wheelchair Transportation",
+    desc: "Secure and ADA-compliant wheelchair transportation with trained drivers ensuring safe transfers and comfortable travel to medical appointments."
   },
   {
     icon: <FaWalking />,
-    title: "Rehabilitation Visits",
-    desc: "Timely transport for therapy, rehab, and recovery appointments."
+    title: "Ambulatory Transportation",
+    desc: "Reliable transportation for passengers who can walk independently but require assistance getting to and from healthcare facilities."
   },
   {
-    icon: <FaUserShield />,
-    title: "Senior Transportation",
-    desc: "Comfortable and respectful services for elderly passengers."
+    icon: <FaHospital />,
+    title: "Hospital Discharge Transportation",
+    desc: "Safe and coordinated transport from hospital to home, rehabilitation centers, or care facilities with patient-focused support."
   },
   {
-    icon: <FaUsers />,
-    title: "Group & Facility Transport",
-    desc: "Transportation solutions for care homes and medical facilities."
+    icon: <FaProcedures />,
+    title: "Dialysis Appointment Transportation",
+    desc: "Scheduled and punctual round-trip transportation for dialysis patients with consistent and dependable service."
+  },
+  {
+    icon: <FaDumbbell />,
+    title: "Physical Therapy Transportation",
+    desc: "Timely and stress-free transportation to physical therapy and rehabilitation sessions to support recovery progress."
+  },
+  {
+    icon: <FaUserMd />,
+    title: "Doctor Appointment Transportation",
+    desc: "On-time transport for routine checkups, specialist visits, and outpatient medical consultations."
+  },
+  {
+    icon: <FaAmbulance />,
+    title: "Long-Distance Medical Transportation",
+    desc: "Comfortable long-distance non-emergency medical transportation between cities or medical facilities."
+  },
+  {
+    icon: <FaHandsHelping />,
+    title: "Special Needs Transportation",
+    desc: "Compassionate and professionally assisted transport services for individuals with disabilities or special care requirements."
   }
 ];
 

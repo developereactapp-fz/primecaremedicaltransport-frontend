@@ -55,7 +55,7 @@ export default function TransportCoverage() {
 
         {/* INTRO */}
         <p className="coverage-intro">
-          As you can see, PrimeCare is at the center of all things related to
+          As you can see, PrimeCareMedicalTransportations is at the center of all things related to
           wheelchair, stretcher and assisted transportation.
         </p>
 

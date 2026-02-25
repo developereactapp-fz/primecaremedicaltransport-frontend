@@ -62,7 +62,7 @@ export default function HelpBusiness() {
             </div>
 
             <div className="circle-image">
-              <img src={mainImage} alt="CareHealth Transport" />
+              <img src={mainImage} alt="PrimeCare Transport" />
             </div>
 
           </div>
@@ -70,16 +70,19 @@ export default function HelpBusiness() {
 
         {/* CONTENT */}
         <div className={`help-right ${inView ? "animate-in" : ""}`}>
-          <img src={rightIcon} alt="CareHealth Icon" className="right-icon" />
+          <img src={rightIcon} alt="PrimeCare Icon" className="right-icon" />
 
           <h2>
-            How can <span className="highlight">CareHealth</span> help your journey?
+            How can <span className="highlight">PrimeCare</span> help your journey?
           </h2>
 
           <p>
-            CareHealth Transport offers safe, comfortable and dependable
-            non-emergency medical transportation for seniors and individuals
-            with mobility challenges.
+            {/* PrimeCareMedicalTransportations offers safe, comfortable and dependable
+            non-emergency medical transportations for seniors and individuals
+            with mobility challenges. */}
+            Prime Care Medical Transportation LLC provides safe, reliable, and compassionate
+             non‑emergency medical transportation across Washington State.
+             We ensure every client receives timely, comfortable, and professional service.
           </p>
 
           <p>
@@ -88,7 +91,7 @@ export default function HelpBusiness() {
           </p>
 
           <button className="help-btn" onClick={() => navigate("/about-us")}>
-            Learn More
+            Know More
           </button>
         </div>
 

@@ -80,7 +80,7 @@ export default function BigClients() {
         <div className="bigclients-header">
           <h2>Our Trusted Clients</h2>
           <p>
-            We proudly partner with healthcare providers, senior living facilities,
+            We proudly partner with PrimeCareMedicalTransportations providers, senior living facilities,
             hospitals, and organizations who trust us for dependable medical transportation.
           </p>
         </div>
@@ -103,12 +103,12 @@ export default function BigClients() {
 
           <div className="stat-item">
             <h3>{clients.toLocaleString()}+</h3>
-            <p>Satisfied Clients</p>
+            <p>Happy Clients</p>
           </div>
 
           <div className="stat-item">
             <h3>{rides.toLocaleString()}+</h3>
-            <p>Successful Transport Operations</p>
+            <p>Successful Rides</p>
           </div>
         </div>
 

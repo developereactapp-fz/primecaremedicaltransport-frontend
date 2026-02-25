@@ -40,6 +40,7 @@ export default function BookingAppointment() {
 
   const [formData, setFormData] = useState({
     name: "",
+    email: "",
     phone: "",
     pickupDateTime: "",
     pickupLocation: "",
@@ -63,17 +64,33 @@ export default function BookingAppointment() {
 
   const validate = () => {
     const e = {};
+
     if (!formData.name) e.name = "Full name required";
+
+    if (!formData.email) {
+      e.email = "Email required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      e.email = "Enter valid email address";
+    }
+
     if (!/^[0-9]{10}$/.test(formData.phone))
-      e.phone = "Valid phone number required";
+      e.phone = "Valid 10-digit phone required";
+
     if (!formData.pickupDateTime)
       e.pickupDateTime = "Pickup date & time required";
+
     if (!formData.pickupLocation)
       e.pickupLocation = "Pickup location required";
+
     if (!formData.dropLocation)
       e.dropLocation = "Drop-off location required";
-    if (!formData.serviceType) e.serviceType = "Select service type";
-    if (!formData.captchaToken) e.captcha = "Please verify captcha";
+
+    if (!formData.serviceType)
+      e.serviceType = "Select service type";
+
+    if (!formData.captchaToken)
+      e.captcha = "Please verify captcha";
+
     return e;
   };
 
@@ -86,7 +103,8 @@ export default function BookingAppointment() {
     if (Object.keys(v).length > 0) return;
 
     try {
-      const res = await fetch(`${process.env.REACT_APP_API_URL}/api/booking`,
+      const res = await fetch(
+        `${process.env.REACT_APP_API_URL}api/booking`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -100,6 +118,7 @@ export default function BookingAppointment() {
         showToast("success", "Booking submitted successfully");
         setFormData({
           name: "",
+          email: "",
           phone: "",
           pickupDateTime: "",
           pickupLocation: "",
@@ -110,7 +129,7 @@ export default function BookingAppointment() {
         });
         setSubmitted(false);
       } else {
-        showToast("error", "Booking failed");
+        showToast("error", data.message || "Booking failed");
       }
     } catch {
       showToast("error", "Server error");
@@ -126,23 +145,37 @@ export default function BookingAppointment() {
       <section className="form-section" ref={sectionRef}>
         <div className={`form-grid ${visible ? "show" : ""}`}>
 
-          {/* LEFT FORM */}
           <div className="form-left">
             <h2 className="animate booking-form-header">Book a Ride</h2>
 
             <form className="form-body" onSubmit={handleSubmit} noValidate>
 
+              {/* FULL WIDTH NAME */}
+              <div className="field animate">
+                <input
+                  name="name"
+                  placeholder=" "
+                  value={formData.name}
+                  onChange={handleChange}
+                />
+                <label>Full Name</label>
+                <span className="underline" />
+                {submitted && errors.name && <small>{errors.name}</small>}
+              </div>
+
+              {/* EMAIL + PHONE SAME ROW */}
               <div className="two-col">
                 <div className="field animate">
                   <input
-                    name="name"
+                    type="email"
+                    name="email"
                     placeholder=" "
-                    value={formData.name}
+                    value={formData.email}
                     onChange={handleChange}
                   />
-                  <label>Full Name</label>
+                  <label>Email Address</label>
                   <span className="underline" />
-                  {submitted && errors.name && <small>{errors.name}</small>}
+                  {submitted && errors.email && <small>{errors.email}</small>}
                 </div>
 
                 <div className="field animate">
@@ -158,44 +191,47 @@ export default function BookingAppointment() {
                 </div>
               </div>
 
+              {/* DATE + SERVICE */}
               <div className="two-col">
 
-                {/* UPDATED DATE FIELD */}
-              <div
-  className={`field date-field animate ${
-    formData.pickupDateTime ? "has-value" : ""
-  }`}
->
-  <input
-    ref={dateInputRef}
-    type="datetime-local"
-    name="pickupDateTime"
-    value={formData.pickupDateTime}
-    onChange={handleChange}
-    onClick={() =>
-      dateInputRef.current?.showPicker?.() ||
-      dateInputRef.current?.focus()
-    }
-  />
-  <label>Pickup Date & Time</label>
+                <div
+                  className={`field date-field animate ${
+                    formData.pickupDateTime ? "has-value" : ""
+                  }`}
+                >
+                  <input
+                    ref={dateInputRef}
+                    type="datetime-local"
+                    name="pickupDateTime"
+                    value={formData.pickupDateTime}
+                    onChange={handleChange}
+                    onClick={() =>
+                      dateInputRef.current?.showPicker?.() ||
+                      dateInputRef.current?.focus()
+                    }
+                  />
+                  <label>Pickup Date & Time</label>
 
-  <FaCalendarAlt
-    className="date-icon"
-    onClick={(e) => {
-      e.stopPropagation();
-      dateInputRef.current?.showPicker?.() ||
-        dateInputRef.current?.focus();
-    }}
-  />
+                  <FaCalendarAlt
+                    className="date-icon"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      dateInputRef.current?.showPicker?.() ||
+                        dateInputRef.current?.focus();
+                    }}
+                  />
 
-  <span className="underline" />
-  {submitted && errors.pickupDateTime && (
-    <small>{errors.pickupDateTime}</small>
-  )}
-</div>
+                  <span className="underline" />
+                  {submitted && errors.pickupDateTime && (
+                    <small>{errors.pickupDateTime}</small>
+                  )}
+                </div>
 
-
-                <div className={`field select-field animate ${formData.serviceType ? "has-value" : ""}`}>
+                <div
+                  className={`field select-field animate ${
+                    formData.serviceType ? "has-value" : ""
+                  }`}
+                >
                   <select
                     name="serviceType"
                     value={formData.serviceType}
@@ -207,14 +243,14 @@ export default function BookingAppointment() {
                     <option value="Wheelchair">Wheelchair</option>
                   </select>
                   <label>Service Type</label>
-                  {/* <FaChevronDown className="select-icon" /> */}
-
                   <span className="underline" />
+                  {submitted && errors.serviceType && (
+                    <small>{errors.serviceType}</small>
+                  )}
                 </div>
 
               </div>
 
-              {/* Other fields unchanged */}
               <div className="field animate">
                 <input
                   name="pickupLocation"
@@ -224,6 +260,9 @@ export default function BookingAppointment() {
                 />
                 <label>Pickup Location</label>
                 <span className="underline" />
+                {submitted && errors.pickupLocation && (
+                  <small>{errors.pickupLocation}</small>
+                )}
               </div>
 
               <div className="field animate">
@@ -235,6 +274,9 @@ export default function BookingAppointment() {
                 />
                 <label>Drop-off Location</label>
                 <span className="underline" />
+                {submitted && errors.dropLocation && (
+                  <small>{errors.dropLocation}</small>
+                )}
               </div>
 
               <div className="field animate">
@@ -255,11 +297,14 @@ export default function BookingAppointment() {
                 }
               />
 
+              {submitted && errors.captcha && (
+                <small style={{ color: "red" }}>{errors.captcha}</small>
+              )}
+
               <button type="submit">Submit Booking</button>
             </form>
           </div>
 
-          {/* RIGHT DESKTOP SLIDER */}
           <div className="form-right animate">
             {slides.map((img, index) => (
               <div

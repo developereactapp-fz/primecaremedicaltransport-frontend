@@ -21,8 +21,8 @@
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 70px;
   align-items: center;
 }
 
@@ -62,9 +62,9 @@
   background: #10b981;
   color: #ffffff;
   padding: 30px 29px;
-  max-width: 260px;
+  max-width: 300px;
   border-radius: 0px 48px 48px 24px;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }

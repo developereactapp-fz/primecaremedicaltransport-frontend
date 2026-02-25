@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import "./AboutStory.css";
+import {
+  FaCheckCircle,
+} from "react-icons/fa";
 import bgImage from "../../assets/aboutstorybg.avif";
 
 export default function AboutStory() {
@@ -109,6 +112,15 @@ export default function AboutStory() {
               Service is a <strong>SMILE</strong>, a welcoming <strong>WAVE</strong>,
               a gentle <strong>HANDSHAKE</strong>, and a warm <strong>HUG</strong>.
             </p>
+          
+          {/* TWO UL BLOCKS */}
+            <ul className="about-ul">
+              <li><FaCheckCircle /> Fully licensed and insured</li>
+              <li><FaCheckCircle /> Professional, trained, background‑checked drivers</li>
+              <li><FaCheckCircle /> Clean, sanitized vehicles</li>
+              <li><FaCheckCircle /> On‑time guarantee</li>
+              <li><FaCheckCircle />  Friendly customer service</li>
+            </ul>
 
             <p className="quote">
               The greatest service to a human soul has always been kindness and recognition.
