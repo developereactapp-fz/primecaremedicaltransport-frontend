@@ -96,7 +96,7 @@ margin: 0px 0px 0px 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0f172a;
+  color: #008000;
   transition: all 0.3s ease;
 }
 
@@ -113,7 +113,7 @@ margin: 0px 0px 0px 25px;
   font-size: 30px;
   font-weight: 700;
   margin: 30px 0;
-  color: #ffffff;
+  color: #06162b;
 }
 
 /* ===================== */
@@ -136,7 +136,7 @@ font-size:25px;
 }
 
 .footer-col ul li a:hover {
-  color: #008000;
+  color: #06162b;
 }
 
 /* ===================== */
@@ -145,7 +145,7 @@ font-size:25px;
 
 .footer-col p svg {
   margin-right: 10px;
-  color: #008000;
+  color: #06162b;
   font-size:18px;
 }
 
@@ -156,7 +156,7 @@ font-size:25px;
 }
 
 .footer-col p a:hover {
-  color: #008000;
+  color: #06162b;
 }
 
 /* ===================== */
