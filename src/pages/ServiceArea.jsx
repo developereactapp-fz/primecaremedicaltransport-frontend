@@ -55,12 +55,12 @@ export default function ServiceArea() {
         style={{ backgroundImage: `url(${heroImg})` }}
       >
         <div className="page-hero-overlay">
-          <h1>Service List</h1>
+          <h1>Service Area</h1>
 
           <div className="breadcrumb">
             <Link to="/">Home</Link>
             <span>–</span>
-            <span>Service List</span>
+            <span>Service Area</span>
           </div>
         </div>
       </section>

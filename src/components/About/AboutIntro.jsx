@@ -65,6 +65,18 @@ export default function AboutIntro() {
               “Compassionate care and safe transportation for every journey.”
             </div>
           </div>
+                    {/* TWO UL BLOCKS */}
+          <div className="about-ul-grid">
+            <ul className="about-ul">
+              <li><FaUserMd /> Professional Medical Support</li>
+              <li><FaWheelchair /> Assisted Mobility Services</li>
+              <li><FaHandsHelping /> Door-to-Door Care</li>
+          
+              <li><FaClock /> On-Time Pickups</li>
+              <li><FaShieldAlt /> Secure & Sanitized Vehicles</li>
+              <li><FaHandsHelping /> Trusted Patient Care</li>
+            </ul>
+          </div>
         </div>
 
         {/* RIGHT – CONTENT */}
@@ -98,20 +110,7 @@ export default function AboutIntro() {
              specialized transportation with comfort and respect.
           </p>
 
-          {/* TWO UL BLOCKS */}
-          <div className="about-ul-grid">
-            <ul className="about-ul">
-              <li><FaUserMd /> Professional Medical Support</li>
-              <li><FaWheelchair /> Assisted Mobility Services</li>
-              <li><FaHandsHelping /> Door-to-Door Care</li>
-            </ul>
 
-            <ul className="about-ul">
-              <li><FaClock /> On-Time Pickups</li>
-              <li><FaShieldAlt /> Secure & Sanitized Vehicles</li>
-              <li><FaHandsHelping /> Trusted Patient Care</li>
-            </ul>
-          </div>
 
           <a href="/reservation" className="about-btn">
             Book Appointment

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b1995a4.css",
-    "main.js": "/static/js/main.09e16b62.js",
+    "main.css": "/static/css/main.75721018.css",
+    "main.js": "/static/js/main.fb49dfa1.js",
     "static/js/453.92ca356b.chunk.js": "/static/js/453.92ca356b.chunk.js",
     "static/media/ContactUS.jpg": "/static/media/ContactUS.92e8bccbdd0b39ffd391.jpg",
     "static/media/banner-right-img1.png": "/static/media/banner-right-img1.41837ffb5fa0d0b0a171.png",
@@ -10,9 +10,9 @@
     "static/media/banner-right-img2.png": "/static/media/banner-right-img2.acc5509993ff4569db38.png",
     "static/media/about.jpg": "/static/media/about.d08aad4f25ac3a1eaed5.jpg",
     "static/media/ServiceEquipmentAll.png": "/static/media/ServiceEquipmentAll.b6a6806aee8aa350af4f.png",
-    "static/media/mainlogo.png": "/static/media/mainlogo.b0da0153c8604e6165fd.png",
     "static/media/aboutstorybg.avif": "/static/media/aboutstorybg.ad3336262f857850af58.avif",
     "static/media/Car_motionn.png": "/static/media/Car_motionn.25ba1ce849a257aaf15c.png",
+    "static/media/Logo_PrimeCare.png": "/static/media/Logo_PrimeCare.492a110af2579420e1a5.png",
     "static/media/help-bg-img.jpg": "/static/media/help-bg-img.bcb369b773e13a0a9b78.jpg",
     "static/media/work-bg-img.jpg": "/static/media/work-bg-img.3957ed24bda9b4996c27.jpg",
     "static/media/Main-banner.jpeg": "/static/media/Main-banner.cdb433a2b98cc5af720b.jpeg",
@@ -25,12 +25,12 @@
     "static/media/Tesla-200x107.webp": "/static/media/Tesla-200x107.7a343b25931c65709531.webp",
     "static/media/Toyota-Prius-200x107.webp": "/static/media/Toyota-Prius-200x107.f6d70bc6fdc8c550dd56.webp",
     "index.html": "/index.html",
-    "main.5b1995a4.css.map": "/static/css/main.5b1995a4.css.map",
-    "main.09e16b62.js.map": "/static/js/main.09e16b62.js.map",
+    "main.75721018.css.map": "/static/css/main.75721018.css.map",
+    "main.fb49dfa1.js.map": "/static/js/main.fb49dfa1.js.map",
     "453.92ca356b.chunk.js.map": "/static/js/453.92ca356b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b1995a4.css",
-    "static/js/main.09e16b62.js"
+    "static/css/main.75721018.css",
+    "static/js/main.fb49dfa1.js"
   ]
 }

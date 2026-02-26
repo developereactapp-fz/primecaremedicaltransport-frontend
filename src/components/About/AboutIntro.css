@@ -57,7 +57,7 @@
 /* QUOTE BOX */
 .quote-box {
     position: fixed;
-    bottom: 60px;
+    bottom: 440px;
     left: -50px;
   background: #10b981;
   color: #ffffff;
@@ -97,7 +97,7 @@
 /* UL GRID */
 .about-ul-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 32px;
   margin: 28px 0;
 }
@@ -111,15 +111,15 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
-  color: #0f172a;
+  color: #f8f7f7;
   margin-bottom: 14px;
 }
 
 .about-ul li svg {
   color: #10b981;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* BUTTON */
@@ -194,7 +194,7 @@
   }
 
 .about-ul li {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .about-btn {
