@@ -96,8 +96,8 @@ export default function Footer() {
 
           <p>
             <FaEnvelope />
-            <a href="mailto:primecare.tranportations@gmail.com">
-              Primecare.tranportations@gmail.com
+            <a href="mailto:primecare.transportations@gmail.com">
+              Primecare.transportations@gmail.com
             </a>
           </p>
 
