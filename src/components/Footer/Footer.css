@@ -4,7 +4,9 @@
 
 .footer {
   padding: 160px 0 40px;
-  background: radial-gradient(circle at top, #008000, #6495ed);
+  /* background: radial-gradient(circle at top, #008000, #6495ed); */
+
+  background: linear-gradient(00deg, #6495ed, #008000);
   font-family: "Jost", "Plus Jakarta Sans", sans-serif;
   overflow: hidden;
   
