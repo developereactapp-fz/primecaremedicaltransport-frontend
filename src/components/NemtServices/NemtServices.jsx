@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import "./NemtServices.css";
 import {
-  FaHeartbeat,
-  FaXRay,
+  // FaHeartbeat,
+  // FaXRay,
+  // FaCalendarCheck,
+  // FaHome,
+  // FaStethoscope,
+  // FaClinicMedical,
   FaWheelchair,
-  FaCalendarCheck,
-  FaHome,
-  FaStethoscope,
-  FaClinicMedical,
   FaWalking,
   FaHospital,
   FaProcedures,
@@ -77,17 +77,21 @@ export default function NemtServices() {
               <li><FaWalking /> Ambulatory Transportation</li>
               <li><FaHospital />Hospital Discharge Transportation</li>
               <li><FaProcedures />Dialysis Appointment Transportation</li>
-              <li><FaHospital /> Non-Emergency</li>
+                            <li><FaDumbbell /> Physical Therapy Transportation</li>
+              <li><FaUserMd />Doctor Appointment Transportation</li>
+              <li><FaAmbulance />Long-Distance Medical Transportation</li>
+              <li><FaHandsHelping />Special Needs Transportation</li>
+              {/* <li><FaHospital /> Non-Emergency</li>
               <li><FaHospital /> Hospital Visits</li>
               <li><FaClinicMedical /> Adult Day Care</li>
               <li><FaClinicMedical /> Acute Care Facilities</li>
               <li><FaXRay /> Radiation Appointments</li>
               <li><FaHeartbeat /> Pulmonary & Cardiac</li>
               <li><FaHome /> Nursing Homes</li>
-              <li><FaCalendarCheck /> Appointments</li>
+              <li><FaCalendarCheck /> Appointments</li> */}
             </ul>
 
-            <ul>
+            {/* <ul>
               
               <li><FaDumbbell /> Physical Therapy Transportation</li>
               <li><FaUserMd />Doctor Appointment Transportation</li>
@@ -102,7 +106,7 @@ export default function NemtServices() {
               <li><FaCalendarCheck /> Pharmacy Trips</li>
               <li><FaProcedures /> Outpatient Surgery</li>
 
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>

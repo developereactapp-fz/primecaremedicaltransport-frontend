@@ -92,7 +92,7 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 🔥 KEEP TWO UL ALWAYS */
+  grid-template-columns: 1fr; /* 🔥 KEEP TWO UL ALWAYS */
   gap: 26px;
 }
 
@@ -105,14 +105,14 @@
 .services-grid li {
   display: flex;
   align-items: center;
-  gap: 14px;
-  font-size: 20px;
+  gap: 20px;
+  font-size: 25px;
   color: #0f172a;
   margin-bottom: 14px;
 }
 
 .services-grid svg {
-  font-size: 30px;
+  font-size: 35px;
   color: #008000;
 }
 
