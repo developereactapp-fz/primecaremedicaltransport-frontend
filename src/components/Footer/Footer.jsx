@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 
-import Logo from "../../assets/mainlogo.png";
+import Logo from "../../assets/Logo_PrimeCare.png";
 
 export default function Footer() {
   const footerRef = useRef(null);

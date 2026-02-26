@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./BookRideCTA.css";
 import { FaCheckCircle, FaStar } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import Logo from "../../assets/mainlogo.png";
+import Logo from "../../assets/Logo_PrimeCare.png";
 
 export default function BookRideCTA() {
   const sectionRef = useRef(null);
