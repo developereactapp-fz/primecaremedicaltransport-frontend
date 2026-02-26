@@ -2,7 +2,7 @@ import Seo from "../seo/Seo";
 import Heros from "../components/Heros/Heros";
 import WhatWeDo from "../components/WhatWeDo/WhatWeDo";
 import HelpBusiness from "../components/HelpBusiness/HelpBusiness";
-import BigClients from "../components/BigClients/BigClients";
+// import BigClients from "../components/BigClients/BigClients";
 import AnyTripSection from "../components/AnyTripSection/AnyTripSection";
 import TransportCoverage from "../components/TransportCoverage/TransportCoverage"
 // import OurFleet from "../components/OurFleet/OurFleet";
@@ -48,7 +48,7 @@ export default function Home() {
       <Heros />
       <WhatWeDo />
       <HelpBusiness />
-      <BigClients />
+      {/* <BigClients /> */}
       <AnyTripSection />
       <TransportCoverage />
       {/* <OurFleet /> */}

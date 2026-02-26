@@ -99,7 +99,7 @@
 .btn-primarly {
   /* background: #14b8a6; */
   background: #008000;
-  color: #080808;
+  color: #ffffff;
   padding: 14px 32px;
   border-radius: 8px;
   font-weight: 700;
@@ -113,7 +113,7 @@
   /* background: #0d5e52; green */
   /* background: #06162b; */
   background: #6495ED;
-  color: #ffffff;
+  color: #080808;
   box-shadow: 0 15px 30px #6495ED;
   transform: translateY(-4px);
 }
@@ -121,7 +121,7 @@
 /* secondarly BUTTON */
 .btn-secondarly {
   background: #6495ED;
-  color: #ffffff;
+  color: #080808;
   padding: 14px 32px;
   border-radius: 8px;
   font-weight: 700;
@@ -133,7 +133,7 @@
 /* secondarly HOVER */
 .btn-secondarly:hover {
   background: #008000; /* green */
-  color: #000000;
+  color: #ffffff;
   box-shadow: 0 15px 30px #008000;
   transform: translateY(-4px);
 }
