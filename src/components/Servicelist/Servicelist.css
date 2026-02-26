@@ -42,7 +42,7 @@
 
 .highlight {
   position: relative;
-  color: #10b981;
+  color: #008000;
 }
 
 .highlight::after {
@@ -101,7 +101,7 @@
 }
 
 .btn-red {
-  background: #10b981;
+  background: #008000;
 }
 
 .btn-dark {
