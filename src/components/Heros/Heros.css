@@ -97,7 +97,8 @@
 
 /* primarly BUTTON */
 .btn-primarly {
-  background: #14b8a6;
+  /* background: #14b8a6; */
+  background: #008000;
   color: #080808;
   padding: 14px 32px;
   border-radius: 8px;
@@ -110,15 +111,16 @@
 /* primarly HOVER */
 .btn-primarly:hover {
   /* background: #0d5e52; green */
-  background: #06162b; /* green */
+  /* background: #06162b; */
+  background: #6495ED;
   color: #ffffff;
-  box-shadow: 0 15px 30px #06162b;
+  box-shadow: 0 15px 30px #6495ED;
   transform: translateY(-4px);
 }
 
 /* secondarly BUTTON */
 .btn-secondarly {
-  background: #06162b;
+  background: #6495ED;
   color: #ffffff;
   padding: 14px 32px;
   border-radius: 8px;
@@ -130,9 +132,9 @@
 
 /* secondarly HOVER */
 .btn-secondarly:hover {
-  background: #14b8a6; /* green */
+  background: #008000; /* green */
   color: #000000;
-  box-shadow: 0 15px 30px #14b8a6;
+  box-shadow: 0 15px 30px #008000;
   transform: translateY(-4px);
 }
 
@@ -211,7 +213,7 @@
     width: 90px;
     height: 90px;
     /* background: #f48b63; */
-    background: #14b8a6;
+    background: #008000;
     top: 530px;
     right: 480px;
     z-index: 5;

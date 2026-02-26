@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5b1995a4.css",
+    "main.js": "/static/js/main.09e16b62.js",
+    "static/js/453.92ca356b.chunk.js": "/static/js/453.92ca356b.chunk.js",
+    "static/media/ContactUS.jpg": "/static/media/ContactUS.92e8bccbdd0b39ffd391.jpg",
+    "static/media/banner-right-img1.png": "/static/media/banner-right-img1.41837ffb5fa0d0b0a171.png",
+    "static/media/banner-right-img3.png": "/static/media/banner-right-img3.3ea419570abe0845df57.png",
+    "static/media/process-left-img.jpg": "/static/media/process-left-img.3397d8a60b729ba23a83.jpg",
+    "static/media/banner-right-img2.png": "/static/media/banner-right-img2.acc5509993ff4569db38.png",
+    "static/media/about.jpg": "/static/media/about.d08aad4f25ac3a1eaed5.jpg",
+    "static/media/ServiceEquipmentAll.png": "/static/media/ServiceEquipmentAll.b6a6806aee8aa350af4f.png",
+    "static/media/mainlogo.png": "/static/media/mainlogo.b0da0153c8604e6165fd.png",
+    "static/media/aboutstorybg.avif": "/static/media/aboutstorybg.ad3336262f857850af58.avif",
+    "static/media/Car_motionn.png": "/static/media/Car_motionn.25ba1ce849a257aaf15c.png",
+    "static/media/help-bg-img.jpg": "/static/media/help-bg-img.bcb369b773e13a0a9b78.jpg",
+    "static/media/work-bg-img.jpg": "/static/media/work-bg-img.3957ed24bda9b4996c27.jpg",
+    "static/media/Main-banner.jpeg": "/static/media/Main-banner.cdb433a2b98cc5af720b.jpeg",
+    "static/media/AboutUS.webp": "/static/media/AboutUS.8aecfaee1422dec4e901.webp",
+    "static/media/CashCheckCC.png": "/static/media/CashCheckCC.201cb4f8de928f44986b.png",
+    "static/media/Lincon-continental-200x107.webp": "/static/media/Lincon-continental-200x107.a6bbe7457c2fcf5aa26f.webp",
+    "static/media/Wheelchair-van-1-200x107.webp": "/static/media/Wheelchair-van-1-200x107.88efc6b3e47b663c46b9.webp",
+    "static/media/Toyota-Camry-3-200x107.webp": "/static/media/Toyota-Camry-3-200x107.adec23c5ea595abb25b8.webp",
+    "static/media/Toyota-Camry-200x107.webp": "/static/media/Toyota-Camry-200x107.7412807d7f9c4de18cae.webp",
+    "static/media/Tesla-200x107.webp": "/static/media/Tesla-200x107.7a343b25931c65709531.webp",
+    "static/media/Toyota-Prius-200x107.webp": "/static/media/Toyota-Prius-200x107.f6d70bc6fdc8c550dd56.webp",
+    "index.html": "/index.html",
+    "main.5b1995a4.css.map": "/static/css/main.5b1995a4.css.map",
+    "main.09e16b62.js.map": "/static/js/main.09e16b62.js.map",
+    "453.92ca356b.chunk.js.map": "/static/js/453.92ca356b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b1995a4.css",
+    "static/js/main.09e16b62.js"
+  ]
+}

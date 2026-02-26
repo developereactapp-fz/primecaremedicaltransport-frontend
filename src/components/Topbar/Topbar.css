@@ -3,7 +3,7 @@
 /* ===================== */
 
 .topbar {
-  background: linear-gradient(125deg, #2563eb, #14b8a6);
+  background: linear-gradient(125deg, #6495ED, #008000);
   font-family: "Jost", "Plus Jakarta Sans", sans-serif;
   color: #ffffff;
   font-size: 13px;
@@ -71,7 +71,7 @@
   align-items: center;
   gap: 6px;
   background: #ffffff;
-  color: #2563eb;
+  color: #6495ED;
   padding: 6px 14px;
   border-radius: 4px;
   font-weight: 600;

@@ -4,7 +4,7 @@
 
 .footer {
   padding: 160px 0 40px;
-  background: radial-gradient(circle at top, #06162b, #0f8577ff);
+  background: radial-gradient(circle at top, #6495ed, #008000);
   font-family: "Jost", "Plus Jakarta Sans", sans-serif;
   overflow: hidden;
   
@@ -99,7 +99,7 @@ margin: 0px 0px 0px 25px;
 }
 
 .social-icons a:hover {
-  background: #10b981;
+  background: #008000;
   color: #ffffff;
 }
 
@@ -134,7 +134,7 @@ font-size:25px;
 }
 
 .footer-col ul li a:hover {
-  color: #10b981;
+  color: #008000;
 }
 
 /* ===================== */
@@ -143,7 +143,7 @@ font-size:25px;
 
 .footer-col p svg {
   margin-right: 10px;
-  color: #10b981;
+  color: #008000;
   font-size:18px;
 }
 
@@ -154,7 +154,7 @@ font-size:25px;
 }
 
 .footer-col p a:hover {
-  color: #10b981;
+  color: #008000;
 }
 
 /* ===================== */
@@ -163,7 +163,7 @@ font-size:25px;
 
 .newsletter input {
   width: 100%;
-  border: 1px solid #10b981;
+  border: 1px solid #008000;
   padding: 14px 16px;
   border-radius: 10px;
   margin: 16px 0 12px;
@@ -182,8 +182,8 @@ font-size:25px;
 }
 
 .newsletter button:hover {
-  background: #10b981;
-  border-color: #10b981;
+  background: #008000;
+  border-color: #008000;
 }
 
 /* ===================== */
@@ -191,7 +191,7 @@ font-size:25px;
 /* ===================== */
 
 .footer-bottom {
-  background: #10b981;
+  background: #008000;
   padding: 18px 28px;
   border-radius: 50px 50px;
   max-width: 1100px;
@@ -209,7 +209,7 @@ font-size:25px;
   display: flex;
   gap: 32px;
   align-items: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .footer-bottom-links span {
@@ -222,7 +222,7 @@ font-size:25px;
 }
 
 .copyright{
-  font-size: 25px;
+  font-size: 20px;
 }
 
 /* ===================== */
@@ -271,7 +271,7 @@ font-size:20px;
   }
 
 .footer-bottom-links {
-  font-size: 20px;
+  font-size: 16px;
 }
 
   .social-icons {
@@ -281,7 +281,7 @@ margin: 0px 0px 0px 0px;
 }
 
 .copyright{
-  font-size: 18px;
+  font-size: 16px;
 }
 
   .footer-bottom-links {

@@ -76,14 +76,15 @@
 
 .info-card i {
   font-size: 20px;
-  color: #10b981;
+  /* color: #10b981; */
+  color: #008000;
 }
 
 .info-card strong {
   display: block;
   font-size: 22px;
   font-weight: 700;
-  color: #0f172a;
+  color: #6495ed;
 }
 
 .info-card span {
@@ -125,13 +126,13 @@
   font-size: 52px;
   font-weight: 800;
   line-height: 1.2;
-  color: #0f172a;
+  color: #6495ed;
   margin-bottom: 20px;
 }
 
 .highlight {
   position: relative;
-  color: #10b981;
+  color: #008000;
 }
 
 .highlight::after {
@@ -158,7 +159,7 @@
   margin-top: 20px;
   padding: 14px 36px;
   border-radius: 0 28px 28px 28px;
-  background: #10b981;
+  background: #008000;
   color: #ffffff;
   border: none;
   font-size: 20px;

@@ -65,7 +65,7 @@
 }
 
 .btn-red {
-  background: #10b981;
+  background: #008000;
 }
 
 .btn-dark {
@@ -76,7 +76,7 @@
 .btn-red:hover,
 .btn-dark:hover {
   transform: translateY(-5px);
-  background: linear-gradient(135deg, #2563eb, #14b8a6);
+  background: linear-gradient(135deg, #6495ed, #008000);
 }
 
 /* ===================== */
@@ -113,7 +113,7 @@
 
 .services-grid svg {
   font-size: 30px;
-  color: #14b8a6;
+  color: #008000;
 }
 
 /* ===================== */

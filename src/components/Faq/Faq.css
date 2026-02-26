@@ -35,7 +35,7 @@
   letter-spacing: 1.2px;
   text-transform: uppercase;
   font-family:"jost";
-  color: #14b8a6;
+  color: #008000;
   margin-bottom: 12px;
   display: inline-block;
 }
@@ -44,12 +44,12 @@
   font-size: 42px;
   font-weight: 800;
   font-family: "jost";
-  color: #0f172a;
+  color: #6495ed;
 }
 
 .faq-header h2 span {
   text-decoration: underline;
-  text-decoration-color: #14b8a6;
+  text-decoration-color: #008000;
   text-decoration-thickness: 3px;
 }
 
@@ -77,8 +77,8 @@
 }
 
 .faq-item.active {
-  border-color: #0f172a;
-  background: #14b8a6;
+  border-color: #6495ed;
+  background: #008000;
   color: #fff;
   transition: all 0.3s ease;
 }
@@ -101,7 +101,7 @@
 .faq-question h4 {
   font-size: 22px;
   font-weight: 600;
-  color: #0f172a;
+  color: #6495ed;
   text-align: left;
 }
 

@@ -34,7 +34,7 @@
   content: "";
   width: 48px;
   height: 4px;
-  background: #2563eb;
+  background: #6495ed;
   display: block;
   margin: 10px auto 0;
   border-radius: 10px;
@@ -90,7 +90,7 @@
 
 .wedo-service-icon {
   font-size: 82px;
-  color: #10b981;
+  color: #ffffff;
   margin-bottom: 26px;
   transition: transform 0.35s ease, color 0.35s ease;
 }
@@ -102,13 +102,13 @@
 .whatwedo-item h3 {
   font-size: 25px;
   font-weight: 700;
-  color: #0f172a;
+  color: #151515;
   margin-bottom: 14px;
 }
 
 .whatwedo-item p {
   font-size: 20px;
-  color: #475569;
+  color: #222324;
   line-height: 1.7;
 }
 
@@ -119,6 +119,8 @@
 .whatwedo-item {
   text-align: center;
   padding: 30px 22px;
+      background-color: #6495ed;
+
   border-radius: 22px;
   transition: all 0.35s ease;
 }
@@ -130,7 +132,7 @@
 }
 
 .whatwedo-item:hover .wedo-service-icon {
-  color: #2563eb;
+  color: #6495ed;
   transform: scale(1.1);
 }
 

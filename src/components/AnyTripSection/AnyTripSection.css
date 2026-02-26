@@ -3,8 +3,8 @@
 ================================ */
 .anytrip-section {
   /* background: #b7dcf5; */
-  /* background: radial-gradient(circle at bottom, #06162b, #14b8a6); */
-  background: linear-gradient(360deg, #14b8a6, #06162b);
+  /* background: radial-gradient(circle at bottom, #6495ed, #008000); */
+  background: linear-gradient(360deg, #008000, #6495ed);
   padding: 110px 0 55px 0;
   overflow: hidden;
   font-family: "Jost", "Plus Jakarta Sans", sans-serif;
@@ -59,7 +59,8 @@
   display: block;
     font-size: 22px;
     font-weight: 800;
-      color: #10b981;
+      /* color: #10b981; */
+      color: #008000;
   margin-bottom: 14px;
 }
 

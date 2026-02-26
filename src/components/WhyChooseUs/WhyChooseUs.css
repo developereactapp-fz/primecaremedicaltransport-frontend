@@ -4,8 +4,8 @@
 
 .why-section {
   padding: 100px 0;
-  /* background: radial-gradient(circle at top, #06162b, #14b8a6); */
-  background: linear-gradient(00deg, #06162b, #14b8a6);
+  /* background: radial-gradient(circle at top, #6495ed, #008000); */
+  background: linear-gradient(00deg, #6495ed, #008000);
 
   font-family: "Jost", "Plus Jakarta Sans", sans-serif;
   color: #ffffff;
@@ -69,7 +69,8 @@
   width: 52px;
   height: 52px;
   min-width: 52px;
-  background: #f28c63;
+  /* background: #f28c63; */
+  background: #06162b;
   border-radius: 50%;
   display: flex;
   align-items: center;
