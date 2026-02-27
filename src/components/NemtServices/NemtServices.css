@@ -8,9 +8,8 @@
   font-family: "Jost", "Plus Jakarta Sans", sans-serif;
   overflow: hidden;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 100px;
 }
 
 .nemt-wrapper {
@@ -164,7 +163,7 @@ background: #0000009e;
 
 @media (max-width: 768px) {
   .nemt-section {
-    padding: 70px 0;
+    padding: 0px 0;
   }
 
   .nemt-left h2 {

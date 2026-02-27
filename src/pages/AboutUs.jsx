@@ -6,7 +6,7 @@ import "./AboutUS.css";
 import AboutStory from "../components/AboutStory/AboutStory";
 import AboutIntro from "../components/About/AboutIntro";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
-import BigClients from "../components/BigClients/BigClients";
+// import BigClients from "../components/BigClients/BigClients";
 
 import heroImg from "../assets/about.jpg";
 
@@ -77,7 +77,7 @@ export default function AboutUs() {
             <AboutStory />
 
       <WhyChooseUs />
-      <BigClients />
+      {/* <BigClients /> */}
     </>
   );
 }

@@ -115,6 +115,11 @@
     gap: 26px;
   }
 
+  .services-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
   .service-card {
     padding: 30px 24px;
   }

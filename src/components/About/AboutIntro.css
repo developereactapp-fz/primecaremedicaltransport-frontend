@@ -57,7 +57,7 @@
 /* QUOTE BOX */
 .quote-box {
     position: fixed;
-    bottom: 440px;
+    bottom: 330px;
     left: -50px;
   background: #008000;
   color: #ffffff;
@@ -216,7 +216,7 @@
   .quote-box {
     font-size: 20px;
     padding: 16px;
-            left: 0px;
+            left: 20px;
 
   }
 }
