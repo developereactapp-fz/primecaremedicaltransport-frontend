@@ -1,15 +1,20 @@
 import "./OurFleet.css";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaUserFriends, FaSuitcase } from "react-icons/fa";
+// import { FaUserFriends, FaSuitcase } from "react-icons/fa";
 
 /* IMAGES */
-import Tesla from "../../assets/Tesla-200x107.webp";
-import WheelchairVan1 from "../../assets/Wheelchair-van-1-200x107.webp";
-import WheelchairVan2 from "../../assets/Toyota-Camry-3-200x107.webp";
-import Prius from "../../assets/Toyota-Prius-200x107.webp";
-import Lincoln from "../../assets/Lincon-continental-200x107.webp";
-import Camry from "../../assets/Toyota-Camry-200x107.webp";
+import CorollaSE from "../../assets/carehealth/cars/CorollaSEHybrid.jpeg";
+import WheelchairVan from "../../assets/carehealth/cars/BestTransportation.jpg";
+import Fransit from "../../assets/carehealth/cars/FordFransit.jpeg";
+import Corolla from "../../assets/carehealth/cars/Corolla.jpeg";
+import PriusPrime from "../../assets/carehealth/cars/PriusPrime.jpeg";
+import PriusV from "../../assets/carehealth/cars/PriusV.jpeg";
+import Sienna from "../../assets/carehealth/cars/Sienna.jpeg";
+import Prius from "../../assets/carehealth/cars/Prius.jpeg";
+import PriusPrimes from "../../assets/carehealth/cars/PriusPrimes.jpeg";
+
+
 
 export default function OurFleet() {
   const navigate = useNavigate();
@@ -32,12 +37,16 @@ export default function OurFleet() {
   }, []);
 
   const fleetData = [
-    { name: "Tesla", passengers: 2, luggage: 2, img: Tesla },
-    { name: "Wheelchair Van", passengers: 5, luggage: 5, img: WheelchairVan1 },
-    { name: "Wheelchair Van", passengers: 4, luggage: 4, img: WheelchairVan2 },
-    { name: "Toyota Prius", passengers: 2, luggage: 2, img: Prius },
-    { name: "Lincoln Continental", passengers: 3, luggage: 3, img: Lincoln },
-    { name: "Toyota Camry", passengers: 2, luggage: 2, img: Camry },
+    // { name: "Toyato Corolla SE Hrbrid", passengers: 2, luggage: 2, img: CorollaSE },
+    { name: "Toyato Corolla SE Hrbrid", img: CorollaSE },
+    { name: "Wheelchair Van", img: WheelchairVan },
+    { name: "Ford Fransit",  img: Fransit },
+    { name: "Toyota Corolla",  img: Corolla },
+    { name: "Toyota Prius Prime", img: PriusPrime },
+    { name: "Toyota Prius V", img: PriusV },
+    { name: "Toyato Sienna",  img: Sienna },
+    { name: "Toyato Prius",  img: Prius },
+    { name: "Toyota Prius Prime",  img: PriusPrimes },
   ];
 
   return (
@@ -65,10 +74,10 @@ export default function OurFleet() {
 
               <h3>{item.name}</h3>
 
-              <ul className="fleet-meta">
+              {/* <ul className="fleet-meta">
                 <li><FaUserFriends /> {item.passengers} Passengers</li>
                 <li><FaSuitcase /> {item.luggage} Suitcases</li>
-              </ul>
+              </ul> */}
 
               <button
                 className="fleet-btn"

@@ -55,10 +55,10 @@ display: flex;
 }
 
 .nav a {
-  position: relative;
-  font-weight: 500;
-  padding: 6px 0;
-    font-size: 20px;
+    position: relative;
+    font-weight: 600;
+    padding: 6px 0;
+    font-size: 17px;
     /* color: #0f172a; */
     color: #000000;
   transition: transform 0.25s ease, color 0.25s ease;

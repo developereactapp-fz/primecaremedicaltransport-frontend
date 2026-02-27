@@ -99,7 +99,7 @@ export default function BookingHeader() {
               </div>
             </a>
 
-            <a href="mailto:primecare.tranportations@gmail.com"  
+            <a href="mailto:primecare.transportations@gmail.com"  
               className={`booking-card orange ${
               inView ? "animate-up-Serving" : ""
             }`}
@@ -110,7 +110,7 @@ export default function BookingHeader() {
               <div className="card-content">
                 <h4>Email</h4>
                 <p>
-                  Primecare.tranportations@gmail.com
+                  Primecare.transportations@gmail.com
                 </p>
               </div>
             </a>

@@ -34,7 +34,7 @@ export default function Header() {
         <nav className="nav desktop-only">
           <NavLink to="/" end>Home</NavLink>
           <NavLink to="/about-us">About Us</NavLink>
-          {/* <NavLink to="/fleet">Our Fleet</NavLink> */}
+          <NavLink to="/gallery">Our Gallery</NavLink>
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/service-areas">Service Areas</NavLink>
           <NavLink to="/reservation">Reservation</NavLink>
@@ -73,7 +73,7 @@ export default function Header() {
         <div className="mobile-menu-links">
           <NavLink to="/" end onClick={() => setOpen(false)}>Home</NavLink>
           <NavLink to="/about-us" onClick={() => setOpen(false)}>About Us</NavLink>
-          {/* <NavLink to="/fleet" onClick={() => setOpen(false)}>Our Fleet</NavLink> */}
+          <NavLink to="/gallery" onClick={() => setOpen(false)}>Our Gallery</NavLink>
           <NavLink to="/services" onClick={() => setOpen(false)}>Services</NavLink>
           <NavLink to="/service-areas" onClick={() => setOpen(false)}>Service Areas</NavLink>
           <NavLink to="/reservation" onClick={() => setOpen(false)}>Reservation</NavLink>
