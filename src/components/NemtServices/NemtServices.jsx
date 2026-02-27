@@ -16,6 +16,7 @@ import {
   FaAmbulance,
   FaHandsHelping,
 } from "react-icons/fa";
+import bgImage from "../../assets/carehealth/wheelchair_alone.jpeg";
 
 export default function NemtServices() {
   const sectionRef = useRef(null);
@@ -37,8 +38,9 @@ export default function NemtServices() {
   }, []);
 
   return (
-    <section className="nemt-section" ref={sectionRef}>
-      <div className="container nemt-wrapper">
+    <section className="nemt-section" ref={sectionRef}  style={{ backgroundImage: `url(${bgImage})` }}>
+ <div className="overlays">
+     <div className="container nemt-wrapper">
 
         {/* LEFT */}
         <div className={`nemt-left ${inView ? "nemt-left-animate" : ""}`}>
@@ -110,6 +112,7 @@ export default function NemtServices() {
           </div>
         </div>
       </div>
+  </div>
     </section>
   );
 }

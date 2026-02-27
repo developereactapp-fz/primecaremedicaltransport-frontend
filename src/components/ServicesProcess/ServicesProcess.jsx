@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "./ServicesProcess.css";
 
-import processImg from "../../assets/process-left-img.jpg";
+import processImg from "../../assets/carehealth/service_process.jpeg";
 import icon1 from "../../assets/process-icon1.png";
 import icon2 from "../../assets/process-icon2.png";
 import icon3 from "../../assets/process-icon3.png";

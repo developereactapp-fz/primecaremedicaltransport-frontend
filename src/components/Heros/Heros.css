@@ -20,7 +20,8 @@
   position: absolute;
   inset: 0;
   /* background: rgba(13, 94, 82, 0.85); */
-  background: rgb(9 9 9 / 86%);
+  /* background: rgb(9 9 9 / 86%); */
+  background: #6494ed32;
   z-index: 1;
 }
 
@@ -315,9 +316,9 @@
   .description {
     font-size: 18px;
   }
-    .btn-primarly{
-        text-align-last: left;
-        font-size: 18px;
+  .btn-primarly{
+    text-align-last: left;
+    font-size: 18px;
 
     }
     .btn-secondarly{

@@ -59,7 +59,7 @@
     position: fixed;
     bottom: 440px;
     left: -50px;
-  background: #10b981;
+  background: #008000;
   color: #ffffff;
   padding: 30px 29px;
   max-width: 300px;
@@ -74,7 +74,7 @@
 ================================ */
 
 .about-tag {
-  color: #10b981;
+  color: #008000;
   font-weight: 700;
   font-size: 22px;
   letter-spacing: 1px;
@@ -84,7 +84,7 @@
   font-size: 36px;
   font-weight: 800;
   margin: 14px 0 18px;
-  color: #0f172a;
+  color: #6495ed;
 }
 
 .about-right p {
@@ -99,7 +99,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 32px;
-  margin: 28px 0;
+  margin: 28px 0 28px 20px;
 }
 
 .about-ul {
@@ -113,12 +113,12 @@
   gap: 12px;
   font-size: 25px;
   font-weight: 500;
-  color: #f8f7f7;
+  color: #6495ed;
   margin-bottom: 14px;
 }
 
 .about-ul li svg {
-  color: #10b981;
+  color: #008000;
   font-size: 25px;
 }
 
@@ -127,7 +127,7 @@
   display: inline-block;
       font-size: 25px;
 
-  background: #10b981;
+  background: #008000;
   color: #ffffff;
   padding: 14px 36px;
   border-radius: 0px 24px 24px 24px;
@@ -202,7 +202,7 @@
 }
 
 .about-ul li svg {
-    color: #10b981;
+    color: #008000;
     font-size: 20px;
 }
 

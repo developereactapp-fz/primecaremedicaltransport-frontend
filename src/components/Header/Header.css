@@ -60,7 +60,7 @@ display: flex;
   padding: 6px 0;
     font-size: 20px;
     /* color: #0f172a; */
-    color: #7b808c;
+    color: #000000;
   transition: transform 0.25s ease, color 0.25s ease;
 }
 

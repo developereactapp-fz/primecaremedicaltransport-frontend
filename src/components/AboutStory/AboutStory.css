@@ -27,7 +27,7 @@
 .about-story-title {
   font-size: 42px;
   letter-spacing: 2px;
-  color: #ffffff;
+  color: #0f172a;
   margin-bottom: 40px;
 }
 
@@ -44,13 +44,13 @@
 .counter h3 {
   font-size: 42px;
   font-weight: 800;
-  /* color: #2563eb; */
-  color: #ffffff;
+  /* color: #6495ed; */
+  color: #0f172a;
 }
 
 .counter p {
   font-size: 22px;
-  color: #ffffff;
+  color: #0f172a;
 }
 
 /* ===================== */
@@ -88,7 +88,7 @@
 /* LEFT CARD */
 .about-card.light {
   background: rgba(255, 255, 255, 0.88);
-  color: #0f172a;
+  color: #151515;
   text-align: left;
 }
 
@@ -120,7 +120,7 @@
 .about-btn {
   display: inline-block;
   margin-top: 18px;
-  background: #2563eb;
+  background: #6495ed;
   color: #ffffff;
   padding: 12px 26px;
   border-radius: 4px;
@@ -199,7 +199,7 @@
 }
 
 .about-ul li svg {
-    color: #10b981;
+    color: #008000;
     font-size: 20px;
 }
 }

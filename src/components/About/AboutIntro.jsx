@@ -9,9 +9,9 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 
-import slide1 from "../../assets/AboutUS.webp";
-import slide2 from "../../assets/process-left-img.jpg";
-import slide3 from "../../assets/AboutUS.webp";
+import slide1 from "../../assets/carehealth/doctor_help.jpeg";
+import slide2 from "../../assets/carehealth/BestTransportation.jpg";
+import slide3 from "../../assets/carehealth/wheelchair_alone.jpeg";
 
 const images = [slide1, slide2, slide3];
 
