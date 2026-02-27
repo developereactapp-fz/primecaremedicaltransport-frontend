@@ -40,14 +40,14 @@
 }
 
 .fleet-header h2 {
-  font-size: 42px;
+  font-size: 45px;
   font-weight: 800;
   color: #008000;
   margin-bottom: 14px;
 }
 
 .fleet-header p {
-  font-size: 15px;
+  font-size: 25px;
   color: #6495ed;
   line-height: 1.7;
 }
@@ -105,7 +105,7 @@
 /* =============================== */
 
 .fleet-card h3 {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 700;
   color: #6495ed;
   margin-bottom: 16px;
@@ -141,7 +141,7 @@
   border: none;
   padding: 10px 26px;
   border-radius: 20px;
-  font-size: 13px;
+  font-size: 18px;
     border-radius: 28px 28px 28px 28px;
 
   font-weight: 600;
@@ -227,7 +227,7 @@
   }
 
   .fleet-card h3 {
-    font-size: 18px;
+    font-size: 25px;
   }
 
   .fleet-meta li {
@@ -235,7 +235,7 @@
   }
 
   .fleet-btn {
-    font-size: 12px;
+    font-size: 18px;
     padding: 9px 22px;
   }
 }
