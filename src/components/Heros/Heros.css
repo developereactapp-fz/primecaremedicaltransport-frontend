@@ -50,6 +50,8 @@
 
 .subtitle {
   display: flex;
+      font-family: open sans-serif;
+
   align-items: center;
   font-size: 23px;
   margin-bottom: 20px;
@@ -66,12 +68,16 @@
 .heros-left h1 {
   font-size: 45px;
   line-height: 1.2;
+      font-family: Montserrat;
+
   font-weight: 600;
   margin-bottom: 22px;
 }
 
 .description {
   max-width: 500px;
+      font-family: open sans-serif;
+
   font-size: 21px;
   line-height: 1.6;
   margin-bottom: 35px;

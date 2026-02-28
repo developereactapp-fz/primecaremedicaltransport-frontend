@@ -54,9 +54,11 @@ display: flex;
   gap: 36px;
 }
 
-.nav a {
+.nav a { 
     position: relative;
     font-weight: 600;
+        font-family: Montserrat;
+
     padding: 6px 0;
     font-size: 17px;
     /* color: #0f172a; */
