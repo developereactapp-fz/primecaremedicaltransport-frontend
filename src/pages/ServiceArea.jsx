@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Seo from "../seo/Seo";
 import "./AboutUS.css";
 
-import heroImg from "../assets/about.jpg";
+import heroImg from "../assets/carehealth/cars/FordFransit.png";
 import Servicelist from "../components/Servicelist/Servicelist";
 
 export default function ServiceArea() {

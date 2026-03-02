@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Seo from "../seo/Seo";
 import "./AboutUS.css";
-import heroImg from "../assets/ContactUS.jpg";
+import heroImg from "../assets/carehealth/cars/PriusPrimes.png";
 import OurFleet from "../components/OurFleet/OurFleet";
 
 export default function Fleet() {
@@ -28,7 +28,7 @@ export default function Fleet() {
     <>
       {/* ================= SEO ================= */}
       <Seo
-        title="Our Fleet | PrimeCare Medical Transport Vehicles"
+        title="Our Gallery | PrimeCare Medical Transport Vehicles"
         description="Explore PrimeCare Medical Transport’s modern fleet of safe, comfortable, and wheelchair-accessible vehicles designed for reliable non-emergency medical transportation."
         url="https://primecaremedicaltransport.com/fleet"
         image="/fleet-preview.jpg"
@@ -50,12 +50,12 @@ export default function Fleet() {
         style={{ backgroundImage: `url(${heroImg})` }}
       >
         <div className="page-hero-overlay">
-          <h1>Our Fleet</h1>
+          <h1>Our Gallery</h1>
 
           <div className="breadcrumb">
             <Link to="/">Home</Link>
             <span>–</span>
-            <span>Fleet</span>
+            <span>Gallery</span>
           </div>
         </div>
       </section>

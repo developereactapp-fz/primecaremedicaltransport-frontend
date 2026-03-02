@@ -54,7 +54,7 @@ export default function OurFleet() {
       <div className="container">
 
         <div className={`fleet-header ${visible ? "fade-up" : ""}`}>
-          <h2>Our Fleet</h2>
+          <h2>Our Gallery</h2>
           <p>
             Comfortable, reliable vehicles designed for non-emergency
             medical transportation.

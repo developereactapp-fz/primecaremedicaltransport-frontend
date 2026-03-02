@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Seo from "../seo/Seo";
 import "./AboutUS.css";
-import heroImg from "../assets/about.jpg";
+import heroImg from "../assets/carehealth/wheelchair_alone.jpeg";
 import BookingAppointment from '../components/BookingAppointment/BookingAppointment'
 import ContactHeader from '../components/ContactHeader/ContactHeader'
 import ContactMap from '../components/ContactMap/ContactMap'

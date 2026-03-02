@@ -8,7 +8,8 @@ import AboutIntro from "../components/About/AboutIntro";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 // import BigClients from "../components/BigClients/BigClients";
 
-import heroImg from "../assets/about.jpg";
+import heroImg from "../assets/carehealth/cars/BestTransportation.png";
+
 
 export default function AboutUs() {
   const sectionRef = useRef(null);

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Seo from "../seo/Seo";
 import "./AboutUS.css";
-import heroImg from "../assets/about.jpg";
+import heroImg from "../assets/carehealth/cars/PriusPrime.png";
 import ServicesProcess from "../components/ServicesProcess/ServicesProcess";
 import ServicesCards from "../components/ServicesCards/ServicesCards";
 

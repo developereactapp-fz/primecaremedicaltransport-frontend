@@ -32,7 +32,7 @@ export default function Header() {
 
         {/* DESKTOP NAV */}
         <nav className="nav desktop-only">
-          <NavLink to="/" end>Home</NavLink>
+          <NavLink  to="/" end>Home</NavLink>
           <NavLink to="/about-us">About Us</NavLink>
           <NavLink to="/gallery">Our Gallery</NavLink>
           <NavLink to="/services">Services</NavLink>
