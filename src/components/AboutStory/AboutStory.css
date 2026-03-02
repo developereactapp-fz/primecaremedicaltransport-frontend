@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
   padding: 120px 20px;
-  font-family: "Jost", "Plus Jakarta Sans", sans-serif;
+  font-family: "Montserrat", "Open Sans", sans-serif;
 }
 
 /* Disable parallax on mobile */
@@ -27,6 +27,8 @@
 .about-story-title {
   font-size: 42px;
   letter-spacing: 2px;
+        font-family: "Montserrat";
+
   color: #0f172a;
   margin-bottom: 40px;
 }
@@ -38,18 +40,24 @@
   display: flex;
   justify-content: center;
   gap: 70px;
+        font-family: "Montserrat";
+
   margin-bottom: 70px;
 }
 
 .counter h3 {
   font-size: 42px;
   font-weight: 800;
+        font-family: "Montserrat";
+
   /* color: #6495ed; */
   color: #0f172a;
 }
 
 .counter p {
   font-size: 22px;
+        font-family: "Open Sans";
+
   color: #0f172a;
 }
 
@@ -89,6 +97,8 @@
 .about-card.light {
   background: rgba(255, 255, 255, 0.88);
   color: #151515;
+        font-family: "Open Sans";
+
   text-align: left;
 }
 
@@ -97,11 +107,15 @@
   background: rgba(15, 61, 102, 0.88);
   color: #ffffff;
   text-align: left;
+        font-family: "Open Sans";
+
 }
 
 .about-ul {
   list-style: none;
   padding: 0;
+        font-family: "Montserrat";
+
 }
 
 .about-ul li svg {
@@ -114,6 +128,8 @@
   margin: 30px 0;
   font-weight: 700;
   text-align: center;
+        font-family: "Montserrat";
+
 }
 
 /* BUTTON */
@@ -122,6 +138,7 @@
   margin-top: 18px;
   background: #6495ed;
   color: #ffffff;
+  
   padding: 12px 26px;
   border-radius: 4px;
   font-weight: 600;

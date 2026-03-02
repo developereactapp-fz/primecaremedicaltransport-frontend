@@ -35,6 +35,8 @@
 .nemt-left h2 {
   font-size: 42px;
   font-weight: 700;
+    font-family: "Montserrat";
+
   color: #6495ed;
   margin-bottom: 22px;
 }
@@ -43,6 +45,8 @@
   font-size: 20px;
   line-height: 1.7;
   color: #ffffff;
+    font-family: "Open Sans";
+
   margin-bottom: 16px;
 }
 
@@ -53,6 +57,8 @@
 .nemt-buttons {
   display: flex;
   gap: 18px;
+    font-family: "Montserrat";
+
   margin-top: 30px;
 }
 
@@ -96,6 +102,8 @@ background: #0000009e;
 .nemt-right h3 {
   font-size: 40px;
   font-weight: 700;
+    font-family: "Montserrat";
+
   color: #6495ed;
   margin-bottom: 22px;
 }
@@ -104,10 +112,13 @@ background: #0000009e;
   display: grid;
   grid-template-columns: 1fr; /* 🔥 KEEP TWO UL ALWAYS */
   gap: 26px;
+  
 }
 
 .services-grid ul {
   list-style: none;
+    font-family: "Open Sans";
+
   padding: 0;
   margin: 0;
 }
@@ -115,6 +126,8 @@ background: #0000009e;
 .services-grid li {
   display: flex;
   align-items: center;
+      font-family: "Open Sans";
+
   gap: 20px;
   font-size: 25px;
   color: #ffffff;

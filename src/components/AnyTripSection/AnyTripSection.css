@@ -60,6 +60,8 @@
     font-size: 22px;
     font-weight: 800;
       /* color: #10b981; */
+        font-family: "Montserrat";
+
       color: #008000;
   margin-bottom: 14px;
 }
@@ -71,6 +73,8 @@
 }
 
 .payment-bottom-text {
+    font-family: "Montserrat";
+
   font-size: 18px;
   font-weight: 600;
   line-height: 1.4;
@@ -99,6 +103,8 @@
 
 .anytrip-title {
   font-size: 56px;
+    font-family: "Montserrat";
+
   font-weight: 900;
   color: #ffffff;
   margin-bottom: 18px;
@@ -107,6 +113,8 @@
 .anytrip-desc {
   font-size: 20px;
   max-width: 640px;
+    font-family: "Open Sans";
+
   line-height: 1.7;
   color: #ffffff;
   opacity: 0.95;

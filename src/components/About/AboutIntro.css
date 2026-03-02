@@ -59,6 +59,8 @@
     position: fixed;
     bottom: 330px;
     left: -50px;
+          font-family: "Open Sans";
+
   background: #008000;
   color: #ffffff;
   padding: 30px 29px;
@@ -78,17 +80,23 @@
   font-weight: 700;
   font-size: 22px;
   letter-spacing: 1px;
+        font-family: "Open Sana";
+
 }
 
 .about-right h2 {
   font-size: 36px;
   font-weight: 800;
+        font-family: "Montserrat";
+
   margin: 14px 0 18px;
   color: #6495ed;
 }
 
 .about-right p {
   font-size: 25px;
+        font-family: "Open Sans";
+
   line-height: 1.7;
   color: #475569;
   margin-bottom: 14px;
@@ -112,6 +120,8 @@
   align-items: center;
   gap: 12px;
   font-size: 25px;
+        font-family: "Open Sans";
+
   font-weight: 500;
   color: #6495ed;
   margin-bottom: 14px;
@@ -126,6 +136,8 @@
 .about-btn {
   display: inline-block;
       font-size: 25px;
+            font-family: "Montserrat";
+
 
   background: #008000;
   color: #ffffff;

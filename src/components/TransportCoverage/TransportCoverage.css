@@ -18,6 +18,8 @@
   font-size: 25px;
   color: #06162b;
   line-height: 1.6;
+    font-family: "Montserrat";
+
 }
 
 /* GRID */
@@ -32,6 +34,8 @@
 .coverage-column h3 {
   font-size: 25px;
   font-weight: 700;
+    font-family: "Montserrat";
+
   color: #008000;
   margin-bottom: 18px;
 }
@@ -42,6 +46,8 @@
 }
 
 .coverage-column ul {
+    font-family: "Open Sans";
+
   list-style: none;
   padding: 0;
   margin: 0;

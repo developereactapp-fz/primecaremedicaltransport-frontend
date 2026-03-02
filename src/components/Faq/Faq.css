@@ -34,7 +34,7 @@
   font-size: 16px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  font-family:"jost";
+    font-family: "Open Sans";
   color: #008000;
   margin-bottom: 12px;
   display: inline-block;
@@ -43,7 +43,7 @@
 .faq-header h2 {
   font-size: 42px;
   font-weight: 800;
-  font-family: "jost";
+      font-family: "Montserrat";
   color: #6495ed;
 }
 
@@ -101,6 +101,8 @@
 .faq-question h4 {
   font-size: 22px;
   font-weight: 600;
+        font-family: "Montserrat";
+
   color: #6495ed;
   text-align: left;
 }
@@ -117,6 +119,8 @@
 .faq-answer {
   display: grid;
   grid-template-rows: 0fr;
+        font-family: "Open Sans";
+
   opacity: 0;
   transition: all 0.35s ease;
 }
