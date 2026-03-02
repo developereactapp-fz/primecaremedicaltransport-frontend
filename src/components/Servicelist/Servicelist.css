@@ -23,6 +23,8 @@
   font-size: 22px;
   font-weight: 600;
   letter-spacing: 1px;
+    font-family: "Open Sans";
+
   text-transform: uppercase;
   color: #008000;
 }
@@ -30,6 +32,8 @@
 .service-header h2 {
   font-size: 45px;
   font-weight: 800;
+    font-family: "Montserrat";
+
   color: #6495ed;
   margin: 14px 0;
 }
@@ -37,6 +41,8 @@
 .service-header p {
   font-size: 18px;
   color: #475569;
+    font-family: "Open Sans";
+
   line-height: 1.7;
 }
 
@@ -96,6 +102,8 @@
   color: #fff;
   text-decoration: none;
   border-radius: 0 30px 30px 30px;
+    font-family: "Montserrat";
+
   box-shadow: 1px 1px 30px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
@@ -126,7 +134,7 @@
     gap: 10px;
     font-size: 45px;
     font-weight: 800;
-    font-family: "jost";
+  font-family: "Montserrat";
     color: #06162b;
     margin-bottom: 26px;
 }
@@ -134,6 +142,8 @@
 .service-lists {
   display: grid;
   grid-template-columns: 1fr 1fr;
+    font-family: "Open Sans";
+
   gap: 40px;
 }
 

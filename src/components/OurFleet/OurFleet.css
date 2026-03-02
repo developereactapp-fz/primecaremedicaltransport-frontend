@@ -43,6 +43,7 @@
   font-size: 45px;
   font-weight: 800;
   color: #008000;
+  font-family: "Montserrat";
   margin-bottom: 14px;
 }
 
@@ -50,6 +51,8 @@
   font-size: 25px;
   color: #6495ed;
   line-height: 1.7;
+    font-family: "Open Sans";
+
 }
 
 /* =============================== */
@@ -106,6 +109,7 @@
 
 .fleet-card h3 {
   font-size: 25px;
+    font-family: "Montserrat";
   font-weight: 700;
   color: #6495ed;
   margin-bottom: 16px;
@@ -143,7 +147,7 @@
   border-radius: 20px;
   font-size: 18px;
     border-radius: 28px 28px 28px 28px;
-
+  font-family: "Open Sans";
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;

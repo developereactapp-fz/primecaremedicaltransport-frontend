@@ -50,12 +50,16 @@
 color: #008000;  font-size: 22px;
   font-weight: 600;
   margin-bottom: 10px;
+    font-family: "Open Sans";
+
   display: inline-block;
 }
 
 .process-right h2 {
   font-size: 56px;
   font-weight: 800;
+    font-family: "Montserrat";
+
   color: #6495ed;
   margin-bottom: 30px;
 }
@@ -118,6 +122,8 @@ color: #008000;  font-size: 22px;
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 6px;
+    font-family: "Montserrat";
+
   color: #6495ed;
 }
 
@@ -125,6 +131,8 @@ color: #008000;  font-size: 22px;
   font-size: 22px;
   color: #475569;
   line-height: 1.6;
+    font-family: "Open Sans";
+
       padding-bottom: 20px;
 
 }
@@ -134,7 +142,7 @@ color: #008000;  font-size: 22px;
   display: inline-block;
   margin-top: 36px;
       font-size: 25px;
-
+     font-family: "Montserrat";
   background: #008000;
   color: #ffffff;
   padding: 14px 32px;

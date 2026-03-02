@@ -21,8 +21,9 @@
 }
 
 .page-hero-overlay h1 {
-  font-size: 46px;
-  font-weight: 800;
+    font-size: 52px;
+    font-weight: 800;
+    font-family: 'Montserrat';
   margin-top: 115px;
 }
 
@@ -31,6 +32,7 @@
   display: flex;
   gap: 8px;
   font-size: 14px;
+    font-family: 'Open Sans';
 }
 
 .breadcrumb a {

@@ -47,6 +47,8 @@
   border: none;
   outline: none;
   font-size: 14px;
+    font-family: "Open Sans";
+
   border-radius: 6px;
   background: transparent;
 }
@@ -83,6 +85,8 @@
 /* Booking-form-header */
 .booking-form-header{
   padding-bottom: 30px;
+    font-family: "Montserrat";
+
 }
 
 .underline {
