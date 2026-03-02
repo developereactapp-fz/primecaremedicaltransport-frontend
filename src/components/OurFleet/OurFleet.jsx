@@ -4,15 +4,15 @@ import { useNavigate } from "react-router-dom";
 // import { FaUserFriends, FaSuitcase } from "react-icons/fa";
 
 /* IMAGES */
-import CorollaSE from "../../assets/carehealth/cars/CorollaSEHybrid.jpeg";
-import WheelchairVan from "../../assets/carehealth/cars/BestTransportation.jpg";
-import Fransit from "../../assets/carehealth/cars/FordFransit.jpeg";
-import Corolla from "../../assets/carehealth/cars/Corolla.jpeg";
-import PriusPrime from "../../assets/carehealth/cars/PriusPrime.jpeg";
-import PriusV from "../../assets/carehealth/cars/PriusV.jpeg";
-import Sienna from "../../assets/carehealth/cars/Sienna.jpeg";
-import Prius from "../../assets/carehealth/cars/Prius.jpeg";
-import PriusPrimes from "../../assets/carehealth/cars/PriusPrimes.jpeg";
+import CorollaSE from "../../assets/carehealth/cars/CorollaSEHybrid.png";
+import WheelchairVan from "../../assets/carehealth/cars/BestTransportation.png";
+import Fransit from "../../assets/carehealth/cars/FordFransit.png";
+import Corolla from "../../assets/carehealth/cars/Corolla.png";
+import PriusPrime from "../../assets/carehealth/cars/PriusPrime.png";
+import PriusV from "../../assets/carehealth/cars/PriusV.png";
+import Sienna from "../../assets/carehealth/cars/Sienna.png";
+import Prius from "../../assets/carehealth/cars/Prius.png";
+import PriusPrimes from "../../assets/carehealth/cars/PriusPrimes.png";
 
 
 
