@@ -22,8 +22,6 @@ display: flex;
     align-items: center;
     justify-content: space-between;
     height: 130px;
-        flex-direction: row-reverse;
-
 }
 
 .logo {
@@ -38,7 +36,7 @@ display: flex;
   object-fit: contain;
   display: block;
    /* background: rgba(255,255,255,0.6); */
-  padding: 4px 6px;
+  padding: 4px 0px;
   border-radius: 6px;
   
   /* VISUAL BOOST */
@@ -170,7 +168,7 @@ display: flex;
 }
 
 .menu-icon{
-  font-size: 25px;
+  font-size: 35px;
   color: white;
 }
 /* MOBILE MENU HEADER */
@@ -275,12 +273,33 @@ display: flex;
 /* ===================== */
 /* MOBILE – NO STICKY */
 /* ===================== */
+/* ===================== */
+/* MOBILE HEADER LAYOUT FIX */
+/* ===================== */
 @media (max-width: 768px) {
+
+  /* keep your existing mobile styles */
   .header {
     position: absolute !important;
     box-shadow: none !important;
     background: transparent !important;
   }
+
+  /* Make wrapper control alignment */
+  .header-wrapper {
+    justify-content: space-between;
+  }
+
+  /* Move hamburger to LEFT */
+  .menu-icon {
+    order: 1;
+  }
+
+  /* Move logo to RIGHT */
+  .logo {
+    order: 2;
+  }
+
 }
 
 /* OPTIONAL ANIMATION */
