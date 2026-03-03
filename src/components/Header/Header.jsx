@@ -59,16 +59,7 @@ export default function Header() {
 
       {/* MOBILE FULLSCREEN MENU */}
       <div className={`mobile-menu ${open ? "open" : ""}`}>
-        <div className="mobile-menu-header">
-        <div className="logo">
-          <NavLink to="/" aria-label="Prime Care Home">
-            <img
-              src={Logo}
-              alt="Prime Care Medical Transportation"
-            />
-          </NavLink>
-        </div>          <FaTimes className="close-icon" onClick={() => setOpen(false)} />
-        </div>
+       
 
         <div className="mobile-menu-links">
           <NavLink to="/" end onClick={() => setOpen(false)}>Home</NavLink>
@@ -78,6 +69,16 @@ export default function Header() {
           <NavLink to="/service-areas" onClick={() => setOpen(false)}>Service Areas</NavLink>
           <NavLink to="/reservation" onClick={() => setOpen(false)}>Reservation</NavLink>
           <NavLink to="/contact-us" onClick={() => setOpen(false)}>Contact Us</NavLink>
+        </div>
+         <div className="mobile-menu-header">
+        <div className="logo">
+          <NavLink to="/" aria-label="Prime Care Home">
+            <img
+              src={Logo}
+              alt="Prime Care Medical Transportation"
+            />
+          </NavLink>
+        </div>          <FaTimes className="close-icon" onClick={() => setOpen(false)} />
         </div>
       </div>
     </header>

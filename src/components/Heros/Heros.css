@@ -45,7 +45,7 @@
 
 .heros-left {
   flex: 1;
-  color: #ffffff;
+  color: #000000;
 }
 
 .subtitle {
@@ -61,7 +61,7 @@
 .line {
   width: 45px;
   height: 2px;
-  background: #ffffff;
+  background: #008000;
   margin-right: 12px;
 }
 
@@ -315,12 +315,15 @@ font-family: 'Montserrat';
 }
   .heros-left h1 {
     font-size: 22px;
+      color: black;
   }
   .subtitle{
     font-size: 18px;
+      color: black;
   }
   .description {
     font-size: 18px;
+        color: black;
   }
   .btn-primarly{
     text-align-last: left;
