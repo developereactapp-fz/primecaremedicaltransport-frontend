@@ -5,7 +5,7 @@
 .header {
   background: transparent;
   position: absolute;
-  top: 175px;
+  top: 44px;
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -160,8 +160,7 @@ display: flex;
   transform: translateX(100%);
   transition: transform 0.9s ease;
   display: flex;
-      justify-content: flex-end;
-
+  justify-content: flex-end;  
   flex-direction: column-reverse;
 }
 
@@ -178,7 +177,7 @@ display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 30px;
   color: #ffffff;
   font-size: 18px;
 }
@@ -284,7 +283,7 @@ display: flex;
   .header {
     position: absolute !important;
     box-shadow: none !important;
-    background: transparent !important;
+    background: #0f172a8f  !important;
   }
 
   /* Make wrapper control alignment */
@@ -294,12 +293,12 @@ display: flex;
 
   /* Move hamburger to LEFT */
   .menu-icon {
-    order: 1;
+    order: 2;
   }
 
   /* Move logo to RIGHT */
   .logo {
-    order: 2;
+    order: 1;
   }
 
 }

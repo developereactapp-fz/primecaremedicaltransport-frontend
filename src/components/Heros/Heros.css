@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   background-position: top;
   display: flex;
+  top: 60x;
   align-items: center;
   padding: 200px 0 100px;
   overflow: hidden;
@@ -20,8 +21,8 @@
   position: absolute;
   inset: 0;
   /* background: rgba(13, 94, 82, 0.85); */
-  /* background: rgb(9 9 9 / 86%); */
-  background: #6494ed71;
+  background: rgba(9, 9, 9, 0.499);
+  /* background: #6494ed2b; */
   z-index: 1;
 }
 
@@ -30,7 +31,7 @@
     position: relative;
     z-index: 2;
     width: 95%;
-    padding: 80px 0px;
+    padding: 45px 0px;
     max-width: 1300px;
     margin: auto;
     display: flex;
@@ -45,7 +46,7 @@
 
 .heros-left {
   flex: 1;
-  color: #000000;
+  color: #6495ed;
 }
 
 .subtitle {
@@ -61,7 +62,7 @@
 .line {
   width: 45px;
   height: 2px;
-  background: #008000;
+  background: #6495ed;
   margin-right: 12px;
 }
 
@@ -314,16 +315,20 @@ font-family: 'Montserrat';
 
 }
   .heros-left h1 {
-    font-size: 22px;
-      color: black;
+  font-size: 28px;
+        color: #6495ed;
+        font-weight: 800;
   }
   .subtitle{
-    font-size: 18px;
-      color: black;
+   font-size: 22px;
+        color: #6495ed;
+        font-weight: 800;
   }
   .description {
-    font-size: 18px;
-        color: black;
+    font-size: 22px;
+        color: #6495ed;
+        padding-left: 20px;
+        font-weight: 800;
   }
   .btn-primarly{
     text-align-last: left;
