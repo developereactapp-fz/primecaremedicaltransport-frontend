@@ -54,7 +54,7 @@
       font-family: 'Open Sans';
 
   align-items: center;
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -319,6 +319,11 @@ font-family: 'Montserrat';
   font-size: 28px;
         color: #6495ed;
         font-weight: 800;
+  }
+  .line{
+ width: 25px;
+  height: 2px;
+
   }
   .subtitle{
    font-size: 22px;
