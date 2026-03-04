@@ -3,11 +3,11 @@
 /* ===================== */
 
 .topbar {
-  background: linear-gradient(125deg, #6495ED, #008000);
+  background: linear-gradient(125deg, #008000, #6495ED);
   font-family: "Montserrat";
   color: #ffffff;
   font-size: 13px;
-      margin-top: 130px;
+    margin-top: 129px !important;
 
 }
 
@@ -113,5 +113,11 @@
 
   .mobile-only {
     display: none;
+  }
+
+  .topbar {
+  margin-top: 129px !important;
+    background: linear-gradient(125deg, #008000 , #6495ED) !important;
+
   }
 }

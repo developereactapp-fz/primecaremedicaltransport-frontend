@@ -3,9 +3,9 @@
 /* ===================== */
 
 .header {
-  background: transparent;
+  background: linear-gradient(125deg, #008000 , #6495ED);
   position: absolute;
-  top: 44px;
+  top: -1px;
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -283,7 +283,7 @@ display: flex;
   .header {
     position: absolute !important;
     box-shadow: none !important;
-    background: #0f172a !important;
+    background: linear-gradient(125deg, #008000 , #6495ED) !important;
         top: 0px;
 
   }
