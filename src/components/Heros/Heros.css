@@ -21,8 +21,8 @@
   position: absolute;
   inset: 0;
   /* background: rgba(13, 94, 82, 0.85); */
-  background: rgba(9, 9, 9, 0.499);
-  /* background: #6494ed2b; */
+  /* background: rgba(9, 9, 9, 0.499); */
+  background: #6494ed2b;
   z-index: 1;
 }
 
