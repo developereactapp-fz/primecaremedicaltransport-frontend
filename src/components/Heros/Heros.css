@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-position: top;
   display: flex;
-  top: 60x;
+  top: -1px;
   align-items: center;
   padding: 200px 0 100px;
   overflow: hidden;
@@ -316,7 +316,7 @@ font-family: 'Montserrat';
 
 }
   .heros-left h1 {
-  font-size: 28px;
+  font-size: 25px;
         color: #6495ed;
         font-weight: 800;
   }
@@ -326,7 +326,7 @@ font-family: 'Montserrat';
 
   }
   .subtitle{
-   font-size: 20px;
+   font-size: 19px;
         color: #6495ed;
         font-weight: 800;
   }

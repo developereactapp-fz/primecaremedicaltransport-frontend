@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 // import MovingBanner from "./components/MovingBanner/MovingBanner";
-import Topbar from "./components/Topbar/Topbar";
 
 import Header from "./components/Header/Header";
+import Topbar from "./components/Topbar/Topbar";
+
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Fleet from "./pages/Fleet";
@@ -22,26 +23,27 @@ function App() {
     <HelmetProvider>
 
       <BrowserRouter>
-      <Toaster position="top-center" />
+        <Toaster position="top-center" />
 
-                      <ScrollToTop/>
-                               {/* <MovingBanner /> */}
+        <ScrollToTop />
+        {/* <MovingBanner /> */}
 
-        <Topbar />
         <Header />
 
+                <Topbar />
 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/gallery" element={<Fleet />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/service-areas" element={<ServiceArea />} /> 
-          <Route path="/reservation" element={<Reservation />} /> 
+          <Route path="/service-areas" element={<ServiceArea />} />
+          <Route path="/reservation" element={<Reservation />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
-        <BookRideCTA/>
-        <Footer/>
+
+        <BookRideCTA />
+        <Footer />
       </BrowserRouter>
     </HelmetProvider>
   );

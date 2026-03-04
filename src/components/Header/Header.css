@@ -283,7 +283,9 @@ display: flex;
   .header {
     position: absolute !important;
     box-shadow: none !important;
-    background: #0f172a8f  !important;
+    background: #0f172a !important;
+        top: 0px;
+
   }
 
   /* Make wrapper control alignment */
