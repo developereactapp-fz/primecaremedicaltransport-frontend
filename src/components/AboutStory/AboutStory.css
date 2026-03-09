@@ -29,7 +29,8 @@
   letter-spacing: 2px;
         font-family: "Montserrat";
 
-  color: #0f172a;
+  /* color: #0f172a; */
+color: #ffffff;
   margin-bottom: 40px;
 }
 
@@ -51,14 +52,18 @@
         font-family: "Montserrat";
 
   /* color: #6495ed; */
-  color: #0f172a;
+  /* color: #0f172a; */
+
+color: #ffffff;
 }
 
 .counter p {
   font-size: 22px;
         font-family: "Open Sans";
 
-  color: #0f172a;
+  /* color: #0f172a; */
+
+color: #ffffff;
 }
 
 /* ===================== */

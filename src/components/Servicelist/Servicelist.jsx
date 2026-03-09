@@ -35,7 +35,7 @@ export default function ServiceArea() {
         {/* HEADER – SAME STYLE AS HOME */}
         <div className="service-header">
           <span className="section-tag">Service Coverage</span>
-          <h2>How can CareHealth help your journey?</h2>
+          <h2>How can PrimeCare help your journey?</h2>
           <p>
             Safe, reliable, and compassionate non-emergency medical transportation
             across multiple service areas.
