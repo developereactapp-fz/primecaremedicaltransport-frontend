@@ -93,6 +93,8 @@
 .heros-buttons {
   display: flex;
   gap: 20px;
+      padding-bottom: 35px;
+
 }
 
 .heros-buttons a {

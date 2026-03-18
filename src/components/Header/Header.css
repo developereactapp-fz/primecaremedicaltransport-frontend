@@ -260,8 +260,8 @@ display: flex;
 /* Mobile */
 @media (max-width: 769px) {
   .logo img {
-    height: 80px;
-    max-width: 80px;
+    height: 180px;
+    max-width: 180px;
   }
     .nav a{
     font-size: 10px;

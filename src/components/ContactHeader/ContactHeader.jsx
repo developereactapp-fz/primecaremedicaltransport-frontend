@@ -80,7 +80,7 @@ export default function ContactInfo() {
           </a>
 
           {/* EMAIL CARD */}
-          <a href="mailto:primecare.transportations@gmail.com"  
+          <a href="mailto:dispatch@primecaretransportations.com"  
               className={`contact-card orange ${
               inView ? "animate-up-Serving" : ""
             }`}
@@ -90,7 +90,7 @@ export default function ContactInfo() {
             </span>
             <h4>Email</h4>
             <p>
-             Primecare.transportations@gmail.com
+             Dispatch@primecaretransportations.com
             </p>
           </a>
 

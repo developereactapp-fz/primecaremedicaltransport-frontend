@@ -29,8 +29,8 @@ export default function Topbar() {
               5535 Charlotte Ave Se Auburn, WA 98092
             </a>          
           </span>
-          <a href="mailto:primecare.transportations@gmail.com">
-            <FaEnvelope /> Primecare.transportations@gmail.com
+          <a href="mailto:dispatch@primecaretransportations.com">
+            <FaEnvelope /> Dispatch@primecaretransportations.com
           </a>
           <span>
             <FaClock /> Open 24 Hours
