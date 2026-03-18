@@ -250,7 +250,7 @@ display: flex;
     max-width: 140px;
   }
   .nav a{
-    font-size: 14px;
+    font-size: 12px;
   }
     .header-cta{
     font-size: 12px;
@@ -258,10 +258,16 @@ display: flex;
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .logo img {
-    height: 180px;
-    max-width: 180px;
+    height: 80px;
+    max-width: 80px;
+  }
+    .nav a{
+    font-size: 10px;
+  }
+    .header-cta{
+    font-size: 10px;
   }
 }
 /* ===================== */

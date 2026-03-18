@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: space-between;
   height: 44px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* ===================== */
@@ -114,19 +114,53 @@
   .mobile-only {
     display: none;
   }
-  .topbar-wrapper{
-        font-size: 14px;
-
+    .topbar-left a {
+        font-size: 14px !important;
+  }
+  .topbar-left span {
+        font-size: 14px !important;
+  }
+    .topbar-social a {
+            font-size: 14px !important;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 900px) {
   .desktop-only {
     display: flex;
   }
 
   .mobile-only {
     display: none;
+  }
+    .topbar-social a {
+            font-size: 13px !important;
+  }
+    .topbar-left a {
+        font-size: 13px !important;
+  }
+  .topbar-left span {
+        font-size: 13px !important;
+  }
+  
+  
+}
+
+@media (min-width: 769px) {
+  .desktop-only {
+    display: flex;
+  }
+  .mobile-only {
+    display: none;
+  }
+    .topbar-left a {
+        font-size: 12px !important;
+  }
+  .topbar-left span {
+        font-size: 12px !important;
+  }
+  .topbar-social a{
+            font-size: 12px !important;
   }
 
   .topbar {
