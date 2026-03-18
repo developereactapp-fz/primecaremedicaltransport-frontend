@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.402126aa.css",
+    "main.js": "/static/js/main.b14e356c.js",
+    "static/js/453.92ca356b.chunk.js": "/static/js/453.92ca356b.chunk.js",
+    "static/media/Prius.png": "/static/media/Prius.1988531239ad8379414f.png",
+    "static/media/PriusV.png": "/static/media/PriusV.f984ac3f19bff2e67799.png",
+    "static/media/CorollaSEHybrid.png": "/static/media/CorollaSEHybrid.4be7a908bf3806d110fd.png",
+    "static/media/Corolla.png": "/static/media/Corolla.11386ceb24dfa00bf2bf.png",
+    "static/media/PriusPrime.png": "/static/media/PriusPrime.2b7ae6ebe754751bcf20.png",
+    "static/media/Sienna.png": "/static/media/Sienna.7f8a17e952a7125b44e2.png",
+    "static/media/doctor_help_bg.png": "/static/media/doctor_help_bg.180d230657ae55516f2d.png",
+    "static/media/BestTransportation.png": "/static/media/BestTransportation.6d3bfec3d420494c7503.png",
+    "static/media/FordFransit.png": "/static/media/FordFransit.1b2072e0abe72123ec42.png",
+    "static/media/ContactUS.jpg": "/static/media/ContactUS.92e8bccbdd0b39ffd391.jpg",
+    "static/media/PriusPrimes.png": "/static/media/PriusPrimes.34ab10d561385db20c82.png",
+    "static/media/doctor_help.jpeg": "/static/media/doctor_help.81fb82e3dbcad80ff5c8.jpeg",
+    "static/media/wheelchair_alone.jpeg": "/static/media/wheelchair_alone.466e825d55ab47c85e9c.jpeg",
+    "static/media/banner-right-img1.png": "/static/media/banner-right-img1.41837ffb5fa0d0b0a171.png",
+    "static/media/banner-right-img3.png": "/static/media/banner-right-img3.3ea419570abe0845df57.png",
+    "static/media/process-left-img.jpg": "/static/media/process-left-img.3397d8a60b729ba23a83.jpg",
+    "static/media/Main-banner.jpeg": "/static/media/Main-banner.fafcb2ddcf155d4d1786.jpeg",
+    "static/media/BestTransportation.jpg": "/static/media/BestTransportation.2ee225684a5499e9c59e.jpg",
+    "static/media/banner-right-img2.png": "/static/media/banner-right-img2.acc5509993ff4569db38.png",
+    "static/media/about.jpg": "/static/media/about.d08aad4f25ac3a1eaed5.jpg",
+    "static/media/ServiceEquipmentAll.png": "/static/media/ServiceEquipmentAll.b6a6806aee8aa350af4f.png",
+    "static/media/aboutstorybg.avif": "/static/media/aboutstorybg.ad3336262f857850af58.avif",
+    "static/media/Logo_PrimeCare.png": "/static/media/Logo_PrimeCare.492a110af2579420e1a5.png",
+    "static/media/help-bg-img.jpg": "/static/media/help-bg-img.bcb369b773e13a0a9b78.jpg",
+    "static/media/service_process.jpeg": "/static/media/service_process.e4fd59a3800b8c95a949.jpeg",
+    "static/media/work-bg-img.jpg": "/static/media/work-bg-img.3957ed24bda9b4996c27.jpg",
+    "static/media/AboutUS.webp": "/static/media/AboutUS.8aecfaee1422dec4e901.webp",
+    "static/media/CashCheckCC.png": "/static/media/CashCheckCC.201cb4f8de928f44986b.png",
+    "index.html": "/index.html",
+    "main.402126aa.css.map": "/static/css/main.402126aa.css.map",
+    "main.b14e356c.js.map": "/static/js/main.b14e356c.js.map",
+    "453.92ca356b.chunk.js.map": "/static/js/453.92ca356b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.402126aa.css",
+    "static/js/main.b14e356c.js"
+  ]
+}

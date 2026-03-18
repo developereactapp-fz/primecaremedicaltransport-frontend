@@ -106,6 +106,20 @@
 /* DESKTOP */
 /* ===================== */
 
+@media (min-width: 1024px) {
+  .desktop-only {
+    display: flex;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+  .topbar-wrapper{
+        font-size: 14px;
+
+  }
+}
+
 @media (min-width: 769px) {
   .desktop-only {
     display: flex;
@@ -117,7 +131,7 @@
 
   .topbar {
   margin-top: 129px !important;
-    background: linear-gradient(125deg, #008000 , #6495ED) !important;
+  background: linear-gradient(125deg, #008000 , #6495ED) !important;
 
   }
 }
