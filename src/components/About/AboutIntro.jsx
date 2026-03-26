@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 import slide1 from "../../assets/carehealth/doctor_help.jpeg";
-import slide2 from "../../assets/carehealth/BestTransportation.jpg";
+import slide2 from "../../assets/carehealth/BestTransportation.png";
 import slide3 from "../../assets/carehealth/wheelchair_alone.jpeg";
 
 const images = [slide1, slide2, slide3];

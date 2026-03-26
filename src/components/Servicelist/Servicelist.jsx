@@ -4,7 +4,7 @@ import {
   FaMapMarkerAlt
 } from "react-icons/fa";
 import "./Servicelist.css";
-import serviceImg from "../../assets/process-left-img.jpg";
+import serviceImg from "../../assets/banner-right-img2.png";
 
 export default function ServiceArea() {
   const sectionRef = useRef(null);

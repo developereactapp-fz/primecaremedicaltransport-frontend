@@ -7,8 +7,7 @@
   font-family: "Montserrat";
   color: #ffffff;
   font-size: 13px;
-    margin-top: 129px !important;
-
+  margin-top: 129px !important;
 }
 
 /* ===================== */
@@ -110,7 +109,6 @@
   .desktop-only {
     display: flex;
   }
-
   .mobile-only {
     display: none;
   }
@@ -141,9 +139,7 @@
   }
   .topbar-left span {
         font-size: 13px !important;
-  }
-  
-  
+  } 
 }
 
 @media (min-width: 769px) {
@@ -153,7 +149,7 @@
   .mobile-only {
     display: none;
   }
-    .topbar-left a {
+  .topbar-left a {
         font-size: 12px !important;
   }
   .topbar-left span {
@@ -162,7 +158,6 @@
   .topbar-social a{
             font-size: 12px !important;
   }
-
   .topbar {
   margin-top: 129px !important;
   background: linear-gradient(125deg, #008000 , #6495ED) !important;

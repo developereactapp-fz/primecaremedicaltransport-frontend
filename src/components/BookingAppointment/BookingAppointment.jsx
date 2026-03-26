@@ -2,9 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { FaCalendarAlt } from "react-icons/fa";
 import "./BookingAppointment.css";
-import contactImg from "../../assets/ContactUS.jpg";
-import aboutImg from "../../assets/AboutUS.webp";
-import about2Img from "../../assets/about.jpg";
+
+import Slideone from "../../assets/carehealth/BestTransportation.png";
+import Slidetwo from "../../assets/carehealth/doctor_help.jpeg";
+import Slidethree from "../../assets/carehealth/doctor_help_bg.png";
+import Slidefour from "../../assets/carehealth/wheelchair_alone.jpeg";
+
 
 export default function BookingAppointment() {
   const sectionRef = useRef(null);
@@ -12,7 +15,7 @@ export default function BookingAppointment() {
   const [visible, setVisible] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [aboutImg, about2Img, contactImg];
+  const slides = [Slideone, Slidetwo, Slidethree, Slidefour];
 
   useEffect(() => {
     const observer = new IntersectionObserver(

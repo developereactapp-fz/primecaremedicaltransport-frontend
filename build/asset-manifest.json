@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.402126aa.css",
-    "main.js": "/static/js/main.b14e356c.js",
+    "main.css": "/static/css/main.d29c28bc.css",
+    "main.js": "/static/js/main.571c018c.js",
     "static/js/453.92ca356b.chunk.js": "/static/js/453.92ca356b.chunk.js",
     "static/media/Prius.png": "/static/media/Prius.1988531239ad8379414f.png",
     "static/media/PriusV.png": "/static/media/PriusV.f984ac3f19bff2e67799.png",
@@ -32,12 +32,12 @@
     "static/media/AboutUS.webp": "/static/media/AboutUS.8aecfaee1422dec4e901.webp",
     "static/media/CashCheckCC.png": "/static/media/CashCheckCC.201cb4f8de928f44986b.png",
     "index.html": "/index.html",
-    "main.402126aa.css.map": "/static/css/main.402126aa.css.map",
-    "main.b14e356c.js.map": "/static/js/main.b14e356c.js.map",
+    "main.d29c28bc.css.map": "/static/css/main.d29c28bc.css.map",
+    "main.571c018c.js.map": "/static/js/main.571c018c.js.map",
     "453.92ca356b.chunk.js.map": "/static/js/453.92ca356b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.402126aa.css",
-    "static/js/main.b14e356c.js"
+    "static/css/main.d29c28bc.css",
+    "static/js/main.571c018c.js"
   ]
 }

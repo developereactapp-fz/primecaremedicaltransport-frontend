@@ -168,7 +168,7 @@ button {
 .form-right {
   background-size: cover;
   background-position: center;
-  border-radius: 8px;
+  border-radius: 0px;
   min-height: 420px;
 }
 

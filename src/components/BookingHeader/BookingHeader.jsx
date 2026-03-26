@@ -6,16 +6,17 @@ import {
   FaEnvelope
 } from "react-icons/fa";
 
-import contactImg from "../../assets/ContactUS.jpg";
-import aboutImg from "../../assets/AboutUS.webp";
-import about2Img from "../../assets/about.jpg";
+import Slideone from "../../assets/carehealth/BestTransportation.png";
+import Slidetwo from "../../assets/carehealth/doctor_help.jpeg";
+import Slidethree from "../../assets/carehealth/doctor_help_bg.png";
+import Slidefour from "../../assets/carehealth/wheelchair_alone.jpeg";
 
 export default function BookingHeader() {
   const sectionRef = useRef(null);
   const [inView, setInView] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [contactImg, aboutImg, about2Img];
+  const slides = [Slideone, Slidetwo, Slidethree, Slidefour];
 
   /* Scroll animation */
   useEffect(() => {
