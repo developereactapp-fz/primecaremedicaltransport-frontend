@@ -141,7 +141,7 @@
 
 .service-lists {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
     font-family: "Open Sans";
 
   gap: 40px;
